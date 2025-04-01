@@ -5,6 +5,7 @@
 Cross-Site Request Forgery (CSRF) is an attack that tricks a user into executing unwanted actions on a web application where they are authenticated. By exploiting the trust that a website has in the user's browser, an attacker can perform actions on behalf of the user without their consent.
 
 ### Where to Test
+> https://csrf.m14r41.in/
 - Web applications that rely on cookies for authentication.
 - Forms that perform state-changing actions (e.g., updating email, password changes, making payments).
 - Applications with no CSRF protection or weak implementation of CSRF tokens.
@@ -39,6 +40,8 @@ Cross-Site Request Forgery (CSRF) is an attack that tricks a user into executing
 - Utilizing JSONP endpoints or CORS misconfigurations
 
 ---
+### Online csrf Poc generator
+> https://csrf.m14r41.in/
 
 ## Portswigger Lab
 
