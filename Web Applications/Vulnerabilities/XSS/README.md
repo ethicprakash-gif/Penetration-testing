@@ -13,6 +13,12 @@
 
 ---
 
+## DOM XSS
+> DOM XSS in Details
+
+> https://github.com/m14r41/PentestingEverything/blob/main/Web%20Applications/Vulnerabilities/XSS/DOM-XSS.md
+
+---
 ## Login fail XSS 
 
 > CVE-2024-34070 : https://github.com/advisories/GHSA-x525-54hf-xr53
