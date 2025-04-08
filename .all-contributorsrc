@@ -60,6 +60,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "0xKayala",
+      "name": "Satya Prakash",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16838353?v=4",
+      "profile": "https://0xkayala.medium.com",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
