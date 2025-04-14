@@ -1,6 +1,6 @@
 
 
-# 🔧 Configuration Review in Penetration Testing
+# Configuration Review in Penetration Testing
 
 ## What is Configuration Review?
 
