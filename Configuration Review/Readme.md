@@ -2,7 +2,7 @@
 
 # 🔧 Configuration Review in Penetration Testing
 
-## 📝 What is Configuration Review?
+## What is Configuration Review?
 
 A **configuration review** is a methodical process in penetration testing where the tester examines system, application, network, and infrastructure settings to identify **security misconfigurations** that could lead to vulnerabilities. It is one of the most overlooked but **critical components** in any security assessment.
 
@@ -10,7 +10,7 @@ This phase often involves **manual inspection** and the use of automated tools t
 
 ---
 
-## 🎯 Objectives of a Configuration Review
+## Objectives of a Configuration Review
 
 * Identify insecure default settings.
 * Discover unnecessary services or ports.
@@ -22,7 +22,7 @@ This phase often involves **manual inspection** and the use of automated tools t
 
 ---
 
-## 🧰 What to Review (Key Areas)
+## What to Review (Key Areas)
 
 ### 1. **Operating System (OS) Configuration**
 
@@ -75,7 +75,7 @@ This phase often involves **manual inspection** and the use of automated tools t
 
 ---
 
-## 🔍 Sample Checks and Payloads
+## Sample Checks and Payloads
 
 | Area        | Misconfiguration  | Test / Check                              |
 | ----------- | ----------------- | ----------------------------------------- |
@@ -88,7 +88,7 @@ This phase often involves **manual inspection** and the use of automated tools t
 
 ---
 
-## ✅ Best Practices to Recommend (If Found Misconfigured)
+## Best Practices to Recommend (If Found Misconfigured)
 
 * Disable unnecessary services and ports.
 * Enforce strong password policies.
@@ -116,7 +116,7 @@ This phase often involves **manual inspection** and the use of automated tools t
 
 ---
 
-## 🧾 Sample Report Snippet
+## Sample Report Snippet
 
 ```
 Finding: Apache Server Exposes Directory Listings
@@ -132,7 +132,7 @@ Recommendation: Set a strong password for root, disable remote root access.
 
 ---
 
-## 🚨 Common Pitfalls
+## Common Pitfalls
 
 * Trusting default configurations from vendors.
 * Overlooking cloud-specific settings.
@@ -142,7 +142,7 @@ Recommendation: Set a strong password for root, disable remote root access.
 
 ---
 
-## 📌 Summary
+## Summary
 
 Configuration review is a **foundational** step in penetration testing and often leads to **critical findings** that would be missed by automated scans alone. By thoroughly examining configurations, you enhance the **overall security posture** of the environment and reduce the attack surface significantly.
 
