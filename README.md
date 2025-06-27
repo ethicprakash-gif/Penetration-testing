@@ -1,3 +1,34 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="right">
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=en">English</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=zh-CN">简体中文</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=zh-TW">繁體中文</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=ja">日本語</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=ko">한국어</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=hi">हिन्दी</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=th">ไทย</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=fr">Français</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=de">Deutsch</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=es">Español</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=it">Itapano</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=ru">Русский</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=pt">Português</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=nl">Nederlands</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=pl">Polski</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=ar">العربية</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=fa">فارسی</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=tr">Türkçe</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=vi">Tiếng Việt</a></p>
+        <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=id">Bahasa Indonesia</a></p>
+      </div>
+    </div>
+  </details>
+</div>
+
     
 ## Table of Contents
 
