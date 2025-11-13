@@ -97,8 +97,8 @@
 | **Android Security**                   | adb, APKTool, Apkscan, AndroBugs, Android Studio / Genymotion, AppMon, Dexter/Objection (Objection), Drozer, Frida, Magisk, MITMProxy, MobSF, Quark Engine, JADX |
 | **iOS Security**                       | checkra1n, Class-dump, Frida, iMazing, iOS-decrypt, iOS-Hook, MobSF, Needle, Objection, Palera1n, Passionfruit, SSL Kill Switch 2, Cycript                       |
 | **API Pentesting**                     | Burp Suite Professional, GraphQL Raider, GraphQL Voyager, Insomnia, Kite Runner, Postman, Swagger UI                                                             |
-| **Secure Code Review / SAST**          | Bandit, Checkmarx, CodeQL, FindSecBugs, Gitleaks, Semgrep, SonarQube, Snyk, Veracode, Fortify Static (Workbench/Audit)                                           |
-| **Thick-Client / Desktop App Testing** | Burp Suite Professional, dnSpy, de4dot, Fiddler, Ghidra, IDA Pro, OllyDbg, Process Explorer, x64dbg, CFF Explorer, Sysinternals Suite, Wireshark                 |
+| **Secure Code Review**          | Bandit, Checkmarx, CodeQL, FindSecBugs, Gitleaks, Semgrep, SonarQube, Snyk, Veracode, Fortify Static (Workbench/Audit)                                           |
+| **Thick-Client Security** | Burp Suite Professional, dnSpy, de4dot, Fiddler, Ghidra, IDA Pro, OllyDbg, Process Explorer, x64dbg, CFF Explorer, Sysinternals Suite, Wireshark                 |
 | **Network Pentesting**                 | Bettercap, CrackMapExec, Metasploit, Netcat, Nessus, Nmap, OpenVAS, Responder, Wireshark                                                                         |
 
 
@@ -190,5 +190,6 @@
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a>
+
 
 
