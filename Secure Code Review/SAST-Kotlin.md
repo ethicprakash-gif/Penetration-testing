@@ -58,6 +58,27 @@
 
 ---
 
+
+# Java vs Kotlin Backend Components 
+
+| **Aspect / Component** | **Java (Annotation‑Driven)** | **Kotlin (DSL‑Driven)** |
+|-------------------------|------------------------------|--------------------------|
+| **Common Frameworks** | **Spring Boot** → Full‑stack web framework, annotation‑driven, enterprise‑ready. <br> **Spring MVC** → Handles routing/controllers (`@RestController`, `@GetMapping`). <br> **Spring Security** → Authentication, authorization, CSRF protection (`@EnableWebSecurity`, `@PreAuthorize`). <br> **Hibernate / JPA** → ORM for DB mapping (`@Entity`, `@Repository`). <br> **Micronaut / Quarkus** → Modern alternatives to Spring, faster startup, cloud‑native. | **Ktor** → Lightweight Kotlin‑native web framework, DSL routing, coroutine‑friendly. <br> **Exposed** → SQL DSL/ORM for Kotlin, type‑safe queries. <br> **Koin** → Dependency injection with Kotlin DSL (`module { single { UserService() } }`). <br> **Arrow** → Functional programming library (immutability, type safety). <br> **Micronaut (Kotlin support)** → Alternative to Ktor for microservices. |
+| **Controller / Routing** | `@RestController` → Marks REST controller. <br> `@GetMapping("/users")` → Maps GET requests. <br> `@PostMapping("/users")` → Maps POST requests. <br> `@RequestMapping("/api")` → Base path for endpoints. | `routing { get("/users") { call.respondText("All users") } post("/users") { call.respond(HttpStatusCode.Created) } }` |
+| **Dependency Injection** | `@Autowired` → Injects a bean. <br> `@Component` → Marks a Spring bean. <br> `@Service` → Marks business logic class. <br> `@Repository` → Marks DB access class. | `val myModule = module { single { UserService() } single { UserRepository(get()) } }` <br> `startKoin { modules(myModule) }` |
+| **Models / Entities** | `@Entity` → Marks DB entity. <br> `@Table(name="users")` → Maps to DB table. <br> `@Id` → Primary key. <br> `@Column(nullable=false)` → Column constraints. | `@Serializable data class User(val id: Int, val name: String)` <br> Exposed DSL: `object Users : Table() { val id = integer("id").autoIncrement() val name = varchar("name", 255) }` |
+| **Repository / DB Access** | `interface UserRepository extends JpaRepository<User, Long>` → Auto CRUD. <br> `@Query("SELECT u FROM User u WHERE u.name = ?1")` → Custom query. | `Users.select { Users.name eq "Alice" }.map { it[Users.id] }` <br> `transaction { User.new { name = "Alice" } }` |
+| **Configuration** | `@Configuration` → Marks config class. <br> `@Bean` → Defines a bean. <br> `application.properties` / `application.yml` → External configs. | `application.conf` (HOCON). <br> Ktor DSL: `install(ContentNegotiation) { json() }` |
+| **Middleware / Filters** | `OncePerRequestFilter` → Custom filter. <br> `HandlerInterceptor` → Pre/post request handling. | Ktor plugins: `install(Authentication) { jwt { ... } }` <br> `install(CallLogging)` |
+| **Error Handling** | `@ControllerAdvice` → Global error handler. <br> `@ExceptionHandler(Exception.class)` → Handle specific exceptions. | `install(StatusPages) { exception<Throwable> { call.respond(HttpStatusCode.InternalServerError) } }` |
+| **Serialization** | Jackson: `@JsonProperty("username")` → Maps JSON field. <br> `@JsonIgnore` → Excludes field. | kotlinx.serialization: `@Serializable data class User(val id: Int, val name: String)` |
+| **Security** | Spring Security: `@EnableWebSecurity` → Enables security config. <br> `@PreAuthorize("hasRole('ADMIN')")` → Role-based access. | Ktor Authentication plugin: `install(Authentication) { jwt { realm = "ktor" validate { ... } } }` |
+| **Logging** | SLF4J + Logback: `logger.info("User created")` | Ktor CallLogging: `install(CallLogging) { level = Level.INFO }` |
+| **Async Handling** | Java: `CompletableFuture.supplyAsync(...)` <br> Spring WebFlux: `Mono<User>` / `Flux<User>` | Kotlin coroutines: `suspend fun getUser(): User` <br> `launch { ... }` |
+| **API Documentation** | SpringDoc OpenAPI: `@Operation(summary="Get users")` | Ktor OpenAPI plugin: `install(OpenAPI) { ... }` |
+| **Testing** | JUnit: `@Test void testUser() { ... }` <br> Mockito: `@Mock`, `@InjectMocks` | JUnit + MockK: `@Test fun testUser() { coEvery { repo.findUser() } returns User(1,"Alice") }` |
+
+
 # Security Testing Checklist per Layer
 
 **Client Request → Controller → Service → Repository → Database → Response**
