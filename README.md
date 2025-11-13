@@ -90,59 +90,58 @@
 
 # Penetration Testing and Tools 
 
-|       **Category**       |                                          **Tools**                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------- |
-| **Web Application Pentesting**   | **Burp Suite Pro 🌐**, **Acunetix 🌐**, **HCL-AppScan 🌐**, **Invicti Netsparker 🌐**, **Fortify WebInspect 🌐**, **WPScan 🌐**, **Nikto 🌐**, **Nuclei 🌐**, **SQLMap 🌐**, **OWASP ZAP 🌐**, **Nmap 🌐**, **Dirb 🌐**, **FFUF 🌐**, **WhatWeb 🌐** |
-| **Android Security**  | **MobSF 📱**, **Frida 📱**, **APKTool 📱**, **JADX-gui 📱**, **Android Studio/Genymotion 📱**, **Drozer 📱**, **Magisk Root 📱**, **Xposed Framework 📱**, **APKX 📱**, **mitmproxy 📱**, **Objection 📱**, **adb 📱**, **AndroBugs 📱**, **Quark Engine 📱**, **AppMon 📱**, **ApkScan 📱** |
-| **iOS Security**     | **MobSF 📲**, **Frida 📲**, **Objection 📲**, **Chakar1n 📲**, **palera1n 📲**, **Cycript 📲**, **iOS Hook 📲**, **Needle 📲**, **Class-dump 📲**, **SSL Kill Switch 2 📲**, **iMazing 📲**, **Passionfruit 📲**, **ios-decrypt 📲** |
-| **API Pentesting**       | **Postman 📡**, **Burp Suite Pro 📡**, **Swagger UI 📡**, **Kite Runner 📡**, **Insomnia 📡**, **GraphQL Voyager 📡**, **GraphQL Raider 📡** |
-| **Secure Code Review**   | **SonarQube 🔐**, **Snyk 🔐**, **Semgrep 🔐**, **Fortify-Workbench Audit 🔐**, **Checkmarx 🔐**, **Veracode 🔐**, **CodeQL 🔐**, **Bandit 🔐**, **FindSecBugs 🔐**, **Gitleaks 🔐** |
-| **Thick Client Pentesting** | **Fiddler 💻**, **Sysinternals Suite 💻**, **dnSpy 💻**, **de4dot 💻**, **IDA Pro 💻**, **Process Explorer 💻**, **CFF Explorer 💻**, **OllyDbg 💻**, **x64dbg 💻**, **Ghidra 💻**, **Burp Suite Pro 💻**, **Wireshark 💻** |
-| **Network Pentesting**   | **Nmap 🌐**, **Wireshark 🌐**, **Metasploit 🌐**, **Nessus 🌐**, **OpenVAS 🌐**, **Responder 🌐**, **CrackMapExec 🌐**, **Netcat 🌐**, **Bettercap 🌐** |
+
+| **Category**                           | **Tools**                                                                                                                                                        |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Web Application Pentesting**         | Acunetix, Burp Suite Professional, Dirb, FFUF, Nmap, Nikto, Nuclei, OWASP ZAP, SQLMap, WhatWeb, WPScan, Invicti (Netsparker), Fortify WebInspect                 |
+| **Android Security**                   | adb, APKTool, Apkscan, AndroBugs, Android Studio / Genymotion, AppMon, Dexter/Objection (Objection), Drozer, Frida, Magisk, MITMProxy, MobSF, Quark Engine, JADX |
+| **iOS Security**                       | checkra1n, Class-dump, Frida, iMazing, iOS-decrypt, iOS-Hook, MobSF, Needle, Objection, Palera1n, Passionfruit, SSL Kill Switch 2, Cycript                       |
+| **API Pentesting**                     | Burp Suite Professional, GraphQL Raider, GraphQL Voyager, Insomnia, Kite Runner, Postman, Swagger UI                                                             |
+| **Secure Code Review / SAST**          | Bandit, Checkmarx, CodeQL, FindSecBugs, Gitleaks, Semgrep, SonarQube, Snyk, Veracode, Fortify Static (Workbench/Audit)                                           |
+| **Thick-Client / Desktop App Testing** | Burp Suite Professional, dnSpy, de4dot, Fiddler, Ghidra, IDA Pro, OllyDbg, Process Explorer, x64dbg, CFF Explorer, Sysinternals Suite, Wireshark                 |
+| **Network Pentesting**                 | Bettercap, CrackMapExec, Metasploit, Netcat, Nessus, Nmap, OpenVAS, Responder, Wireshark                                                                         |
 
 
 
-# More extended version
+# Extended version 
 
-|       **Category**       |                                          **Tools**                                           |
-|--------------------------|----------------------------------------------------------------------------------------------|
-| **Active Directory Pentesting** | **BloodHound 🏢**, **Mimikatz 🔑**, **CrackMapExec 🏢**, **Impacket 📂**, **Kerbrute 🎭**, **Rubeus 🔓**, **LDAPDomainDump 📜**, **SharpHound 🕵️**, **PowerView 👀**, **ADRecon 📊** |
-| **Cloud Security**       | **Prowler ☁️**, **ScoutSuite ☁️**, **CloudSploit ☁️**, **Pacu ☁️**, **Steampipe ☁️**, **CloudMapper ☁️**, **NCC Scout ☁️**, **kube-bench ☁️**, **Terrascan ☁️**, **KICS ☁️** |
-| **IoT Security**         | **Firmwalker 🔌**, **Binwalk 🔌**, **Firmware-Mod-Kit 🔌**, **Shodan 🔌**, **RIOT 🔌**, **JTAGulator 🔌**, **Qiling 🔌**, **Ghidra 🔌**, **Avatar2 🔌**, **Firmadyne 🔌** |
-| **Firewall Pentesting**  | **hping3 🔥**, **NPing 🔥**, **Scapy 🔥**, **Zmap 🔥**, **firewalk 🔥**, **FTester 🔥**, **Nmap (Firewall Bypass) 🔥**, **Packet Sender 🔥**, **T50 🔥**, **ETTERCAP 🔥**, **TCPReplay 🔥** |
-| **Firmware Analysis**    | **Binwalk 🔍**, **Firmware Analysis Toolkit (FAT) 🔍**, **QEMU 🔍**, **Ghidra 🔍**, **IDA Pro 🔍**, **Firmware-Mod-Kit 🔍**, **Radare2 🔍**, **Firmadyne 🔍** |
-| **Container Security**   | **Trivy 🐳**, **Aqua Microscanner 🐳**, **Clair 🐳**, **Anchore 🐳**, **Docker Bench 🐳**, **kube-hunter 🐳**, **Falco 🐳**, **Sysdig 🐳**, **Snyk 🐳**, **Grype 🐳** |
-| **WiFi Pentesting**      | **Aircrack-ng 📶**, **Kismet 📶**, **Bettercap 📶**, **Reaver 📶**, **Fluxion 📶**, **Wireshark 📶**, **hcxtools 📶**, **Fern WiFi Cracker 📶**, **Wifiphisher 📶**, **Hashcat 📶** |
-| **DevSecOps**            | **GitHub Advanced Security 🔧**, **Trivy 🔧**, **Snyk 🔧**, **Anchore 🔧**, **OWASP DC 🔧**, **Jenkins 🔧**, **Checkmarx 🔧**, **Veracode 🔧**, **Dagda 🔧**, **Sysdig Secure 🔧**, **Cloud Custodian 🔧**, **Bridgecrew 🔧**, **Kubescape 🔧** |
-| **OSINT** | **theHarvester 🕵️**, **Maltego 🕵️**, **SpiderFoot 🕵️**, **Recon-ng 🕵️**, **Shodan 🕵️**, **FOCA 🕵️**, **Google Dorks 🕵️**, **OSINT Framework 🕵️**, **GHunt 🕵️**, **Sherlock 🕵️**, **PhoneInfoga 🕵️** |
-| **Configuration Review** | **Lynis ⚙️**, **OpenSCAP ⚙️**, **Auditd ⚙️**, **Tripwire ⚙️**, **cis-cat Pro ⚙️**, **Chef InSpec ⚙️**, **Prowler ⚙️**, **Kubescape ⚙️** |
-| **Phishing Simulation**  | **GoPhish 🎯**, **SET 🎯**, **Evilginx2 🎯**, **Phishery 🎯**, **King Phisher 🎯**, **Modlishka 🎯**, **Phishing Frenzy 🎯** |
-| **Forensics**            | **Autopsy 🔍**, **Volatility 🔍**, **Sleuth Kit 🔍**, **FTK Imager 🔍**, **Redline 🔍**, **Magnet AXIOM 🔍**, **X-Ways 🔍**, **Bulk Extractor 🔍**, **ExifTool 🔍** |
-| **Blockchain Security**  | **Mythril ⛓️**, **Slither ⛓️**, **Manticore ⛓️**, **Remix IDE ⛓️**, **Oyente ⛓️**, **SmartCheck ⛓️**, **Echidna ⛓️**, **Tenderly ⛓️** |
-| **Threat Modeling**      | **Microsoft TMT 🧠**, **OWASP Threat Dragon 🧠**, **IriusRisk 🧠**, **SeaSponge 🧠**, **Draw.io 🧠**, **Pytm 🧠** |
-| **Red Team Tools**       | **Cobalt Strike 💣**, **Sliver 💣**, **Mythic 💣**, **Empire 💣**, **Metasploit 💣**, **Brute Ratel 💣**, **Koadic 💣**, **FudgeC2 💣**, **Nishang 💣**, **PowerShell Empire 💣** |
-| **Blue Team Tools**      | **Velociraptor 🛡️**, **Wazuh 🛡️**, **OSQuery 🛡️**, **GRR 🛡️**, **Sysmon 🛡️**, **CrowdStrike Falcon 🛡️**, **Elastic Security 🛡️**, **Sigma Rules 🛡️** |
-| **SIEM & Log Analysis**  | **Splunk 📊**, **ELK Stack 📊**, **Graylog 📊**, **Wazuh 📊**, **AlienVault OSSIM 📊**, **SIEMonster 📊** |
-| **Password Cracking**    | **Hashcat 🔓**, **John the Ripper 🔓**, **Hydra 🔓**, **CrackStation 🔓**, **Cain & Abel 🔓**, **Medusa 🔓**, **THC-Hydra 🔓** |
-| **Reverse Engineering**  | **Ghidra 🧬**, **IDA Pro 🧬**, **x64dbg 🧬**, **OllyDbg 🧬**, **Binary Ninja 🧬**, **Radare2 🧬**, **Cutter 🧬** |
-| **Hardware Hacking**     | **ChipWhisperer 🔌**, **Saleae Logic 🔌**, **OpenOCD 🔌**, **JTAGulator 🔌**, **Bus Pirate 🔌**, **Flashrom 🔌**, **Arduino 🔌**, **Raspberry Pi 🔌**, **RTL-SDR 🔌** |
-| **Social Engineering**   | **SET 🎭**, **BeEF 🎭**, **King Phisher 🎭**, **Evilginx 🎭**, **MSF Social Engineering Toolkit 🎭**, **Psychological Frameworks (Pretexting, Elicitation) 🎭** |
-| **SCADA/ICS Security**   | **Snort ⚙️**, **Wireshark ⚙️**, **ModScan ⚙️**, **ModbusPal ⚙️**, **Scadafence ⚙️**, **OpenPLC ⚙️**, **GasPot ⚙️**, **Conpot ⚙️**, **PLCScan ⚙️** |
-| **Social Engineering (Extended)** | **SET 🎭**, **BeEF 🎭**, **King Phisher 🎭**, **Modlishka 🎭**, **Evilginx2 🎭**, **EyeWitness 🎭**, **PhishToolkit 🎭**, **PhishX 🎭** |
-| **Supply Chain Security** | **Snyk 🛠️**, **OWASP Dependency-Check 🛠️**, **Trivy 🛠️**, **Syft 🛠️**, **Grype 🛠️**, **CycloneDX 🛠️**, **Whitesource 🛠️**, **Anchore Engine 🛠️** |
-| **Email Security Testing** | **GoPhish 📧**, **Modlishka 📧**, **SMTPTester 📧**, **MailSniper 📧**, **Evilginx2 📧**, **Phish5 📧**, **Email Header Analyzer 📧** |
-| **Mobile Malware Analysis** | **APKTool 🐛**, **MobSF 🐛**, **Jadx 🐛**, **Frida 🐛**, **VirusTotal Mobile 🐛**, **Droidbox 🐛**, **Bytecode Viewer 🐛**, **Drozer 🐛**, **Quark-Engine 🐛** |
-| **AI/ML Security**       | **Adversarial Robustness Toolbox (ART) 🤖**, **TextAttack 🤖**, **Foolbox 🤖**, **IBM AI Explainability 360 🤖**, **CleverHans 🤖**, **Alibi Detect 🤖**, **SecML 🤖**, **DeepExploit 🤖** |
-| **Security Automation / SOAR** | **StackStorm 🤖**, **Cortex XSOAR 🤖**, **Shuffle 🤖**, **DFIR-IR-Playbook 🤖**, **Phantom Cyber 🤖**, **Tines 🤖** |
-| **Bug Bounty Toolkit**   | **Amass 🪲**, **Sublist3r 🪲**, **Nuclei 🪲**, **HTTPX 🪲**, **Naabu 🪲**, **FFUF 🪲**, **GF 🪲**, **Dalfox 🪲**, **Kiterunner 🪲**, **Hakrawler 🪲**, **JSParser 🪲**, **ParamSpider 🪲** |
-| **Credential Dumping & Cracking** | **LaZagne 🔐**, **Mimikatz 🔐**, **Hashcat 🔐**, **JohnTheRipper 🔐**, **Windows Credential Editor 🔐**, **CrackMapExec 🔐**, **GetNPUsers.py 🔐** |
-| **Payload Generation**   | **MSFVenom 💉**, **Unicorn 💉**, **Shellter 💉**, **Veil 💉**, **Nishang 💉**, **Empire 💉**, **Obfuscation.io 💉**, **Metasploit 💉**, **Donut 💉** |
-| **Honeypots / Deception**| **Cowrie 🐝**, **Dionaea 🐝**, **Kippo 🐝**, **Honeyd 🐝**, **T-Pot 🐝**, **Conpot 🐝**, **Canarytokens 🐝**, **Artillery 🐝** |
-| **MacOS Security**       | **KnockKnock 🍏**, **BlockBlock 🍏**, **OSXCollector 🍏**, **Objective-See Suite 🍏**, **MacMonitor 🍏**, **Little Snitch 🍏**, **Dylib Hijack Scanner 🍏** |
-| **SIEM/Log Analysis (More)** | **Logstash 📊**, **Fluentd 📊**, **Loki 📊**, **Graylog 📊**, **Falco 📊**, **Humio 📊**, **Kibana 📊**, **Loggly 📊**, **Logz.io 📊** |
-| **Windows Post-Exploitation** | **PowerView 🪟**, **Seatbelt 🪟**, **SharpUp 🪟**, **WinPEAS 🪟**, **Sherlock 🪟**, **Empire 🪟**, **FireEye Red Team Tools 🪟**, **SharpHound 🪟** |
-| **Linux Post-Exploitation** | **LinPEAS 🐧**, **Linux Exploit Suggester 🐧**, **pspy 🐧**, **Chkrootkit 🐧**, **rkhunter 🐧**, **bashark 🐧**, **GTFOBins 🐧**, **Sudomy 🐧** |
-| **Browser Security Testing** | **BeEF 🌐**, **XSStrike 🌐**, **XSSer 🌐**, **Burp Collaborator 🌐**, **NoScript 🌐**, **Ublock Origin 🌐**, **Chrome Developer Tools 🌐** |
+| **Category**                      | **Tools**                                                                                                                                                                                                              |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Active Directory Pentesting**   | **BloodHound**, **Mimikatz**, **CrackMapExec**, **Impacket**, **Kerbrute**, **Rubeus**, **LDAPDomainDump**, **SharpHound**, **PowerView**, **ADRecon**                                                                 |
+| **Cloud Security**                | **Prowler**, **ScoutSuite**, **CloudSploit**, **Pacu**, **Steampipe**, **CloudMapper**, **NCC Scout**, **kube-bench**, **Terrascan**, **KICS**                                                                         |
+| **IoT Security**                  | **Firmwalker**, **Binwalk**, **Firmware-Mod-Kit**, **Shodan**, **RIOT**, **JTAGulator**, **Qiling**, **Ghidra**, **Avatar2**, **Firmadyne**                                                                            |
+| **Firewall Pentesting**           | **hping3**, **NPing**, **Scapy**, **Zmap**, **firewalk**, **FTester**, **Nmap (Firewall Bypass)**, **Packet Sender**, **T50**, **Ettercap**, **TCPReplay**                                                             |
+| **Firmware Analysis**             | **Binwalk**, **Firmware Analysis Toolkit (FAT)**, **QEMU**, **Ghidra**, **IDA Pro**, **Firmware-Mod-Kit**, **Radare2**, **Firmadyne**                                                                                  |
+| **Container Security**            | **Trivy**, **Aqua Microscanner**, **Clair**, **Anchore**, **Docker Bench**, **kube-hunter**, **Falco**, **Sysdig**, **Snyk**, **Grype**                                                                                |
+| **WiFi Pentesting**               | **Aircrack-ng**, **Kismet**, **Bettercap**, **Reaver**, **Fluxion**, **Wireshark**, **hcxtools**, **Fern WiFi Cracker**, **Wifiphisher**, **Hashcat**                                                                  |
+| **DevSecOps**                     | **GitHub Advanced Security**, **Trivy**, **Snyk**, **Anchore**, **OWASP Dependency-Check**, **Jenkins**, **Checkmarx**, **Veracode**, **Dagda**, **Sysdig Secure**, **Cloud Custodian**, **Bridgecrew**, **Kubescape** |
+| **OSINT**                         | **theHarvester**, **Maltego**, **SpiderFoot**, **Recon-ng**, **Shodan**, **FOCA**, **Google Dorks**, **OSINT Framework**, **GHunt**, **Sherlock**, **PhoneInfoga**                                                     |
+| **Configuration Review**          | **Lynis**, **OpenSCAP**, **Auditd**, **Tripwire**, **cis-cat Pro**, **Chef InSpec**, **Prowler**, **Kubescape**                                                                                                        |
+| **Phishing Simulation**           | **GoPhish**, **SET**, **Evilginx2**, **Phishery**, **King Phisher**, **Modlishka**, **Phishing Frenzy**                                                                                                                |
+| **Forensics**                     | **Autopsy**, **Volatility**, **Sleuth Kit**, **FTK Imager**, **Redline**, **Magnet AXIOM**, **X-Ways**, **Bulk Extractor**, **ExifTool**                                                                               |
+| **Blockchain Security**           | **Mythril**, **Slither**, **Manticore**, **Remix IDE**, **Oyente**, **SmartCheck**, **Echidna**, **Tenderly**                                                                                                          |
+| **Threat Modeling**               | **Microsoft TMT**, **OWASP Threat Dragon**, **IriusRisk**, **SeaSponge**, **Draw.io**, **Pytm**                                                                                                                        |
+| **Red Team Tools**                | **Cobalt Strike**, **Sliver**, **Mythic**, **Empire**, **Metasploit**, **Brute Ratel**, **Koadic**, **FudgeC2**, **Nishang**, **PowerShell Empire**                                                                    |
+| **Blue Team Tools**               | **Velociraptor**, **Wazuh**, **OSQuery**, **GRR**, **Sysmon**, **CrowdStrike Falcon**, **Elastic Security**, **Sigma Rules**                                                                                           |
+| **SIEM & Log Analysis**           | **Splunk**, **ELK Stack**, **Graylog**, **Wazuh**, **AlienVault OSSIM**, **SIEMonster**, **Logstash**, **Fluentd**, **Loki**, **Falco**, **Humio**, **Kibana**, **Loggly**, **Logz.io**                                |
+| **Password Cracking**             | **Hashcat**, **John the Ripper**, **Hydra**, **CrackStation**, **Cain & Abel**, **Medusa**, **THC-Hydra**                                                                                                              |
+| **Reverse Engineering**           | **Ghidra**, **IDA Pro**, **x64dbg**, **OllyDbg**, **Binary Ninja**, **Radare2**, **Cutter**                                                                                                                            |
+| **Hardware Hacking**              | **ChipWhisperer**, **Saleae Logic**, **OpenOCD**, **JTAGulator**, **Bus Pirate**, **Flashrom**, **Arduino**, **Raspberry Pi**, **RTL-SDR**                                                                             |
+| **Social Engineering**            | **SET**, **BeEF**, **King Phisher**, **Evilginx / Evilginx2**, **Modlishka**, **EyeWitness**, **PhishToolkit**, **PhishX**, **Psychological Frameworks (Pretexting, Elicitation)**                                     |
+| **SCADA/ICS Security**            | **Snort**, **Wireshark**, **ModScan**, **ModbusPal**, **Scadafence**, **OpenPLC**, **GasPot**, **Conpot**, **PLCScan**                                                                                                 |
+| **Supply Chain Security**         | **Snyk**, **OWASP Dependency-Check**, **Trivy**, **Syft**, **Grype**, **CycloneDX**, **Whitesource**, **Anchore Engine**                                                                                               |
+| **Email Security Testing**        | **GoPhish**, **Modlishka**, **SMTPTester**, **MailSniper**, **Evilginx2**, **Phish5**, **Email Header Analyzer**                                                                                                       |
+| **Mobile Malware Analysis**       | **APKTool**, **MobSF**, **Jadx**, **Frida**, **VirusTotal Mobile**, **Droidbox**, **Bytecode Viewer**, **Drozer**, **Quark-Engine**                                                                                    |
+| **AI/ML Security**                | **Adversarial Robustness Toolbox (ART)**, **TextAttack**, **Foolbox**, **IBM AI Explainability 360**, **CleverHans**, **Alibi Detect**, **SecML**, **DeepExploit**                                                     |
+| **Security Automation / SOAR**    | **StackStorm**, **Cortex XSOAR**, **Shuffle**, **DFIR-IR-Playbook**, **Phantom Cyber**, **Tines**                                                                                                                      |
+| **Bug Bounty Toolkit**            | **Amass**, **Sublist3r**, **Nuclei**, **HTTPX**, **Naabu**, **FFUF**, **GF**, **Dalfox**, **Kiterunner**, **Hakrawler**, **JSParser**, **ParamSpider**                                                                 |
+| **Credential Dumping & Cracking** | **LaZagne**, **Mimikatz**, **Hashcat**, **John the Ripper**, **Windows Credential Editor**, **CrackMapExec**, **GetNPUsers.py**                                                                                        |
+| **Payload Generation**            | **MSFVenom**, **Unicorn**, **Shellter**, **Veil**, **Nishang**, **Empire**, **Obfuscation.io**, **Metasploit**, **Donut**                                                                                              |
+| **Honeypots / Deception**         | **Cowrie**, **Dionaea**, **Kippo**, **Honeyd**, **T-Pot**, **Conpot**, **Canarytokens**, **Artillery**                                                                                                                 |
+| **MacOS Security**                | **KnockKnock**, **BlockBlock**, **OSXCollector**, **Objective-See Suite**, **MacMonitor**, **Little Snitch**, **Dylib Hijack Scanner**                                                                                 |
+| **Windows Post-Exploitation**     | **PowerView**, **Seatbelt**, **SharpUp**, **WinPEAS**, **Sherlock**, **Empire**, **FireEye Red Team Tools**, **SharpHound**                                                                                            |
+| **Linux Post-Exploitation**       | **LinPEAS**, **Linux Exploit Suggester**, **pspy**, **Chkrootkit**, **rkhunter**, **bashark**, **GTFOBins**, **Sudomy**                                                                                                |
+| **Browser Security Testing**      | **BeEF**, **XSStrike**, **XSSer**, **Burp Collaborator**, **NoScript**, **uBlock Origin**, **Chrome Developer Tools**                                                                                                  |
 
 
 ---
@@ -191,4 +190,5 @@
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a>
+
 
