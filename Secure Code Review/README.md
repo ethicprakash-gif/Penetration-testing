@@ -6,7 +6,11 @@ What is Source Code Review?
 ---
 
 
-### Awesome Resources:
+### Awesome Resources
+
+>Assetnote Research Notes :  https://www.assetnote.io/resources/research
+
+
 | Credit                                                      | Link                                                                  |
 |-------------------------------------------------------------|-----------------------------------------------------------------------|
 | [Cobalt.io](https://www.cobalt.io/blog/a-pentesters-guide-to-source-code-review)               | [A Pentester's Guide to Source Code Review](https://www.cobalt.io/blog/a-pentesters-guide-to-source-code-review)   |
