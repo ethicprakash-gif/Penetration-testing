@@ -151,7 +151,7 @@
 
 >I appreciate your interest in contributing! please read [Contribution Guidelines](https://github.com/m14r41/PentestingEverything/blob/master/CONTRIBUTING.md).
 
->A heartfelt thank you to these amazing individuals for their contributions to this project. You can view  [emoji key](https://allcontributors.org/docs/en/emoji-key) to see the various ways you can contribute!
+>A heartfelt thanks to the amazing individuals for their contributions to this project. You can view  [emoji key](https://allcontributors.org/docs/en/emoji-key) to see the various ways you can contribute!
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -190,6 +190,7 @@
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a>
+
 
 
 
