@@ -4,6 +4,16 @@
 
 DevSecOps is an extension of the DevOps methodology that integrates security practices into the DevOps process. The goal of DevSecOps is to ensure that security is a fundamental aspect of the development lifecycle, from design through deployment and maintenance. This approach emphasizes the need to incorporate security measures throughout the development process, rather than treating security as a separate or final step.
 
+
+## More Tipic
+
+| TOPIC                          | LINK         |     
+| ----------------------------------- | -------------- |
+|  SCA  (Software Composition Analysis)  |https://github.com/m14r41/PentestingEverything/blob/main/DevSecOps/SCA-Assessment.md             | 
+
+
+
+
 ## Most Common Terms
 
 - **DevOps**: A practice that combines development (Dev) and operations (Ops) to enhance collaboration and productivity by automating infrastructure, workflows, and continuously measuring application performance.
@@ -351,5 +361,6 @@ DevSecOps is an extension of the DevOps methodology that integrates security pra
     - [ ] **Change Management**: Implement change management processes to review and assess the impact of changes on security.
     - [ ] **Release Management**: Ensure that release management processes include security checks and validation.
     - [ ] **Version Control**: Use version control systems to track and manage changes to the codebase.
+
 
 
