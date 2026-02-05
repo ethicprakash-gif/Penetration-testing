@@ -1,8 +1,11 @@
 
-## Upcoming:
-
-- AI/ML Pentesting
-- Threat Modeling
+## 🔜 Upcoming New Resource by this Month. 
+- New Module : OWASP Top 10 LLMs and Gen AI
+- New Module : OWASP MCP Top 10
+- New Module: Threat Modeling
+- New Module : Design Review
+- Update contents on OWASP Top 10:2025 ( Web Application)
+- Update on automation for security asessment
 
 
 <div align="right">
@@ -190,6 +193,7 @@
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a>
+
 
 
 
