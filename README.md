@@ -84,7 +84,7 @@
 
 ---
 <div align="left">
-  <h1>🛡️ Pentesting & Tools 🛡️ </h1>
+  <h1> Pentesting & Tools  </h1>
 <h4> <b> 40 Plus Type of Security Assessment Tools </b> </h4>
 </div>
 
@@ -150,7 +150,7 @@
 ---
 
 
-## 👨‍💻👩‍💻 Contributors ✨👨‍💻👩‍💻
+## 👨‍💻Contributors👩‍💻
 
 >I appreciate your interest in contributing! please read [Contribution Guidelines](https://github.com/m14r41/PentestingEverything/blob/master/CONTRIBUTING.md).
 
@@ -193,6 +193,7 @@
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a>
+
 
 
 
