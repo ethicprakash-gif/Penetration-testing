@@ -1,6 +1,8 @@
-Welcome to the Web Application Penetration Testing repository. You will get help with OWASP standard references, as well as common test cases that can be performed.
+Welcome to the Web Application Penetration Testing repository. You will get help with OWASP standard references, as well as common test cases that get performed in real life i.e day to day in company.
 
-> If you are a beginner, please follow the OWASP guide.
+> OWASP 2025 Top 10 : https://owasp.org/Top10/2025/
+
+> If you are a beginner, please follow the OWASP practical guide .
 
 
  | S.N | Topic                                    | Link |
@@ -90,202 +92,184 @@ Note: The vulnerabilities are listed based on my experiance and  common testing 
 | Tabnabbing                                   | [Tabnabbing](https://github.com/m14r41/PentestingEverything/tree/main/Web%20Applications/Vulnerabilities/Tabnabbing) | Redirecting users to a different page in a newly opened tab. |
 
 
- 
+
+# Common Test Cases
+
+
+## Authentication & Session Issues 
+
+| Vulnerability           | Common Issues Found                                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Broken Authentication   | Login bypass via SQLi, default creds (admin/admin), weak password policy, no lockout, predictable flow        |
+| Weak Password Policy    | Short passwords allowed, no complexity, reused passwords accepted, no history check, common passwords allowed |
+| Credential Stuffing     | No rate limit, reused passwords work, no CAPTCHA, no IP blocking, no MFA                                      |
+| Brute Force             | Unlimited attempts, no delay, no lockout, weak detection, no alerts                                           |
+| Session Fixation        | Session ID not regenerated, attacker sets session, reused session after login, no validation                  |
+| Session Hijacking       | Cookies stolen via XSS, no Secure flag, session reuse, no IP/device binding, predictable tokens               |
+| Missing Session Timeout | Sessions valid for long time, no idle timeout, persistent login, no forced logout                             |
+| Broken Logout           | Session still active after logout, token not invalidated, back button access works, multiple sessions active  |
+| Concurrent Login        | Login mutiple browser or device at the same time                                                              |
+| Cookie Issues           | Missing HttpOnly, no Secure flag, no SameSite, cookies accessible via JS, weak scope                          |
+| Session Prediction      | Sequential session IDs, guessable tokens, weak randomness, predictable patterns                               |
+| Two-Factor Bypass       | 2FA optional, bypass via API, token reuse, no enforcement, backup codes weak                                  |
+| Password Reset Flaws    | Predictable tokens, no expiry, reusable links, user enumeration, no verification                              |
+
+---
+
+## Access Control Issues 
+
+| Vulnerability                 | Common Issues Found                                                                             |
+| ----------------------------- | ----------------------------------------------------------------------------------------------- |
+| IDOR                          | Change ID in URL, access other users’ data, edit profiles, download чуж files, API ID tampering |
+| Missing Authorization         | API works without auth, direct URL access, frontend-only checks, no backend validation          |
+| Improper Access Control       | Weak role checks, bypass restrictions, hidden endpoints exposed, inconsistent rules             |
+| Privilege Escalation          | User becomes admin, role param modified, accessing restricted APIs, bypassing checks            |
+| Vertical Escalation           | Normal user → admin panel, admin APIs exposed, role upgrade possible                            |
+| Horizontal Escalation         | Access other users’ data, modify accounts, read private info                                    |
+| Forced Browsing               | Access hidden endpoints, guessing URLs, bypass navigation flow                                  |
+| Mass Assignment               | Extra fields accepted, role=admin injected, hidden fields trusted                               |
+| Parameter Tampering           | Modify price, quantity, role, IDs, discount values                                              |
+| Business Logic Flaw           | Skip steps, bypass payment, multiple coupon use, workflow abuse                                 |
+| Price Manipulation            | Change price client-side, intercept requests, negative values, free purchase                    |
+| Missing Function Level Access | Restricted functions exposed via API, no role checks                                            |
+
+---
+
+## Injection Vulnerabilities 
+
+| Vulnerability                 | Common Issues Found                                                        |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| SQL Injection                 | `' OR 1=1`, data dump, login bypass, union queries, error-based extraction |
+| Blind SQL Injection           | Time-based delays, boolean-based, no visible output                        |
+| NoSQL Injection               | JSON injection, bypass auth, query manipulation                            |
+| Command Injection             | `; ls`, `&& whoami`, execute OS commands, chain commands                   |
+| Code Injection                | Execute arbitrary code, eval misuse, dynamic execution                     |
+| LDAP Injection                | Manipulate LDAP queries, bypass login, extract directory data              |
+| XPath Injection               | Modify XML queries, bypass auth, extract data                              |
+| SSTI                          | `{{7*7}}`, access server objects, read configs, RCE                        |
+| XXE                           | Read `/etc/passwd`, SSRF, file disclosure, DoS                             |
+| CRLF Injection                | Header injection, response splitting, cookie manipulation                  |
+| HTTP Parameter Pollution      | Duplicate params override values, bypass filters                           |
+| Template Injection            | Unsafe rendering of user input, server-side execution                      |
+| Expression Language Injection | Inject EL expressions, access server data                                  |
+| ORM Injection                 | Manipulate ORM queries, bypass logic                                       |
+
+---
+
+## Client-Side Issues
+
+| Vulnerability               | Common Issues Found                                            |
+| --------------------------- | -------------------------------------------------------------- |
+| XSS                         | `<script>` injection, cookie theft, session hijack, defacement |
+| Stored XSS                  | Persistent scripts, affects all users, stored in DB            |
+| DOM XSS                     | JS handles input unsafely, URL fragment injection              |
+| Clickjacking                | No X-Frame-Options, hidden iframe attacks                      |
+| Tabnabbing                  | Replace original tab, phishing page                            |
+| Reverse Tabnabbing          | Missing `noopener`, opener access                              |
+| DOM Clobbering              | Overwriting DOM elements, JS manipulation                      |
+| Prototype Pollution         | Modify JS objects globally                                     |
+| Client-Side Validation Only | No server validation, bypass via request                       |
+| Sensitive Data in JS        | Tokens/keys exposed in frontend                                |
+
+---
+
+## File Handling Issues 
+
+| Vulnerability        | Common Issues Found                           |
+| -------------------- | --------------------------------------------- |
+| File Upload          | Upload web shells, no validation, MIME bypass |
+| Unrestricted Upload  | Execute uploaded files, no restrictions       |
+| File Upload Bypass   | Double extensions, null byte bypass           |
+| LFI                  | Include local files, read configs             |
+| RFI                  | Remote file execution                         |
+| Path Traversal       | `../` access system files                     |
+| File Download Issues | Download arbitrary files                      |
+| Directory Listing    | File structure exposed                        |
+| Backup Files         | `.bak`, `.old`, accessible                    |
+| Log File Exposure    | Logs readable, sensitive data inside          |
+
+---
+
+## API & Web Services 
+
+| Vulnerability             | Common Issues Found             |
+| ------------------------- | ------------------------------- |
+| Unsecured API             | No auth, open endpoints         |
+| Excessive Data Exposure   | Returns unnecessary data        |
+| Lack of Rate Limiting     | Abuse APIs easily               |
+| SSRF                      | Access internal services        |
+| CORS Misconfiguration     | `*` origin, credentials allowed |
+| GraphQL Misconfig         | Introspection enabled           |
+| WebSocket Issues          | No authentication               |
+| API Versioning Issues     | Old insecure APIs accessible    |
+| Improper Input Validation | No validation on API            |
+| Insecure Serialization    | Unsafe data handling            |
+
+---
+
+## Security Misconfiguration 
+
+| Vulnerability             | Common Issues Found    |
+| ------------------------- | ---------------------- |
+| Missing Security Headers  | No CSP, HSTS, Permission Policy X-Framer Options, X-Conten-Type Options etc. |
+| CSP Misconfiguration      | Too permissive         |
+| Debug Mode Enabled        | Internal data leak     |
+| Verbose Errors            | Stack traces           |
+| Default Credentials       | Admin/admin works      |
+| Content Type confuction   | Force browser to load and executed content type   |
+| Directory Listing Enabled | File browsing          |
+| CDN Misconfiguration      | Sensitive data cached  |
+| Third-party Script Risk   | External JS compromise |
+| Web Cache Deception      | Cached sensitive data by frontent |
+| Third-party Script Risk   | External JS compromise |
+| Trace Method Enable   | Check if Trace Method is enabled |
 
 
 
 
+---
 
-# Web Application Checklist
+## Data Exposure & Storage 
 
-## Injection Vulnerabilities
+| Vulnerability            | Common Issues Found       |
+| ------------------------ | ------------------------- |
+| Information Disclosure   | Sensitive data leak       |
+| Sensitive Files Exposure | `.env`, configs           |
+| Hardcoded Secrets        | API keys in code          |
+| Insecure Storage         | Plaintext passwords       |
+| Weak Hashing             | MD5/SHA1 used             |
+| Mixed Content            | HTTP in HTTPS             |
+| Referrer Leak            | Sensitive data in headers |
+| Browser Storage Issues   | Tokens in localStorage    |
 
-- [ ] **SQL Injection (SQLi)**
-  - [ ] Identify and Exploit SQL Injection Vulnerabilities
-  - [ ] Union-based, Blind SQL Injection Techniques
-  - [ ] Time-Based Blind SQL Injection
-  - [ ] Second-Order SQL Injection Attacks
-  - [ ] Out-of-Band SQL Injection
+---
 
-- [ ] **NoSQL Injection**
-  - [ ] Test for NoSQL Injection Vulnerabilities
-  - [ ] Exploit NoSQL Injection
+## Advanced & Logic Issues 
 
-- [ ] **Command Injection**
-  - [ ] Identify and Exploit Command Injection Vulnerabilities
-  - [ ] OS Command Injection
-  - [ ] Blind Command Injection
+| Vulnerability           | Common Issues Found        |
+| ----------------------- | -------------------------- |
+| Race Condition          | Double spending            |
+| JWT Issues              | Weak secret, no validation |
+| OAuth Misconfig         | Token leakage              |
+| SSO Issues              | Weak trust model           |
+| CAPTCHA Bypass          | Automation possible        |
+| Workflow Bypass         | Skip steps                 |
+| Replay Attack           | Reuse requests             |
+| State Management Issues | Inconsistent app state     |
 
-- [ ] **XML Injection (XXE)**
-  - [ ] Detect and Exploit XML Injection Vulnerabilities
-  - [ ] XXE OOB (Out-of-Band) Exploitation
-  - [ ] Blind XXE Attacks
+---
 
-- [ ] **XPath Injection**
-  - [ ] Test for XPath Injection Vulnerabilities
-  - [ ] Exploit XPath Injection
-  - [ ] Blind XPath Injection
+## Network & Transport
 
-- [ ] **LDAP Injection**
-  - [ ] Identify and Exploit LDAP Injection Vulnerabilities
-  - [ ] Blind LDAP Injection Techniques
-
-- [ ] **SSI Injection (Server-Side Includes)**
-  - [ ] Test for SSI Injection Vulnerabilities
-  - [ ] Exploit SSI Injection
-  - [ ] Blind SSI Injection
-
-- [ ] **Template Injection**
-  - [ ] Detect and Exploit Template Injection Vulnerabilities
-  - [ ] Exploiting Injection in Template Engines
-
-- [ ] **Code Injection**
-  - [ ] Test for Code Injection Vulnerabilities
-  - [ ] Remote Code Execution (RCE)
-  - [ ] Local File Inclusion (LFI) to RCE
-
-- [ ] **XPath Injection**
-  - [ ] Test for XPath Injection Vulnerabilities
-  - [ ] Exploit XPath Injection
-  - [ ] Blind XPath Injection
-
-## Authentication and Authorization
-
-- [ ] **Authentication Bypass**
-  - [ ] Test for Authentication Bypass Vulnerabilities
-  - [ ] Identify Weaknesses in Authentication Mechanisms
-
-- [ ] **Session Management**
-  - [ ] Session Fixation Attacks
-  - [ ] Session Hijacking and Cookie Tampering
-
-- [ ] **Privilege Escalation**
-  - [ ] Test for Privilege Escalation Vulnerabilities
-  - [ ] Exploit Privilege Escalation
-
-- [ ] **Insecure Direct Object References (IDOR)**
-  - [ ] Identify and Exploit IDOR Vulnerabilities
-  - [ ] Forced Browsing Techniques
-
-## Cross-Site Scripting (XSS)
-
-- [ ] **Reflected XSS**
-  - [ ] Detect and Exploit Reflected XSS Vulnerabilities
-  - [ ] DOM-based XSS Testing
-
-- [ ] **Stored XSS**
-  - [ ] Test for Stored XSS Vulnerabilities
-  - [ ] Exploit Stored XSS
-
-- [ ] **XSS via DOM Manipulation**
-  - [ ] Identify and Exploit DOM-based XSS
-  - [ ] AngularJS Sandbox Escapes
-
-- [ ] **XSS Payloads and Techniques**
-  - [ ] Bypass Filters and Encode Payloads
-  - [ ] BeEF Framework for XSS Exploitation
-
-## Cross-Site Request Forgery (CSRF)
-
-- [ ] **Detect and Exploit CSRF Vulnerabilities**
-- [ ] CSRF Token Bypass Techniques
-- [ ] Blind CSRF Attacks
+| Vulnerability         | Common Issues Found |
+| --------------------- | ------------------- |
+| Missing HTTPS         | HTTP used           |
+| Weak TLS              | Weak ciphers        |
+| Outdated TLS          | Deprecated versions |
+| Host Header Injection | Reset poisoning     |
+| Subdomain Takeover    | Dangling DNS        |
+| Web Cache Issues      | Cache poisoning     |
 
 
-## Cross-Site Request Forgery (CSRF)
-- [ ] Detect and Exploit CSRF Vulnerabilities
-- [ ] CSRF Token Bypass Techniques
-- [ ] Blind CSRF Attacks
 
-## Content Security Policy (CSP)
-- [ ] CSP Header Configuration Testing
-- [ ] CSP Bypass Techniques
-- [ ] Reporting and Violation Handling
-
-## Clickjacking
-- [ ] Identify and Exploit Clickjacking Vulnerabilities
-- [ ] Frame Busting and Protection Mechanisms
-
-## HTTP Security Headers
-- [ ] Implementation of Security Headers (HSTS, X-Content-Type-Options)
-- [ ] Header Manipulation and Bypass Testing
-
-## Insecure Deserialization
-- [ ] Test for Insecure Deserialization Attacks
-- [ ] Exploit Deserialization Vulnerabilities
-
-## Business Logic Flaws
-- [ ] Identify and Exploit Business Logic Vulnerabilities
-- [ ] Logic Bypass Techniques
-
-## Unvalidated Redirects and Forwards
-- [ ] Detect and Exploit Unvalidated Redirects
-- [ ] URL Redirection and Parameter Tampering
-
-## HTTP Parameter Pollution (HPP)
-- [ ] Identify and Exploit HPP Vulnerabilities
-- [ ] Parameter Injection Techniques
-
-## HTTP Response Splitting
-- [ ] Test for HTTP Response Splitting Attacks
-- [ ] Exploit Response Splitting Vulnerabilities
-
-## HTML5 Security
-- [ ] Web Storage (localStorage, sessionStorage) Security Testing
-- [ ] Cross-Origin Communication Risks
-- [ ] WebSockets Security Testing
-
-
-## Web Application Firewall (WAF) Testing
-- [ ] Bypassing WAF Protections
-- [ ] False Positive Analysis
-- [ ] Payload Encoding and Obfuscation
-
-## Client-Side Storage
-- [ ] Local Storage and Session Storage Testing
-- [ ] Cookies Security Testing
-- [ ] Web Storage Best Practices
-
-## Serverless Web Applications
-- [ ] Testing Serverless Functions (AWS Lambda, Azure Functions)
-- [ ] Event Injection and Data Manipulation
-
-## Content Spoofing
-- [ ] Detect and Exploit Content Spoofing Vulnerabilities
-- [ ] Phishing and Impersonation Attacks
-
-## WebRTC Security
-- [ ] WebRTC Communication Testing
-- [ ] IP Leakage Testing
-
-## Cross-Origin Resource Sharing (CORS)
-- [ ] Identify and Exploit CORS Vulnerabilities
-- [ ] Credential and Non-Credential-Based Attacks
-
-## Security Headers
-- [ ] HTTP Security Header Testing
-- [ ] Security Header Bypass Techniques
-- [ ] Reporting and Monitoring
-
-## Application-Level Denial of Service (DoS)
-- [ ] Testing for Application Layer DoS Attacks
-- [ ] Resource Exhaustion and Performance Degradation
-
-## WebSocket Security
-- [ ] WebSockets Protocol Testing
-- [ ] WebSockets Message Tampering
-- [ ] WebSockets Security Policies
-
-## GraphQL Security
-- [ ] GraphQL Endpoint Testing
-- [ ] Query Depth and Complexity Analysis
-- [ ] Enumerate and Exploit Weak Resolvers
-
-## Web Application Fuzzing
-- [ ] Parameter Fuzzing (GET, POST, Headers)
-- [ ] API Fuzzing and Data Validation Testing
-
-## Application Analytics and Telemetry
-- [ ] Data Leakage through Analytics
-- [ ] Privacy Risks in User Tracking
 
