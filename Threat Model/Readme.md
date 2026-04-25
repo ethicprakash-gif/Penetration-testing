@@ -45,7 +45,7 @@ Threat modeling is a structured process used to identify, analyze, and reduce se
 
 ---
 
-# OWASP Threat Modeling – Official Resources Cheat Sheet
+# OWASP Threat Modeling : Official Resources
 > Understand system → Break system → Identify threats → Apply STRIDE → Mitigate → Review → Maintain
 
 | Resource | What it is |  Description       |
@@ -54,6 +54,20 @@ Threat modeling is a structured process used to identify, analyze, and reduce se
 | [OWASP Threat Modeling Guide](https://owasp.org/www-project-threat-modelling-guide/) | Learning + adoption guide | Helps teams understand how to start threat modeling and choose the right method |
 | [OWASP Threat Modeling Community Page](https://owasp.org/www-community/Threat_Modeling) | General overview | Explains what threat modeling is and why it is important in security design |
 | [OWASP Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) | Quick reference guide | Practical checklist for performing threat modeling in real projects |
+
+
+# Real-World View 
+### idea review VS design review VS architecture review VS threat modeling
+
+| Stage                   | What it is (in real projects)                                              | How we actually perform it                                                                                               | What we do in practice                                                                                            | What we review i.e Focused Area                                                                                                            |
+| ----------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Idea Review**         | First security checkpoint when a feature is still just a business idea     | Join requirement discussion, ask security questions early, understand user journey and data flow at high level           | Identify whether idea introduces sensitive data handling, abuse cases, compliance risk, or obvious attack surface | What data is collected, who can access it, external dependencies, obvious abuse cases (e.g., spam, file abuse, unauthorized access)          |
+| **Design Review**       | Review of system design before any code is written                         | Analyze API contracts, wireframes, user flows, authentication approach, and data handling design                         | Identify design weaknesses early so developers don’t build insecure logic                                         | Authentication design, authorization model, API structure, input validation strategy, encryption plan, client vs server responsibility       |
+| **Architecture Review** | Full system security validation at component level                         | Study architecture diagram (frontend, backend, DB, services), map data flows, identify trust boundaries and integrations | Ensure system design is secure at structural level and does not allow unsafe trust relationships                  | Microservices communication, database access patterns, third-party integrations, network exposure, trust boundaries, sensitive data movement |
+| **Threat Modeling**     | Deep security analysis simulating attacker behavior on the designed system | Break system into components, identify assets, apply STRIDE, build attack scenarios, rate risks                          | Convert system design into attack paths and define how attackers could break it                                   | Spoofing, tampering, data leakage, privilege escalation, DoS, API abuse, SSRF, IDOR, injection points, abuse scenarios                       |
+
+
+---
 
 # Threat Modeling Practical Flow Looks like: 
 
