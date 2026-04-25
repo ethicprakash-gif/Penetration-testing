@@ -2,9 +2,6 @@
 ## 🔜 Upcoming New Resource by this Month. 
 - New Module : OWASP Top 10 LLMs and Gen AI
 - New Module : OWASP MCP Top 10
-- New Module: Threat Modeling
-- New Module : Design Review
-- Update contents on OWASP Top 10:2025 ( Web Application)
 - Update on automation for security asessment
   
 ## Updated So Far: 2026
@@ -12,6 +9,8 @@
 ✅ API Pentesting Module </br>
 ✅ SAST/Source Code Review </br>
 ✅ Thick Client Pentesting </br>
+✅ OWASP Top 10:2025 Web Application </br>
+✅ Threat Modeling, Design Review, Idea Review, Archtecure Review </br>
 
 <div align="right">
   <details>
