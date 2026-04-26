@@ -1,16 +1,20 @@
 
-## 🔜 Upcoming New Resource by this Month. 
-- New Module : OWASP Top 10 LLMs and Gen AI
-- New Module : OWASP MCP Top 10
-- Update on automation for security asessment
-  
+## 🔜 Upcoming New Resource by this Month :
+```python
+You any Idea/Suggestion/Contribution are Welcome!
+```
+- New Module : OWASP Top 10 LLMs/MCP and Gen AI Pentesting
+- Automation of Pentesting : New module to introduce
 ## Updated So Far: 2026
 ✅ iOS Pentesting Module </br>
+✅ Android Pentesting </br>
 ✅ API Pentesting Module </br>
 ✅ SAST/Source Code Review </br>
+✅ DevSecOps and SCA </br>
 ✅ Thick Client Pentesting </br>
 ✅ OWASP Top 10:2025 Web Application </br>
 ✅ Threat Modeling, Design Review, Idea Review, Archtecure Review </br>
+
 
 <div align="right">
   <details>
