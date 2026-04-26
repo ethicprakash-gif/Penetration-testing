@@ -1,7 +1,7 @@
 
 ## 🔜 Upcoming New Resource by this Month :
 ```python
-You any Idea/Suggestion/Contribution are Welcome!
+Your any Idea/Suggestion/Contribution are Welcome!
 ```
 - New Module : OWASP Top 10 LLMs/MCP and Gen AI Pentesting
 - Automation of Pentesting : New module to introduce
