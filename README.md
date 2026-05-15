@@ -1,5 +1,6 @@
+<details>
+<summary><b> 🔜 Upcoming New Resources This Month</b></summary>
 
-### 🔜 Upcoming New Resources This Month
 ```python
 Your ideas, suggestions, and contributions are always welcome!
 ```
@@ -7,14 +8,26 @@ Your ideas, suggestions, and contributions are always welcome!
 - [ ] **New Module:** OWASP Top 10 for LLMs & MCP Pentesting  
 - [ ] **New Module:** Leveraging AI in Pentesting  
 
-####  Improvements and advance technique
-- [ ]  More methods for SSL Pinning bypass and exploitation  
-- [ ] Intercepting mobile TCP traffic using iptables and invisible proxying.
-- [ ] Comprehensive enumeration with Frida and object analysis  (Local Storage, Classes, Methods, Activities, Services, Intents, Receivers, etc.)  
+</details>
+
+
+
+<details>
+<summary><b> Improvements and advance technique</b></summary>
+
+- [ ] More methods for SSL Pinning bypass and exploitation  
+- [ ] Intercepting mobile TCP traffic using iptables and invisible proxying  
+- [ ] Comprehensive enumeration with Frida and object analysis  
+  *(Local Storage, Classes, Methods, Activities, Services, Intents, Receivers, etc.)*  
 - [ ] Exploiting Android components using ADB and Drozer  
 - [ ] Advanced SAST beyond MobSF  
 
-## Recently Updated Content : 2026
+</details>
+
+
+
+<details>
+<summary><b>Recently Updated Content : 2026</b></summary>
 
 - [x] iOS Pentesting Module  
 - [x] Android Pentesting  
@@ -23,7 +36,10 @@ Your ideas, suggestions, and contributions are always welcome!
 - [x] DevSecOps & SCA  
 - [x] Thick Client Pentesting  
 - [x] OWASP Top 10:2025 Web Application  
-- [x] Threat Modeling, Design Review, Idea Review, Archtecure Review
+- [x] Threat Modeling, Design Review, Idea Review, Architecture Review  
+
+</details>
+</details>
 
 
 
