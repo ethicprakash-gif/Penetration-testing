@@ -1,19 +1,30 @@
 
-## 🔜 Upcoming New Resource by this Month :
+### 🔜 Upcoming New Resources This Month
 ```python
-Your any Idea/Suggestion/Contribution are Welcome!
+Your ideas, suggestions, and contributions are always welcome!
 ```
-- New Module : OWASP Top 10 LLMs/MCP and Gen AI Pentesting
-- Automation of Pentesting : New module to introduce
-## Updated So Far: 2026
-✅ iOS Pentesting Module </br>
-✅ Android Pentesting </br>
-✅ API Pentesting Module </br>
-✅ SAST/Source Code Review </br>
-✅ DevSecOps and SCA </br>
-✅ Thick Client Pentesting </br>
-✅ OWASP Top 10:2025 Web Application </br>
-✅ Threat Modeling, Design Review, Idea Review, Archtecure Review </br>
+
+- [ ] **New Module:** OWASP Top 10 for LLMs & MCP Pentesting  
+- [ ] **New Module:** Leveraging AI in Pentesting  
+
+####  Improvements and advance technique
+- [ ]  More methods for SSL Pinning bypass and exploitation  
+- [ ] Intercepting mobile TCP traffic using iptables and invisible proxying.
+- [ ] Comprehensive enumeration with Frida and object analysis  (Local Storage, Classes, Methods, Activities, Services, Intents, Receivers, etc.)  
+- [ ] Exploiting Android components using ADB and Drozer  
+- [ ] Advanced SAST beyond MobSF  
+
+## Recently Updated Content : 2026
+
+- [x] iOS Pentesting Module  
+- [x] Android Pentesting  
+- [x] API Pentesting Module  
+- [x] SAST / Source Code Review  
+- [x] DevSecOps & SCA  
+- [x] Thick Client Pentesting  
+- [x] OWASP Top 10:2025 Web Application  
+- [x] Threat Modeling, Design Review, Idea Review, Archtecure Review
+
 
 
 <div align="right">
