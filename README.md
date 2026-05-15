@@ -39,6 +39,15 @@ Your ideas, suggestions, and contributions are always welcome!
 - [x] Threat Modeling, Design Review, Idea Review, Architecture Review  
 
 </details>
+
+<details>
+<summary><b> Currently Exploring & Seeking Collaboration </b></summary>
+ 
+> Contributions and knowledge sharing are welcome from professionals experienced in Cloud and Enterprise Infrastructure Pentesting.
+
+- Cloud Pentesting  
+- Enterprise Pentesting (Network, Firewall, WiFi & Configuration Review)
+
 </details>
 
 
