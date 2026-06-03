@@ -1,5 +1,5 @@
 <details>
-<summary><b> 🔜 Upcoming New Resources This Month</b></summary>
+<summary><b> 🔜 Upcoming New Resources soon!</b></summary>
 
 ```python
 Your ideas, suggestions, and contributions are always welcome!
