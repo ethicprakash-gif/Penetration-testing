@@ -1,48 +1,76 @@
 #!/bin/bash
 
-# Define color codes
 green="\e[32m"
 yellow="\e[33m"
 red="\e[31m"
 reset="\e[0m"
 
-# Banner
 echo -e "${green}"
 echo "╔════════════════════════════════════════════════════╗"
-echo "║         Migrating your work to Cloud              ║"
+echo "║         Migrating your work to github              ║"
 echo "╚════════════════════════════════════════════════════╝"
 echo -e "${reset}"
 
-# Ask for commit message
-echo -ne "${yellow}Enter commit message (leave blank for default): ${reset}"
+# Commit message
+
+echo -ne "${yellow}Enter commit message: ${reset}"
 read -r commit_message
 
-# Use default message if empty
 if [ -z "$commit_message" ]; then
-    commit_message="Automated backup $(date '+%Y-%m-%d %H:%M:%S')"
+commit_message="Automated backup $(date '+%Y-%m-%d %H:%M:%S')"
 fi
 
-# Add changes
 git add .
-
-# Show status
 git status
 
-# Commit changes
 git commit -m "$commit_message"
 
-# Check if commit succeeded
 if [ $? -ne 0 ]; then
-    echo -e "${red}Git commit failed. Aborting push.${reset}"
-    exit 1
+echo -e "${red}Commit failed. Exiting.${reset}"
+exit 1
 fi
 
-# Push changes
-git push
+current_branch=$(git branch --show-current)
 
-# Completion message
+echo
+echo "Select an action:"
+echo "1) Push directly"
+echo "2) Create Pull Request"
+echo "3) Exit"
+echo
+
+read -rp "Choice [1-3]: " choice
+
+case $choice in
+1)
+echo -e "${yellow}Pushing changes...${reset}"
+git push
+;;
+2)
+echo -e "${yellow}Creating Pull Request...${reset}"
+
+```
+    git push -u origin "$current_branch"
+
+    gh pr create \
+        --fill \
+        --title "$commit_message"
+
+    ;;
+3)
+    echo "Exiting..."
+    exit 0
+    ;;
+*)
+    echo -e "${red}Invalid option.${reset}"
+    exit 1
+    ;;
+```
+
+esac
+
 echo -e "${green}"
 echo "╔════════════════════════════════════════════════════╗"
-echo "║      Your work has been saved remotely            ║"
+echo "║          Operation Completed Successfully         ║"
 echo "╚════════════════════════════════════════════════════╝"
 echo -e "${reset}"
