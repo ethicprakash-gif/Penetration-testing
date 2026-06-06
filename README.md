@@ -9,19 +9,6 @@ Your ideas, suggestions, and contributions are always welcome!
 
 </details>
 
-
-<details>
-<summary><b> Improvements and advance technique</b></summary>
-
-- [ ] More methods for SSL Pinning bypass and exploitation  
-- [ ] Intercepting mobile TCP traffic using iptables and invisible proxying  
-- [ ] Comprehensive enumeration with Frida and object analysis  
-  *(Local Storage, Classes, Methods, Activities, Services, Intents, Receivers, etc.)*  
-- [ ] Exploiting Android components using ADB and Drozer  
-- [ ] Advanced SAST beyond MobSF  
-
-</details>
-
 <details>
 <summary><b>Recently Updated Content : 2026</b></summary>
 
@@ -35,8 +22,23 @@ Your ideas, suggestions, and contributions are always welcome!
 - [x] Threat Modeling, Design Review, Idea Review, Architecture Review  
 - [x] New Module : LLMs OWASP Top 10  
 - [x] New Module : MCP Pentesting  
+- [x] New Module : Firewall (In progress)  
 
 </details>
+
+<details>
+<summary><b> Improvements and advance technique</b></summary>
+
+- [ ] More methods for SSL Pinning bypass and exploitation  
+- [ ] Intercepting mobile TCP traffic using iptables and invisible proxying  
+- [ ] Comprehensive enumeration with Frida and object analysis  
+  *(Local Storage, Classes, Methods, Activities, Services, Intents, Receivers, etc.)*  
+- [ ] Exploiting Android components using ADB and Drozer  
+- [ ] Advanced SAST beyond MobSF  
+
+</details>
+
+
 
 <details>
 <summary><b> Currently Exploring & Seeking Collaboration </b></summary>
