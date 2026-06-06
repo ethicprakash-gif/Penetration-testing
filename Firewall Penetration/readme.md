@@ -1,4 +1,4 @@
-## Firewall Pentesting: Core Concepts
+## Firewall Pentesting
 Firewall penetration testing is the process of assessing firewall configurations, rules, and security controls to verify that network traffic is properly filtered and access restrictions are enforced as intended. The objective is to identify misconfigurations, rule weaknesses, segmentation issues, and potential bypass techniques that could allow unauthorized access to protected resources.
 
 ### Basic Concepts
