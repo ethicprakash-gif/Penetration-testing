@@ -19,8 +19,12 @@
 | -------------------------------------- | ------------------------------- |
 | Fetch updates                          | `git fetch`                     |
 | Fetch + remove deleted remote branches | `git fetch --prune`             |
+| delete the branch from GitHub (remote) | `git push origin --delete feature-test`             |
 | Pull latest changes                    | `git pull`                      |
 | Update main branch                     | `git checkout main && git pull` |
+
+
+
 
 ---
 
