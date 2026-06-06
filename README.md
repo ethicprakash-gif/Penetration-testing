@@ -1,4 +1,4 @@
-`<details>
+<details>
 <summary><b> 🔜 Upcoming New Resources soon!</b></summary>
 
 ```python
