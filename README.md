@@ -1,4 +1,4 @@
-<details>
+`<details>
 <summary><b> 🔜 Upcoming New Resources soon!</b></summary>
 
 ```python
@@ -86,44 +86,24 @@ Your ideas, suggestions, and contributions are always welcome!
 ## Table of Contents
 
 
-| No. |  Types of Pentesting                                                                                                         | No. | Directory Name                                                                                                         |
-| --- | --------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Web Application Security](https://github.com/m14r41/PentestingEverything/tree/main/Web%20Applications)                    | 11  | [Active Directory Security](https://github.com/m14r41/PentestingEverything/tree/main/Active%20Directory%20Pentesting) |
-| 2   | [API Security](https://github.com/m14r41/PentestingEverything/tree/main/API%20Pentesting)                                   | 12  | [Infrastructure Security](https://github.com/m14r41/PentestingEverything/tree/main/Infrastucture%20Pentesting)         |
-| 3   | [Mobile Application Security](https://github.com/m14r41/PentestingEverything/tree/main/Mobile%20Pentesting)                | 13  | [Threat Modeling](https://github.com/m14r41/PentestingEverything/tree/main/Threat%20Model)                             |
-| 4   | [Thick Client Application Security](https://github.com/m14r41/PentestingEverything/tree/main/Thick%20Client%20Pentesting) | 14  | [IoT Security](https://github.com/m14r41/PentestingEverything/tree/main/iOT%20Pentesting)                              |
-| 5   | [Source Code Review](https://github.com/m14r41/PentestingEverything/tree/main/Secure%20Code%20Review)                       | 15  | [OSINT (Open Source Intelligence)](https://github.com/m14r41/PentestingEverything/tree/main/OSINT)                     |
-| 6   | [Network Security](https://github.com/m14r41/PentestingEverything/tree/main/Network%20Pentesting)                         | 16  | [Blockchain Security](https://github.com/m14r41/PentestingEverything/tree/main/BlockChain%20Pentesting)                |
-| 7   | [Wi-Fi Security](https://github.com/m14r41/PentestingEverything/tree/main/Wifi%20Pentesting)                               | 17  | [CI/CD Pipeline Security](https://github.com/m14r41/PentestingEverything/tree/main/CI-CD%20Pentesting)                |
-| 8   | [Cloud Security](https://github.com/m14r41/PentestingEverything/tree/main/Cloud%20Pentesting)                             | 18  | [Docker Container Security](https://github.com/m14r41/PentestingEverything/tree/main/DockerContainer%20Pentesting)    |
-| 9   | [DevSecOps](https://github.com/m14r41/PentestingEverything/tree/main/DevSecOps)                                           | 19  | [Phishing Penetration Testing](https://github.com/m14r41/PentestingEverything/tree/main/Phishing%20Penetration%20Testing) |
-| 10  | [Configuration Review](https://github.com/m14r41/PentestingEverything/tree/main/Configuration%20Review)                   | 20  | [Forensic Analysis](https://github.com/m14r41/PentestingEverything/tree/main/Forensic)                                 |
+| No. | Types of Pentesting                                                                                                   | No. | Directory Name                                                                                                                        |
+| --- | --------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [Web Application Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Web%20Application%20Pentesting) | 12  | [Active Directory Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Active%20Directory%20Pentesting)               |
+| 2   | [API Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/API%20Pentesting)                           | 13  | [Infrastructure Security](https://github.com/m14r41/PentestingEverything/tree/main/Infrastucture%20Security)                          |
+| 3   | [Mobile Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Mobile%20Pentesting)                     | 14  | [Threat Modeling](https://github.com/m14r41/PentestingEverything/tree/main/Threat%20Modeling)                                         |
+| 4   | [Thick Client Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Thick%20Client%20Pentesting)       | 15  | [IoT Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/IoT%20Pentesting)                                           |
+| 5   | [Secure Code Review](https://github.com/m14r41/PentestingEverything/tree/main/Secure%20Code%20Review)                 | 16  | [OSINT](https://github.com/m14r41/PentestingEverything/tree/main/OSINT)                                                               |
+| 6   | [Network Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Network%20Pentesting)                   | 17  | [Blockchain Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/BlockChain%20Pentesting)                             |
+| 7   | [Wi-Fi Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Wi-Fi%20Pentesting)                       | 18  | [CI/CD Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/CI-CD%20Pentesting)                                       |
+| 8   | [LLM Security Assessment](https://github.com/m14r41/PentestingEverything/tree/main/LLM%20Security%20Assessment)       | 19  | [MCP Security Assessment](https://github.com/m14r41/PentestingEverything/tree/main/MCP%20Security%20Assessment)                       |
+| 9   | [Cloud Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Cloud%20Pentesting)                       | 20  | [Container & Kubernetes Assessment](https://github.com/m14r41/PentestingEverything/tree/main/Container%20&%20Kubernetes%20Assessment) |
+| 10  | [DevSecOps](https://github.com/m14r41/PentestingEverything/tree/main/DevSecOps)                                       | 21  | [Phishing Penetration Testing](https://github.com/m14r41/PentestingEverything/tree/main/Phishing%20Penetration%20Testing)             |
+| 11  | [Configuration Review](https://github.com/m14r41/PentestingEverything/tree/main/Configuration%20Review)               | 22  | [Forensic](https://github.com/m14r41/PentestingEverything/tree/main/Forensic)                                                         |
 
----
 
 
-| No. |  Types of Pentesting                                                                                                              | Description                                                   |
-| --- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| 1   | [Web Application Security](https://github.com/m14r41/PentestingEverything/tree/main/Web%20Applications)                     | Assess and secure web applications for vulnerabilities.       |
-| 2   | [API Security](https://github.com/m14r41/PentestingEverything/tree/main/API%20Pentesting)                                    | Test and enhance the security of APIs and microservices.      |
-| 3   | [Mobile Application Security](https://github.com/m14r41/PentestingEverything/tree/main/Mobile%20Pentesting)                  | Evaluate the security of mobile apps and devices.             |
-| 4   | [Thick Client Application Security](https://github.com/m14r41/PentestingEverything/tree/main/Thick%20Client%20Pentesting)  | Assess thick client applications for security issues.         |
-| 5   | [Source Code Review](https://github.com/m14r41/PentestingEverything/tree/main/Secure%20Code%20Review)                        | Analyze source code to identify and rectify vulnerabilities.  |
-| 6   | [Network Security](https://github.com/m14r41/PentestingEverything/tree/main/Network%20Pentesting)                          | Secure networks by identifying and addressing weaknesses.     |
-| 7   | [Wi-Fi Network Security](https://github.com/m14r41/PentestingEverything/tree/main/Wifi%20Pentesting)                         | Evaluate the security of Wi-Fi networks and access points.    |
-| 8   | [Cloud Security](https://github.com/m14r41/PentestingEverything/tree/main/Cloud%20Pentesting)                              | Assess the security of cloud-based systems and services.      |
-| 9   | [Active Directory Security](https://github.com/m14r41/PentestingEverything/tree/main/Active%20Directory%20Pentesting)      | Evaluate the security of Active Directory environments.       |
-| 10  | [Infrastructure Security](https://github.com/m14r41/PentestingEverything/tree/main/Infrastucture%20Pentesting)             | Secure the underlying IT infrastructure and assets.           |
-| 11  | [Threat Modeling](https://github.com/m14r41/PentestingEverything/tree/main/Threat%20Model)                                 | Model and assess threats to enhance system security.          |
-| 12  | [IoT Security](https://github.com/m14r41/PentestingEverything/tree/main/iOT%20Pentesting)                                   | Identify and mitigate vulnerabilities in IoT devices.         |
-| 13  | [OSINT (Open Source Intelligence)](https://github.com/m14r41/PentestingEverything/tree/main/OSINT)                          | Gather intelligence from open sources for security analysis.  |
-| 14  | [Blockchain Security](https://github.com/m14r41/PentestingEverything/tree/main/BlockChain%20Pentesting)                    | Assess blockchain systems for security and compliance.        |
-| 15  | [CI/CD Pipeline Security](https://github.com/m14r41/PentestingEverything/tree/main/CI-CD%20Pentesting)                     | Evaluate the security of continuous integration pipelines.    |
-| 16  | [Docker Container Security](https://github.com/m14r41/PentestingEverything/tree/main/DockerContainer%20Pentesting)          | Secure Docker containers and containerized applications.      |
-| 17  | [DevSecOps](https://github.com/m14r41/PentestingEverything/tree/main/DevSecOps)                                             | Integrate security practices throughout the DevOps lifecycle. |
-| 18  | [Phishing Penetration Testing](https://github.com/m14r41/PentestingEverything/tree/main/Phishing%20Penetration%20Testing)  | Simulate and analyze phishing attacks for awareness training. |
-| 19  | [Configuration Review](https://github.com/m14r41/PentestingEverything/tree/main/Configuration%20Review)                   | Examine and verify system configurations for security issues. |
-| 20  | [Forensic Analysis](https://github.com/m14r41/PentestingEverything/tree/main/Forensic)                                     | Investigate and analyze digital evidence post-incident.       |
+
+
 
 
 ---
@@ -248,3 +228,4 @@ Your ideas, suggestions, and contributions are always welcome!
 
 
 
+`
