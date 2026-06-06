@@ -5,11 +5,9 @@
 Your ideas, suggestions, and contributions are always welcome!
 ```
 
-- [ ] **New Module:** OWASP Top 10 for LLMs & MCP Pentesting  
 - [ ] **New Module:** Leveraging AI in Pentesting  
 
 </details>
-
 
 
 <details>
@@ -24,8 +22,6 @@ Your ideas, suggestions, and contributions are always welcome!
 
 </details>
 
-
-
 <details>
 <summary><b>Recently Updated Content : 2026</b></summary>
 
@@ -37,6 +33,8 @@ Your ideas, suggestions, and contributions are always welcome!
 - [x] Thick Client Pentesting  
 - [x] OWASP Top 10:2025 Web Application  
 - [x] Threat Modeling, Design Review, Idea Review, Architecture Review  
+- [x] New Module : LLMs OWASP Top 10  
+- [x] New Module : MCP Pentesting  
 
 </details>
 
@@ -83,26 +81,23 @@ Your ideas, suggestions, and contributions are always welcome!
 </div>
 
     
-## Table of Contents
+## 0.1. Table of Contents
 
 
-| No. | Types of Pentesting                                                                                                   | No. | Directory Name                                                                                                                        |
-| --- | --------------------------------------------------------------------------------------------------------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Web Application Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Web%20Application%20Pentesting) | 12  | [Active Directory Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Active%20Directory%20Pentesting)               |
-| 2   | [API Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/API%20Pentesting)                           | 13  | [Infrastructure Security](https://github.com/m14r41/PentestingEverything/tree/main/Infrastucture%20Security)                          |
-| 3   | [Mobile Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Mobile%20Pentesting)                     | 14  | [Threat Modeling](https://github.com/m14r41/PentestingEverything/tree/main/Threat%20Modeling)                                         |
-| 4   | [Thick Client Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Thick%20Client%20Pentesting)       | 15  | [IoT Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/IoT%20Pentesting)                                           |
-| 5   | [Secure Code Review](https://github.com/m14r41/PentestingEverything/tree/main/Secure%20Code%20Review)                 | 16  | [OSINT](https://github.com/m14r41/PentestingEverything/tree/main/OSINT)                                                               |
-| 6   | [Network Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Network%20Pentesting)                   | 17  | [Blockchain Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/BlockChain%20Pentesting)                             |
-| 7   | [Wi-Fi Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Wi-Fi%20Pentesting)                       | 18  | [CI/CD Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/CI-CD%20Pentesting)                                       |
-| 8   | [LLM Security Assessment](https://github.com/m14r41/PentestingEverything/tree/main/LLM%20Security%20Assessment)       | 19  | [MCP Security Assessment](https://github.com/m14r41/PentestingEverything/tree/main/MCP%20Security%20Assessment)                       |
-| 9   | [Cloud Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Cloud%20Pentesting)                       | 20  | [Container & Kubernetes Assessment](https://github.com/m14r41/PentestingEverything/tree/main/Container%20&%20Kubernetes%20Assessment) |
-| 10  | [DevSecOps](https://github.com/m14r41/PentestingEverything/tree/main/DevSecOps)                                       | 21  | [Phishing Penetration Testing](https://github.com/m14r41/PentestingEverything/tree/main/Phishing%20Penetration%20Testing)             |
-| 11  | [Configuration Review](https://github.com/m14r41/PentestingEverything/tree/main/Configuration%20Review)               | 22  | [Forensic](https://github.com/m14r41/PentestingEverything/tree/main/Forensic)                                                         |
-
-
-
-
+| No. | Types of Pentesting | No. | Types of Pentesting |
+| --- | --- | --- | --- |
+| 1 | [Web Application Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Web%20Application%20Pentesting) | 13 | [MCP Security Assessment](https://github.com/m14r41/PentestingEverything/tree/main/MCP%20Security%20Assessment) |
+| 2 | [API Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/API%20Pentesting) | 14 | [LLM Security Assessment](https://github.com/m14r41/PentestingEverything/tree/main/LLM%20Security%20Assessment) |
+| 3 | [Mobile Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Mobile%20Pentesting) | 15 | [Threat Modeling](https://github.com/m14r41/PentestingEverything/tree/main/Threat%20Modeling) |
+| 4 | [Thick Client Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Thick%20Client%20Pentesting) | 16 | [Configuration Review](https://github.com/m14r41/PentestingEverything/tree/main/Configuration%20Review) |
+| 5 | [Secure Code Review](https://github.com/m14r41/PentestingEverything/tree/main/Secure%20Code%20Review) | 17 | [Container & Kubernetes Assessment](https://github.com/m14r41/PentestingEverything/tree/main/Container%20%26%20Kubernetes%20%20Assessment) |
+| 6 | [Cloud Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Cloud%20Pentesting) | 18 | [CI/CD Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/CI-CD%20Pentesting) |
+| 7 | [DevSecOps](https://github.com/m14r41/PentestingEverything/tree/main/DevSecOps) | 19 | [IoT Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/IoT%20Pentesting) |
+| 8 | [Network Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Network%20Pentesting) | 20 | [BlockChain Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/BlockChain%20Pentesting) |
+| 9 | [Wi-Fi Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Wi-Fi%20Pentesting) | 21 | [Phishing Assessment](https://github.com/m14r41/PentestingEverything/tree/main/Phishing%20Assessment) |
+| 10 | [Firewall Penetration](https://github.com/m14r41/PentestingEverything/tree/main/Firewall%20Penetration) | 22 | [OSINT](https://github.com/m14r41/PentestingEverything/tree/main/OSINT) |
+| 11 | [Active Directory Pentesting](https://github.com/m14r41/PentestingEverything/tree/main/Active%20Directory%20Pentesting) | 23 | [Forensic](https://github.com/m14r41/PentestingEverything/tree/main/Forensic) |
+| 12 | [Infrastructure Security](https://github.com/m14r41/PentestingEverything/tree/main/Infrastucture%20Security) |  |  |
 
 
 
@@ -115,22 +110,22 @@ Your ideas, suggestions, and contributions are always welcome!
 
 ---
 
-# Penetration Testing and Tools 
+# 1. Penetration Testing and Tools 
 
 
-| **Category**                           | **Tools**                                                                                                                                                        |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Web Application Pentesting**         | Acunetix, Burp Suite Professional, Dirb, FFUF, Nmap, Nikto, Nuclei, OWASP ZAP, SQLMap, WhatWeb, WPScan, Invicti (Netsparker), Fortify WebInspect                 |
-| **Android Security**                   | adb, APKTool, Apkscan, AndroBugs, Android Studio / Genymotion, AppMon, Dexter/Objection (Objection), Drozer, Frida, Magisk, MITMProxy, MobSF, Quark Engine, JADX |
-| **iOS Security**                       | checkra1n, Class-dump, Frida, iMazing, iOS-decrypt, iOS-Hook, MobSF, Needle, Objection, Palera1n, Passionfruit, SSL Kill Switch 2, Cycript                       |
-| **API Pentesting**                     | Burp Suite Professional, GraphQL Raider, GraphQL Voyager, Insomnia, Kite Runner, Postman, Swagger UI                                                             |
-| **Secure Code Review**          | Bandit, Checkmarx, CodeQL, FindSecBugs, Gitleaks, Semgrep, SonarQube, Snyk, Veracode, Fortify Static (Workbench/Audit)                                           |
-| **Thick-Client Security** | Burp Suite Professional, dnSpy, de4dot, Fiddler, Ghidra, IDA Pro, OllyDbg, Process Explorer, x64dbg, CFF Explorer, Sysinternals Suite, Wireshark                 |
-| **Network Pentesting**                 | Bettercap, CrackMapExec, Metasploit, Netcat, Nessus, Nmap, OpenVAS, Responder, Wireshark                                                                         |
+| **Category**                   | **Tools**                                                                                                                                                        |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Web Application Pentesting** | Acunetix, Burp Suite Professional, Dirb, FFUF, Nmap, Nikto, Nuclei, OWASP ZAP, SQLMap, WhatWeb, WPScan, Invicti (Netsparker), Fortify WebInspect                 |
+| **Android Security**           | adb, APKTool, Apkscan, AndroBugs, Android Studio / Genymotion, AppMon, Dexter/Objection (Objection), Drozer, Frida, Magisk, MITMProxy, MobSF, Quark Engine, JADX |
+| **iOS Security**               | checkra1n, Class-dump, Frida, iMazing, iOS-decrypt, iOS-Hook, MobSF, Needle, Objection, Palera1n, Passionfruit, SSL Kill Switch 2, Cycript                       |
+| **API Pentesting**             | Burp Suite Professional, GraphQL Raider, GraphQL Voyager, Insomnia, Kite Runner, Postman, Swagger UI                                                             |
+| **Secure Code Review**         | Bandit, Checkmarx, CodeQL, FindSecBugs, Gitleaks, Semgrep, SonarQube, Snyk, Veracode, Fortify Static (Workbench/Audit)                                           |
+| **Thick-Client Security**      | Burp Suite Professional, dnSpy, de4dot, Fiddler, Ghidra, IDA Pro, OllyDbg, Process Explorer, x64dbg, CFF Explorer, Sysinternals Suite, Wireshark                 |
+| **Network Pentesting**         | Bettercap, CrackMapExec, Metasploit, Netcat, Nessus, Nmap, OpenVAS, Responder, Wireshark                                                                         |
 
 
 
-# Extended version 
+# 2. Extended version 
 
 | **Category**                      | **Tools**                                                                                                                                                                                                              |
 | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -174,7 +169,7 @@ Your ideas, suggestions, and contributions are always welcome!
 ---
 
 
-## 👨‍💻Contributors👩‍💻
+## 2.1. 👨‍💻Contributors👩‍💻
 
 >I appreciate your interest in contributing! please read [Contribution Guidelines](https://github.com/m14r41/PentestingEverything/blob/master/CONTRIBUTING.md).
 
@@ -207,7 +202,7 @@ Your ideas, suggestions, and contributions are always welcome!
 
 ---
 
-## Star History
+## 2.2. Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=m14r41/PentestingEverything&type=Timeline)](https://star-history.com/#m14r41/PentestingEverything&Timeline)
 
@@ -217,5 +212,6 @@ Your ideas, suggestions, and contributions are always welcome!
 
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a>
+
 
 
