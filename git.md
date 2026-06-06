@@ -57,10 +57,19 @@
 
 ## Local
 
-| Task         | Command                     |
-| ------------ | --------------------------- |
-| Safe delete  | `git branch -d branch-name` |
-| Force delete | `git branch -D branch-name` |
+## Local Branch Management
+
+>  git branch | grep "feature-" | xargs git branch -D
+
+| Task                      | Command                                              |
+| ------------------------- | ---------------------------------------------------- |
+| Safe delete branch        | `git branch -d <branch-name>`                        |
+| Force delete branch       | `git branch -D <branch-name>`                        |
+| Delete all feature branches | `git branch \| grep "^  feature-\|^\* feature-" \| xargs git branch -D` |
+| List local branches       | `git branch`                                         |
+| List merged branches      | `git branch --merged main`                           |
+
+
 
 ## Remote (GitHub)
 
