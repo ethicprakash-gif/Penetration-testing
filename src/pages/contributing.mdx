@@ -1,0 +1,145 @@
+---
+title: Contributing Guide
+description: How to add or improve documentation in the PentestingEverything knowledge base — fork, edit, preview, and open a pull request.
+---
+
+# Contributing Guide
+
+Thanks for helping improve **PentestingEverything**. This site is generated automatically
+from the repository's content folders, so contributing is mostly about **adding Markdown
+files and PDFs in the right place** — the navigation, search index, metadata, and reference
+pages are all built for you.
+
+:::tip The golden rule
+You never edit the sidebar, routes, or search index by hand. Drop a Markdown file or PDF
+into the correct folder and the build does the rest.
+:::
+
+## How the site is generated
+
+```
+Content folders (source of truth)  ──►  bun run migrate  ──►  docs/ + References pages + search
+   e.g. "Web Application Pentesting/…"      (deterministic)        (generated automatically)
+```
+
+- Each **folder** becomes a section in the sidebar.
+- A `README.md` in a folder becomes that section's **main page**.
+- Any other `*.md` becomes a sub-page.
+- Every **PDF** in a category is collected onto that category's single **References** page.
+
+## Prerequisites
+
+| Tool | Version |
+| --- | --- |
+| Git | any recent |
+| Node.js | 18 or newer |
+| Bun | latest (`curl -fsSL https://bun.sh/install \| bash`) |
+
+## Step 1 — Fork the repository
+
+Click **Fork** on the [repository page](https://github.com/m14r41/PentestingEverything),
+then clone your fork:
+
+```bash
+git clone https://github.com/<your-username>/PentestingEverything.git
+cd PentestingEverything
+```
+
+## Step 2 — Create a branch
+
+```bash
+git checkout -b add-graphql-idor-notes
+```
+
+## Step 3 — Run the site locally
+
+```bash
+bun install
+bun start
+# opens http://localhost:3000 with live reload
+```
+
+## Step 4 — Make your change
+
+### Add a new topic or technique
+
+Create a folder under the relevant category and add a `README.md`:
+
+```bash
+mkdir -p "Web Application Pentesting/Vulnerabilities/Prototype Pollution"
+$EDITOR "Web Application Pentesting/Vulnerabilities/Prototype Pollution/README.md"
+```
+
+A minimal page is just Markdown — frontmatter (title, slug, tags, reading time) is
+generated automatically. You can still override any field by adding your own frontmatter:
+
+```markdown
+---
+title: Prototype Pollution
+tags: [Web, Injection]
+---
+
+# Prototype Pollution
+
+Short description of the vulnerability…
+
+## How to test
+...
+```
+
+### Improve an existing page
+
+Find the source file in its category folder and edit it directly. Every page on the live
+site also has an **“Edit this page”** link at the bottom that takes you straight to the
+correct source file on GitHub.
+
+### Add a reference (PDF)
+
+Drop the PDF into the relevant category folder:
+
+```bash
+cp ~/Downloads/"GraphQL Cheat Sheet.pdf" "API Pentesting/GraphQL/"
+```
+
+It is automatically copied, de-duplicated, and listed on the **API Pentesting → References**
+page. You do not create a page for it.
+
+## Step 5 — Preview and verify
+
+```bash
+bun run build      # regenerates everything and checks for broken links
+```
+
+Fix any warnings the build reports for files you touched.
+
+## Step 6 — Commit, push, open a Pull Request
+
+```bash
+git add -A
+git commit -m "Add Prototype Pollution testing notes"
+git push origin add-graphql-idor-notes
+```
+
+Then open a Pull Request from your branch on GitHub. In the description, briefly note **what
+you added or changed** and **why**. A maintainer will review it.
+
+## Content style guidelines
+
+- **Be accurate and practical** — prefer real commands, payloads, and steps over theory.
+- **One topic per folder.** Keep titles specific (e.g. *Blind SSRF*, not *Misc*).
+- **Use fenced code blocks** with a language tag (` ```bash `, ` ```http `) for highlighting.
+- **Cite sources** where relevant. Keep a neutral, professional tone — no emoji.
+- **Only contribute material you have the right to share.** Respect the repository
+  [LICENSE](https://github.com/m14r41/PentestingEverything/blob/main/LICENSE).
+
+## Where things live (quick map)
+
+| You want to… | Do this |
+| --- | --- |
+| Add a technique page | New folder + `README.md` under a category |
+| Add sub-notes to a topic | Another `*.md` in the same folder |
+| Add a cheat sheet / PDF | Drop the PDF in the category folder |
+| Fix a typo on a page | Use the page's “Edit this page” link |
+| Re-order a section | Add `sidebar_position` to the page frontmatter |
+
+Happy hacking — and thank you for contributing.

@@ -567,6 +567,15 @@
     ],
     "words": 0
   },
+  "/web-application-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Web",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/api-pentesting": {
     "readingTime": 10,
     "difficulty": "Advanced",
@@ -599,6 +608,15 @@
     ],
     "words": 1022
   },
+  "/api-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "API",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/network-pentesting": {
     "readingTime": 33,
     "difficulty": "Intermediate",
@@ -608,6 +626,15 @@
       "Network Pentesting"
     ],
     "words": 6665
+  },
+  "/network-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Network",
+    "tags": [
+      "References"
+    ],
+    "words": 0
   },
   "/active-directory-pentesting": {
     "readingTime": 22,
@@ -629,6 +656,25 @@
       "Windows Privilege Escalation"
     ],
     "words": 1
+  },
+  "/active-directory-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Windows / AD",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
+  "/cloud-pentesting": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Cloud",
+    "tags": [
+      "Cloud",
+      "Cloud Pentesting"
+    ],
+    "words": 339
   },
   "/cloud-pentesting/aws": {
     "readingTime": 2,
@@ -663,6 +709,15 @@
     ],
     "words": 349
   },
+  "/cloud-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Cloud",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/container-and-kubernetes-assessment": {
     "readingTime": 4,
     "difficulty": "Intermediate",
@@ -671,6 +726,15 @@
       "Kubernetes"
     ],
     "words": 734
+  },
+  "/container-and-kubernetes-assessment/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Kubernetes",
+    "tags": [
+      "References"
+    ],
+    "words": 0
   },
   "/mobile-pentesting": {
     "readingTime": 1,
@@ -737,6 +801,15 @@
     ],
     "words": 2647
   },
+  "/mobile-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Mobile",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/thick-client-pentesting": {
     "readingTime": 12,
     "difficulty": "Intermediate",
@@ -746,6 +819,15 @@
       "Thick Client Pentesting"
     ],
     "words": 2437
+  },
+  "/thick-client-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Desktop",
+    "tags": [
+      "References"
+    ],
+    "words": 0
   },
   "/iot-pentesting": {
     "readingTime": 5,
@@ -757,6 +839,16 @@
     ],
     "words": 1033
   },
+  "/iot-pentesting/fundamentals": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "IoT",
+    "tags": [
+      "IoT",
+      "IoT Pentesting"
+    ],
+    "words": 336
+  },
   "/wi-fi-pentesting": {
     "readingTime": 6,
     "difficulty": "Intermediate",
@@ -766,6 +858,15 @@
       "Wi-Fi Pentesting"
     ],
     "words": 1260
+  },
+  "/wi-fi-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Wireless",
+    "tags": [
+      "References"
+    ],
+    "words": 0
   },
   "/blockchain-pentesting": {
     "readingTime": 2,
@@ -816,6 +917,15 @@
     ],
     "words": 1349
   },
+  "/osint/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "OSINT",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/phishing-assessment": {
     "readingTime": 1,
     "difficulty": "Intermediate",
@@ -825,6 +935,16 @@
       "Phishing Assessment"
     ],
     "words": 261
+  },
+  "/phishing-assessment/methodology": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Social Eng.",
+    "tags": [
+      "Social Eng.",
+      "Phishing Assessment"
+    ],
+    "words": 351
   },
   "/secure-code-review": {
     "readingTime": 7,
@@ -886,6 +1006,15 @@
     ],
     "words": 169
   },
+  "/secure-code-review/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Source Code",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/configuration-review": {
     "readingTime": 4,
     "difficulty": "Intermediate",
@@ -924,6 +1053,15 @@
     ],
     "words": 959
   },
+  "/devsecops/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "DevSecOps",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/ci-cd-pentesting": {
     "readingTime": 5,
     "difficulty": "Intermediate",
@@ -933,6 +1071,15 @@
       "CI-CD Pentesting"
     ],
     "words": 1045
+  },
+  "/ci-cd-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "CI/CD",
+    "tags": [
+      "References"
+    ],
+    "words": 0
   },
   "/threat-modeling": {
     "readingTime": 7,
@@ -944,6 +1091,15 @@
     ],
     "words": 1369
   },
+  "/threat-modeling/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Design",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/firewall-penetration": {
     "readingTime": 3,
     "difficulty": "Advanced",
@@ -953,6 +1109,25 @@
       "Firewall Penetration"
     ],
     "words": 556
+  },
+  "/firewall-penetration/fundamentals": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Network",
+    "tags": [
+      "Network",
+      "Firewall Penetration"
+    ],
+    "words": 348
+  },
+  "/firewall-penetration/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Network",
+    "tags": [
+      "References"
+    ],
+    "words": 0
   },
   "/infrastucture-security": {
     "readingTime": 2,
@@ -964,6 +1139,15 @@
     ],
     "words": 460
   },
+  "/infrastucture-security/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Infrastructure",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/forensic": {
     "readingTime": 1,
     "difficulty": "Intermediate",
@@ -973,6 +1157,16 @@
       "Forensic"
     ],
     "words": 31
+  },
+  "/forensic/fundamentals": {
+    "readingTime": 1,
+    "difficulty": "Intermediate",
+    "platform": "Forensics",
+    "tags": [
+      "Forensics",
+      "Forensic"
+    ],
+    "words": 293
   },
   "/forensic/mobile": {
     "readingTime": 3,
@@ -995,6 +1189,15 @@
       "Windows"
     ],
     "words": 656
+  },
+  "/forensic/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Forensics",
+    "tags": [
+      "References"
+    ],
+    "words": 0
   },
   "/overview": {
     "readingTime": 7,

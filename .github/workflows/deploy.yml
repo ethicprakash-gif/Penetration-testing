@@ -35,12 +35,9 @@ jobs:
         run: bun install --frozen-lockfile || bun install
 
       - name: Build site (runs migration via prebuild)
+        # Uses the custom-domain defaults in docusaurus.config.ts (pentesting.m14r41.in,
+        # baseUrl "/"). The static/CNAME file pins the domain on GitHub Pages.
         run: bun run build
-        env:
-          GH_ORG: ${{ github.repository_owner }}
-          GH_REPO: ${{ github.event.repository.name }}
-          SITE_URL: https://${{ github.repository_owner }}.github.io
-          BASE_URL: /${{ github.event.repository.name }}/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

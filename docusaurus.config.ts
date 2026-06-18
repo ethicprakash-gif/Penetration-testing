@@ -3,12 +3,13 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // --- Deployment identity -----------------------------------------------------
-// The site is published to GitHub Pages for the fork that owns this repo.
-// Override via env vars in CI if the repo is renamed or moved to a custom domain.
-const ORG = process.env.GH_ORG ?? 'bugs76-beep';
+// Published to the custom domain pentesting.m14r41.in (CNAME in static/). The
+// canonical project links/edit URLs point at the maintainer's repository.
+// Everything is env-overridable for forks or alternate hosting.
+const ORG = process.env.GH_ORG ?? 'm14r41';
 const REPO = process.env.GH_REPO ?? 'PentestingEverything';
-const SITE_URL = process.env.SITE_URL ?? `https://${ORG}.github.io`;
-const BASE_URL = process.env.BASE_URL ?? `/${REPO}/`;
+const SITE_URL = process.env.SITE_URL ?? 'https://pentesting.m14r41.in';
+const BASE_URL = process.env.BASE_URL ?? '/';
 const GITHUB_URL = `https://github.com/${ORG}/${REPO}`;
 
 const config: Config = {
@@ -133,6 +134,7 @@ const config: Config = {
         },
         {to: '/references', label: 'References', position: 'left'},
         {to: '/learning-paths', label: 'Learning Paths', position: 'left'},
+        {to: '/contributing', label: 'Contribute', position: 'left'},
         {
           href: GITHUB_URL,
           position: 'right',
@@ -156,7 +158,7 @@ const config: Config = {
           title: 'Contribute',
           items: [
             {label: 'GitHub', href: GITHUB_URL},
-            {label: 'Contributing', href: `${GITHUB_URL}/blob/main/CONTRIBUTING.md`},
+            {label: 'Contributing Guide', to: '/contributing'},
             {label: 'Open an Issue', href: `${GITHUB_URL}/issues`},
           ],
         },

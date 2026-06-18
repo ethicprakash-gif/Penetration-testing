@@ -31,10 +31,11 @@ const DOCS = path.join(ROOT, 'docs');
 const PDF_OUT = path.join(ROOT, 'static', 'pdfs');
 const DATA = path.join(ROOT, 'src', 'data');
 
-const GH_ORG = process.env.GH_ORG ?? 'bugs76-beep';
+const GH_ORG = process.env.GH_ORG ?? 'm14r41';
 const GH_REPO = process.env.GH_REPO ?? 'PentestingEverything';
 const GH_BRANCH = process.env.GH_BRANCH ?? 'main';
 const RAW_BASE = `https://github.com/${GH_ORG}/${GH_REPO}/blob/${GH_BRANCH}`;
+const TREE_BASE = `https://github.com/${GH_ORG}/${GH_REPO}/tree/${GH_BRANCH}`;
 
 // Repo entries that are NOT source content (the Docusaurus project itself + meta).
 const EXCLUDE = new Set([
@@ -88,7 +89,12 @@ const PLATFORM: Record<string, string> = {
 };
 
 type DocMeta = {readingTime: number; difficulty: string; platform: string; tags: string[]; words: number};
-type PdfEntry = {title: string; category: string; href: string; page: string; description: string};
+type PdfEntry = {title: string; category: string; categorySlug: string; href: string; page: string; description: string};
+// A single reference document collected under a top-level category. All of a
+// category's references are rendered on ONE "References" page (grouped by sub-area)
+// instead of a separate page per PDF — keeping the sidebar clean and readable.
+type RefItem = {title: string; href: string; sizeKb: number; group: string};
+const catRefs: Record<string, RefItem[]> = {};
 
 // Case-insensitive uniqueness guards. The source repo contains paths that differ
 // only by letter case (e.g. "Computer Networking.pdf" vs "Computer networking.pdf"),
@@ -118,7 +124,7 @@ function uniqueStatic(relPath: string): string {
 const docmeta: Record<string, DocMeta> = {};
 const pdfs: PdfEntry[] = [];
 const categoryCounts: Record<string, {docs: number; pdfs: number; label: string; slug: string}> = {};
-const report = {docsWritten: 0, pdfsCopied: 0, categories: 0, indexPages: 0, pdfPages: 0};
+const report = {docsWritten: 0, pdfsCopied: 0, categories: 0, indexPages: 0, pdfPages: 0, refPages: 0};
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -237,13 +243,12 @@ function ensureDir(p: string) {fs.mkdirSync(p, {recursive: true});}
 /** Recursively remove directories that ended up with no content (e.g. empty source folders). */
 function pruneEmpty(dir: string): boolean {
   if (!fs.existsSync(dir)) return true;
-  let entries = fs.readdirSync(dir, {withFileTypes: true});
+  const entries = fs.readdirSync(dir, {withFileTypes: true});
   for (const e of entries) {
     if (e.isDirectory()) pruneEmpty(path.join(dir, e.name));
   }
-  entries = fs.readdirSync(dir);
   // A lone _category_.json with no sibling docs is also "empty" for our purposes.
-  const meaningful = entries.filter((n) => n !== '_category_.json');
+  const meaningful = fs.readdirSync(dir).filter((n) => n !== '_category_.json');
   if (meaningful.length === 0) {
     fs.rmSync(dir, {recursive: true, force: true});
     return true;
@@ -267,6 +272,49 @@ function writeCategory(dir: string, label: string, position: number, description
 // ---------------------------------------------------------------------------
 // Core walk
 // ---------------------------------------------------------------------------
+/** Write ONE References page per top-level category, aggregating every PDF found within it. */
+function writeReferencesPage(topCategory: string, topSlug: string) {
+  const items = catRefs[topCategory];
+  if (!items || items.length === 0) return;
+  const topLabel = prettyLabel(topCategory);
+
+  const groupsMap = new Map<string, RefItem[]>();
+  for (const it of items) (groupsMap.get(it.group) ?? groupsMap.set(it.group, []).get(it.group)!).push(it);
+  const groups = Array.from(groupsMap.entries())
+    .sort((a, b) => (a[0] === 'General' ? -1 : b[0] === 'General' ? 1 : a[0].localeCompare(b[0])))
+    .map(([label, its]) => ({
+      label,
+      items: its
+        .sort((x, y) => x.title.localeCompare(y.title))
+        .map(({title, href, sizeKb}) => ({title, href, sizeKb})),
+    }));
+
+  const slug = '/' + topSlug + '/references';
+  usedSlugs.add(slug.toLowerCase());
+  docmeta[slug] = {readingTime: 1, difficulty: 'Beginner', platform: PLATFORM[topCategory] ?? 'General', tags: ['References'], words: 0};
+
+  const fm = buildFrontmatter({
+    title: `${topLabel} — References`,
+    label: 'References',
+    slug,
+    description: `Downloadable reference documents and PDFs for ${topLabel}.`,
+    tags: ['References', PLATFORM[topCategory] ?? 'General'],
+    editUrl: `${TREE_BASE}/${encodeURIComponent(topCategory)}`,
+    lastUpdate: null,
+    sidebarPos: 9000,
+  });
+  const body = `
+import ReferenceList from '@site/src/components/ReferenceList';
+
+All reference material for **${topLabel}** is collected here — ${items.length} document${items.length === 1 ? '' : 's'}. Open any item in a new tab or download it for offline use. The written, hands-on methodology lives in the other pages of this section.
+
+<ReferenceList groups={${JSON.stringify(groups)}} />
+`;
+  ensureDir(path.join(DOCS, topSlug));
+  fs.writeFileSync(path.join(DOCS, topSlug, 'references.mdx'), fm + '\n' + body);
+  report.refPages = (report.refPages ?? 0) + 1;
+}
+
 function processFolder(srcDir: string, outDir: string, segments: string[], topCategory: string) {
   const entries = fs.readdirSync(srcDir, {withFileTypes: true});
   ensureDir(outDir);
@@ -348,7 +396,7 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
     bumpCategory(topCategory, topLabel, 'docs');
   }
 
-  // --- PDFs → copy binary + generate a reference page (.mdx) ---
+  // --- PDFs → copy binary + collect into the category's single References page ---
   for (const pdf of pdfFiles) {
     const abs = path.join(srcDir, pdf.name);
     const relPdf = uniqueStatic(path.join(...segments.map(slugify), pdf.name));
@@ -359,40 +407,15 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
 
     const base = pdf.name.replace(/\.pdf$/i, '');
     const title = prettyLabel(base);
-    const pdfSlug = uniqueSlug(indexSlug + '/ref-' + slugify(base));
-    const pdfFile = pdfSlug.split('/').pop()! + '.mdx';
     const publicPath = '/pdfs/' + relPdf.split(path.sep).map(encodeURIComponent).join('/');
     const sizeKb = Math.round(fs.statSync(abs).size / 1024);
-    const tags = deriveTags(topCategory, segments, base);
-    const description = `Reference PDF: ${title} (${topLabel}).`;
+    // Group label = the sub-path inside the category (segments beyond the top one).
+    const group = segments.slice(1).map(prettyLabel).join(' › ') || 'General';
+    const catSlug = slugify(topCategory);
 
-    pdfs.push({title, category: topLabel, href: publicPath, page: pdfSlug, description});
+    (catRefs[topCategory] ??= []).push({title, href: publicPath, sizeKb, group});
+    pdfs.push({title, category: topLabel, categorySlug: '/' + catSlug, href: publicPath, page: `/${catSlug}/references`, description: `${title} — ${topLabel} reference.`});
     bumpCategory(topCategory, topLabel, 'pdfs');
-
-    const fm = buildFrontmatter({
-      title, label: title + ' (PDF)', slug: pdfSlug, description,
-      tags, editUrl: ghEdit(abs), lastUpdate: gitDate(abs), sidebarPos: 50 + pos++,
-    });
-    const mdx = `${fm}
-import PdfRef from '@site/src/components/PdfRef';
-
-<PdfRef
-  title=${JSON.stringify(title)}
-  category=${JSON.stringify(topLabel)}
-  href=${JSON.stringify(publicPath)}
-  sizeKb={${sizeKb}}
-  tags={${JSON.stringify(tags)}}
-/>
-
-## Reference notes
-
-This page indexes a reference PDF that ships with the **${topLabel}** knowledge base.
-Use the buttons above to open it in a new tab or download it for offline use.
-
-> Looking for the written walkthrough? See the **${topLabel}** section in the sidebar for hands-on methodology covering the same material.
-`;
-    fs.writeFileSync(path.join(outDir, pdfFile), mdx);
-    report.pdfPages++;
   }
 
   // --- Recurse ---
@@ -447,6 +470,26 @@ function bumpCategory(top: string, label: string, kind: 'docs' | 'pdfs') {
   categoryCounts[key][kind]++;
 }
 
+/** Parse the repo's .all-contributorsrc into a compact, render-ready list. */
+function readContributors(): {login: string; name: string; avatar: string; profile: string}[] {
+  const f = path.join(ROOT, '.all-contributorsrc');
+  if (!fs.existsSync(f)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(f, 'utf8'));
+    const list = Array.isArray(data.contributors) ? data.contributors : [];
+    return list
+      .filter((c: {login?: string}) => c.login && !/\[bot\]$/.test(c.login))
+      .map((c: {login: string; name?: string; avatar_url?: string; profile?: string}) => ({
+        login: c.login,
+        name: c.name || c.login,
+        avatar: c.avatar_url || `https://github.com/${c.login}.png`,
+        profile: c.profile || `https://github.com/${c.login}`,
+      }));
+  } catch {
+    return [];
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -467,7 +510,10 @@ function main() {
 
   for (const dir of topDirs) {
     report.categories++;
-    processFolder(path.join(ROOT, dir), path.join(DOCS, slugify(dir)), [dir], dir);
+    const topSlug = slugify(dir);
+    processFolder(path.join(ROOT, dir), path.join(DOCS, topSlug), [dir], dir);
+    // One consolidated References page per top-level category (all its PDFs).
+    writeReferencesPage(dir, topSlug);
   }
 
   // Root-level standalone markdown (README hub, help) → an "Overview" section.
@@ -504,19 +550,22 @@ function main() {
     topics: report.docsWritten + report.pdfsCopied,
   };
 
+  // Contributors — read the repo's all-contributors data (offline, deterministic).
+  const contributors = readContributors();
+
   // Drop any directories that produced no pages (defends against empty source folders).
   for (const d of fs.readdirSync(DOCS)) pruneEmpty(path.join(DOCS, d));
 
-  fs.writeFileSync(path.join(DATA, 'manifest.json'), JSON.stringify({stats, categories, pdfs: pdfs.sort((a, b) => a.title.localeCompare(b.title))}, null, 2));
+  fs.writeFileSync(path.join(DATA, 'manifest.json'), JSON.stringify({stats, categories, contributors, pdfs: pdfs.sort((a, b) => a.title.localeCompare(b.title))}, null, 2));
   fs.writeFileSync(path.join(DATA, 'docmeta.json'), JSON.stringify(docmeta, null, 2));
 
   console.log('✔ Migration complete');
   console.table({
     'Categories': report.categories,
     'Docs written': report.docsWritten,
-    'Index pages': report.indexPages,
-    'PDF pages': report.pdfPages,
+    'Reference pages': report.refPages,
     'PDFs copied': report.pdfsCopied,
+    'Contributors': contributors.length,
   });
 }
 

@@ -1,12 +1,23 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-import {ArrowRight, BookOpen, Search, ShieldCheck, FileText, Route, Github} from 'lucide-react';
+import {ArrowRight, BookOpen, Search, ShieldCheck, FileText, Route, Github, Linkedin, Globe, Heart} from 'lucide-react';
 import CategoryIcon from '@site/src/components/CategoryIcon';
 import manifest from '@site/src/data/manifest.json';
 import styles from './index.module.css';
 
 type Category = {key: string; label: string; slug: string; docs: number; pdfs: number; platform: string};
+type Contributor = {login: string; name: string; avatar: string; profile: string};
+
+const MAINTAINER = {
+  name: 'Madhurendra Kumar',
+  handle: 'm14r41',
+  avatar: 'https://github.com/m14r41.png',
+  github: 'https://github.com/m14r41',
+  linkedin: 'https://www.linkedin.com/in/m14r41',
+  website: 'https://m14r41.in',
+};
+const REPO_URL = 'https://github.com/m14r41/PentestingEverything';
 
 const LEARNING_PATHS = [
   {title: 'Web Application Security', desc: 'From recon to OWASP Top 10 exploitation and reporting.', slug: '/web-application-pentesting'},
@@ -133,6 +144,58 @@ function Paths(): React.JSX.Element {
   );
 }
 
+function Maintainers(): React.JSX.Element {
+  const contributors = (manifest.contributors ?? []) as Contributor[];
+  return (
+    <section className={`pe-section ${styles.surface}`}>
+      <div className="container">
+        <div className="pe-section__head">
+          <div className="pe-eyebrow">People</div>
+          <h2 className="pe-section__title">Maintainer &amp; Contributors</h2>
+          <p className="pe-section__sub">Built and maintained in the open by the security community.</p>
+        </div>
+        <div className="pe-maint">
+          <div className="pe-maint__card">
+            <img className="pe-maint__avatar" src={MAINTAINER.avatar} alt={MAINTAINER.name} loading="lazy" width={88} height={88} />
+            <p className="pe-maint__name">{MAINTAINER.name}</p>
+            <p className="pe-maint__role">Project Maintainer · @{MAINTAINER.handle}</p>
+            <div className="pe-maint__links">
+              <a className="pe-maint__link" href={MAINTAINER.github} target="_blank" rel="noopener noreferrer"><Github size={16} /> GitHub</a>
+              <a className="pe-maint__link" href={MAINTAINER.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={16} /> LinkedIn</a>
+              <a className="pe-maint__link" href={MAINTAINER.website} target="_blank" rel="noopener noreferrer"><Globe size={16} /> Website</a>
+            </div>
+          </div>
+          <div className="pe-contrib">
+            <h3 className="pe-card__title" style={{marginBottom: '0.25rem'}}>Contributors</h3>
+            <p className="pe-card__desc" style={{marginBottom: '0.4rem'}}>
+              {contributors.length > 0
+                ? `${contributors.length} people have contributed documentation, tools, and fixes.`
+                : 'This project welcomes contributions from the community.'}
+            </p>
+            {contributors.length > 0 && (
+              <div className="pe-contrib__grid">
+                {contributors.map((c) => (
+                  <a key={c.login} className="pe-contrib__person" href={c.profile} target="_blank" rel="noopener noreferrer" title={c.name}>
+                    <img className="pe-contrib__avatar" src={c.avatar} alt={c.name} loading="lazy" width={48} height={48} />
+                  </a>
+                ))}
+              </div>
+            )}
+            <div>
+              <a className="pe-btn pe-btn--ghost" href={`${REPO_URL}/graphs/contributors`} target="_blank" rel="noopener noreferrer">
+                <Github size={16} /> View all contributors
+              </a>
+            </div>
+            <p className="pe-card__desc" style={{marginTop: '1rem', display: 'flex', alignItems: 'center', gap: '0.35rem'}}>
+              <Heart size={14} /> Want to help? See the <Link to="/contributing">contributing guide</Link>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home(): React.JSX.Element {
   return (
     <Layout
@@ -143,6 +206,7 @@ export default function Home(): React.JSX.Element {
         <Categories />
         <Features />
         <Paths />
+        <Maintainers />
       </main>
     </Layout>
   );

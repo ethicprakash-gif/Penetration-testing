@@ -1,10 +1,23 @@
 import React, {useMemo, useState} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import {FileText, Search} from 'lucide-react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import {FileText, Search, ExternalLink} from 'lucide-react';
 import manifest from '@site/src/data/manifest.json';
 
-type Pdf = {title: string; category: string; href: string; page: string; description: string};
+type Pdf = {title: string; category: string; categorySlug: string; href: string; page: string; description: string};
+
+function PdfCard({p}: {p: Pdf}): React.JSX.Element {
+  const url = useBaseUrl(p.href);
+  return (
+    <a className="pe-card" href={url} target="_blank" rel="noopener noreferrer">
+      <div className="pe-card__icon"><FileText size={22} /></div>
+      <h3 className="pe-card__title" style={{fontSize: '0.98rem'}}>{p.title}</h3>
+      <p className="pe-card__desc">Open reference PDF</p>
+      <div className="pe-card__meta"><span>Open <ExternalLink size={12} style={{verticalAlign: '-1px'}} /></span></div>
+    </a>
+  );
+}
 
 export default function References(): React.JSX.Element {
   const pdfs = manifest.pdfs as Pdf[];
@@ -44,16 +57,13 @@ export default function References(): React.JSX.Element {
 
         {grouped.map(([category, items]) => (
           <section key={category} style={{marginBottom: '2.5rem'}}>
-            <h2 style={{fontSize: '1.25rem', borderBottom: '1px solid var(--pe-border)', paddingBottom: '0.4rem'}}>
-              {category} <span style={{color: 'var(--pe-muted)', fontWeight: 400, fontSize: '0.9rem'}}>({items.length})</span>
+            <h2 style={{fontSize: '1.25rem', borderBottom: '1px solid var(--pe-border)', paddingBottom: '0.4rem', display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem'}}>
+              <span>{category} <span style={{color: 'var(--pe-muted)', fontWeight: 400, fontSize: '0.9rem'}}>({items.length})</span></span>
+              <Link to={items[0].page} style={{fontSize: '0.85rem', fontWeight: 500}}>View in section →</Link>
             </h2>
             <div className="pe-grid pe-grid--3">
               {items.map((p) => (
-                <Link key={p.page} className="pe-card" to={p.page}>
-                  <div className="pe-card__icon"><FileText size={22} /></div>
-                  <h3 className="pe-card__title" style={{fontSize: '0.98rem'}}>{p.title}</h3>
-                  <p className="pe-card__desc">Reference PDF</p>
-                </Link>
+                <PdfCard key={p.href} p={p} />
               ))}
             </div>
           </section>
