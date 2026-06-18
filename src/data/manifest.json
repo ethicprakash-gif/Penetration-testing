@@ -1,0 +1,924 @@
+{
+  "stats": {
+    "docs": 93,
+    "pdfs": 104,
+    "categories": 23,
+    "topics": 197
+  },
+  "categories": [
+    {
+      "key": "Web Application Pentesting",
+      "label": "Web Application Pentesting",
+      "slug": "/web-application-pentesting",
+      "docs": 48,
+      "pdfs": 43,
+      "platform": "Web"
+    },
+    {
+      "key": "API Pentesting",
+      "label": "API Pentesting",
+      "slug": "/api-pentesting",
+      "docs": 3,
+      "pdfs": 14,
+      "platform": "API"
+    },
+    {
+      "key": "Network Pentesting",
+      "label": "Network Pentesting",
+      "slug": "/network-pentesting",
+      "docs": 1,
+      "pdfs": 9,
+      "platform": "Network"
+    },
+    {
+      "key": "Active Directory Pentesting",
+      "label": "Active Directory Pentesting",
+      "slug": "/active-directory-pentesting",
+      "docs": 2,
+      "pdfs": 6,
+      "platform": "Windows / AD"
+    },
+    {
+      "key": "Cloud Pentesting",
+      "label": "AWS",
+      "slug": "/cloud-pentesting",
+      "docs": 3,
+      "pdfs": 6,
+      "platform": "Cloud"
+    },
+    {
+      "key": "Container & Kubernetes  Assessment",
+      "label": "Container & Kubernetes Assessment",
+      "slug": "/container-and-kubernetes-assessment",
+      "docs": 1,
+      "pdfs": 1,
+      "platform": "Kubernetes"
+    },
+    {
+      "key": "Mobile Pentesting",
+      "label": "Mobile Pentesting",
+      "slug": "/mobile-pentesting",
+      "docs": 6,
+      "pdfs": 3,
+      "platform": "Mobile"
+    },
+    {
+      "key": "Thick Client Pentesting",
+      "label": "Thick Client Pentesting",
+      "slug": "/thick-client-pentesting",
+      "docs": 1,
+      "pdfs": 1,
+      "platform": "Desktop"
+    },
+    {
+      "key": "IoT Pentesting",
+      "label": "IoT Pentesting",
+      "slug": "/iot-pentesting",
+      "docs": 1,
+      "pdfs": 0,
+      "platform": "IoT"
+    },
+    {
+      "key": "Wi-Fi Pentesting",
+      "label": "Wi-Fi Pentesting",
+      "slug": "/wi-fi-pentesting",
+      "docs": 1,
+      "pdfs": 2,
+      "platform": "Wireless"
+    },
+    {
+      "key": "BlockChain Pentesting",
+      "label": "BlockChain Pentesting",
+      "slug": "/blockchain-pentesting",
+      "docs": 2,
+      "pdfs": 0,
+      "platform": "Blockchain"
+    },
+    {
+      "key": "LLM Security Assessment",
+      "label": "LLM Security Assessment",
+      "slug": "/llm-security-assessment",
+      "docs": 1,
+      "pdfs": 0,
+      "platform": "AI / LLM"
+    },
+    {
+      "key": "MCP Security Assessment",
+      "label": "MCP Security Assessment",
+      "slug": "/mcp-security-assessment",
+      "docs": 1,
+      "pdfs": 0,
+      "platform": "AI / LLM"
+    },
+    {
+      "key": "OSINT",
+      "label": "OSINT",
+      "slug": "/osint",
+      "docs": 1,
+      "pdfs": 6,
+      "platform": "OSINT"
+    },
+    {
+      "key": "Phishing Assessment",
+      "label": "Phishing Assessment",
+      "slug": "/phishing-assessment",
+      "docs": 1,
+      "pdfs": 0,
+      "platform": "Social Eng."
+    },
+    {
+      "key": "Secure Code Review",
+      "label": "Secure Code Review",
+      "slug": "/secure-code-review",
+      "docs": 6,
+      "pdfs": 3,
+      "platform": "Source Code"
+    },
+    {
+      "key": "Configuration Review",
+      "label": "Configuration Review",
+      "slug": "/configuration-review",
+      "docs": 2,
+      "pdfs": 0,
+      "platform": "Config"
+    },
+    {
+      "key": "DevSecOps",
+      "label": "DevSecOps",
+      "slug": "/devsecops",
+      "docs": 2,
+      "pdfs": 3,
+      "platform": "DevSecOps"
+    },
+    {
+      "key": "CI-CD Pentesting",
+      "label": "CI-CD Pentesting",
+      "slug": "/ci-cd-pentesting",
+      "docs": 1,
+      "pdfs": 1,
+      "platform": "CI/CD"
+    },
+    {
+      "key": "Threat Modeling",
+      "label": "Threat Modeling",
+      "slug": "/threat-modeling",
+      "docs": 1,
+      "pdfs": 1,
+      "platform": "Design"
+    },
+    {
+      "key": "Firewall Penetration",
+      "label": "Firewall Penetration",
+      "slug": "/firewall-penetration",
+      "docs": 1,
+      "pdfs": 1,
+      "platform": "Network"
+    },
+    {
+      "key": "Infrastucture Security",
+      "label": "Infrastructure Security",
+      "slug": "/infrastucture-security",
+      "docs": 1,
+      "pdfs": 3,
+      "platform": "Infrastructure"
+    },
+    {
+      "key": "Forensic",
+      "label": "Forensic",
+      "slug": "/forensic",
+      "docs": 3,
+      "pdfs": 1,
+      "platform": "Forensics"
+    }
+  ],
+  "pdfs": [
+    {
+      "title": "2023 API Security",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/2023%20API%20Security.pdf",
+      "page": "/api-pentesting/rest-api/ref-2023-api-security",
+      "description": "Reference PDF: 2023 API Security (Rest API)."
+    },
+    {
+      "title": "2023 Book For Web Pentesting",
+      "category": "Advanced Techniques",
+      "href": "/pdfs/web-application-pentesting/advance-hacking/2023%20Book%20For%20Web%20Pentesting.pdf",
+      "page": "/web-application-pentesting/advance-hacking/ref-2023-book-for-web-pentesting",
+      "description": "Reference PDF: 2023 Book For Web Pentesting (Advanced Techniques)."
+    },
+    {
+      "title": "About No Rate limit vulnerability",
+      "category": "Rate Limiting",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/rate-limiting/About%20No%20Rate%20limit%20vulnerability.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/rate-limiting/ref-about-no-rate-limit-vulnerability",
+      "description": "Reference PDF: About No Rate limit vulnerability (Rate Limiting)."
+    },
+    {
+      "title": "About SQL injection",
+      "category": "SQL Injection",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/About%20SQL%20injection.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/sql-injection/ref-about-sql-injection",
+      "description": "Reference PDF: About SQL injection (SQL Injection)."
+    },
+    {
+      "title": "About WordPress Vulnerabilities",
+      "category": "WordPress",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/About%20WordPress%20Vulnerabilities.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/wordpress/ref-about-wordpress-vulnerabilities",
+      "description": "Reference PDF: About WordPress Vulnerabilities (WordPress)."
+    },
+    {
+      "title": "About XSS",
+      "category": "XSS",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/xss/About%20XSS.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/xss/ref-about-xss",
+      "description": "Reference PDF: About XSS (XSS)."
+    },
+    {
+      "title": "Active Directory Attacks",
+      "category": "Active Directory Pentesting",
+      "href": "/pdfs/active-directory-pentesting/Active%20Directory%20Attacks.pdf",
+      "page": "/active-directory-pentesting/ref-active-directory-attacks",
+      "description": "Reference PDF: Active Directory Attacks (Active Directory Pentesting)."
+    },
+    {
+      "title": "Active Directory Check List",
+      "category": "AD with Windows",
+      "href": "/pdfs/active-directory-pentesting/ad-with-linux/ad-with-windows/Active%20Directory%20Check%20List.pdf",
+      "page": "/active-directory-pentesting/ad-with-linux/ad-with-windows/ref-active-directory-check-list",
+      "description": "Reference PDF: Active Directory Check List (AD with Windows)."
+    },
+    {
+      "title": "Active Directory Penetration Testing Topic",
+      "category": "Active Directory Pentesting",
+      "href": "/pdfs/active-directory-pentesting/Active%20Directory%20Penetration%20Testing%20Topic.pdf",
+      "page": "/active-directory-pentesting/ref-active-directory-penetration-testing-topic",
+      "description": "Reference PDF: Active Directory Penetration Testing Topic (Active Directory Pentesting)."
+    },
+    {
+      "title": "API",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/API%20.pdf",
+      "page": "/api-pentesting/rest-api/ref-api",
+      "description": "Reference PDF: API (Rest API)."
+    },
+    {
+      "title": "api 2019",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/api%202019.pdf",
+      "page": "/api-pentesting/rest-api/ref-api-2019",
+      "description": "Reference PDF: api 2019 (Rest API)."
+    },
+    {
+      "title": "API PT with Basics concepts",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/API%20PT%20with%20Basics%20concepts.pdf",
+      "page": "/api-pentesting/rest-api/ref-api-pt-with-basics-concepts",
+      "description": "Reference PDF: API PT with Basics concepts (Rest API)."
+    },
+    {
+      "title": "API Security Checklist",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/API%20Security%20Checklist%20.pdf",
+      "page": "/api-pentesting/rest-api/ref-api-security-checklist",
+      "description": "Reference PDF: API Security Checklist (Rest API)."
+    },
+    {
+      "title": "API Security Testing",
+      "category": "API Pentesting",
+      "href": "/pdfs/api-pentesting/API%20Security%20Testing.pdf",
+      "page": "/api-pentesting/ref-api-security-testing",
+      "description": "Reference PDF: API Security Testing (API Pentesting)."
+    },
+    {
+      "title": "API SECURITY TESTING",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/API%20SECURITY%20TESTING%20.pdf",
+      "page": "/api-pentesting/rest-api/ref-api-security-testing",
+      "description": "Reference PDF: API SECURITY TESTING (Rest API)."
+    },
+    {
+      "title": "API Terminology Master",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/API%20Terminology%20Master.pdf",
+      "page": "/api-pentesting/rest-api/ref-api-terminology-master",
+      "description": "Reference PDF: API Terminology Master (Rest API)."
+    },
+    {
+      "title": "API Testing",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/API%20Testing%20.pdf",
+      "page": "/api-pentesting/rest-api/ref-api-testing",
+      "description": "Reference PDF: API Testing (Rest API)."
+    },
+    {
+      "title": "API_Penetration_Examples",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/API_Penetration_Examples.pdf",
+      "page": "/api-pentesting/rest-api/ref-api-penetration-examples",
+      "description": "Reference PDF: API_Penetration_Examples (Rest API)."
+    },
+    {
+      "title": "Attacking Active Directory With LInux",
+      "category": "AD with Linux",
+      "href": "/pdfs/active-directory-pentesting/ad-with-linux/Attacking%20Active%20Directory%20With%20LInux.pdf",
+      "page": "/active-directory-pentesting/ad-with-linux/ref-attacking-active-directory-with-linux",
+      "description": "Reference PDF: Attacking Active Directory With LInux (AD with Linux)."
+    },
+    {
+      "title": "AWESOME OSINT",
+      "category": "OSINT",
+      "href": "/pdfs/osint/AWESOME%20OSINT.pdf",
+      "page": "/osint/ref-awesome-osint",
+      "description": "Reference PDF: AWESOME OSINT (OSINT)."
+    },
+    {
+      "title": "Awesome OSINT(Open-Source Intelligence)",
+      "category": "OSINT",
+      "href": "/pdfs/osint/Awesome%20OSINT(Open-Source%20Intelligence).pdf",
+      "page": "/osint/ref-awesome-osint-open-source-intelligence",
+      "description": "Reference PDF: Awesome OSINT(Open-Source Intelligence) (OSINT)."
+    },
+    {
+      "title": "AWS Cloud Security Checklist",
+      "category": "AWS",
+      "href": "/pdfs/cloud-pentesting/aws/AWS%20Cloud%20Security%20Checklist.pdf",
+      "page": "/cloud-pentesting/aws/ref-aws-cloud-security-checklist",
+      "description": "Reference PDF: AWS Cloud Security Checklist (AWS)."
+    },
+    {
+      "title": "AWS Pentesting",
+      "category": "AWS",
+      "href": "/pdfs/cloud-pentesting/aws/AWS%20Pentesting.pdf",
+      "page": "/cloud-pentesting/aws/ref-aws-pentesting",
+      "description": "Reference PDF: AWS Pentesting (AWS)."
+    },
+    {
+      "title": "AWS Security Incident Response Guide.pdf",
+      "category": "AWS",
+      "href": "/pdfs/cloud-pentesting/aws/AWS%20Security%20Incident%20Response%20Guide.pdf.pdf",
+      "page": "/cloud-pentesting/aws/ref-aws-security-incident-response-guide-pdf",
+      "description": "Reference PDF: AWS Security Incident Response Guide.pdf (AWS)."
+    },
+    {
+      "title": "Business Logic Bugs",
+      "category": "Business Logic Flaw",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/business-logic-flaw/Business%20Logic%20Bugs.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/business-logic-flaw/ref-business-logic-bugs",
+      "description": "Reference PDF: Business Logic Bugs (Business Logic Flaw)."
+    },
+    {
+      "title": "Business Logic bugs-1",
+      "category": "Business Logic Flaw",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/business-logic-flaw/Business%20Logic%20bugs-1.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/business-logic-flaw/ref-business-logic-bugs-1",
+      "description": "Reference PDF: Business Logic bugs-1 (Business Logic Flaw)."
+    },
+    {
+      "title": "Checklist for Testing of Web Application",
+      "category": "Checklist & Exploitation",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/Checklist%20for%20Testing%20of%20%20Web%20Application.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/ref-checklist-for-testing-of-web-application",
+      "description": "Reference PDF: Checklist for Testing of Web Application (Checklist & Exploitation)."
+    },
+    {
+      "title": "CI_CD OWASP TOP 10",
+      "category": "CI-CD Pentesting",
+      "href": "/pdfs/ci-cd-pentesting/CI_CD%20OWASP%20TOP%2010%20.pdf",
+      "page": "/ci-cd-pentesting/ref-ci-cd-owasp-top-10",
+      "description": "Reference PDF: CI_CD OWASP TOP 10 (CI-CD Pentesting)."
+    },
+    {
+      "title": "Cloud - Azure Pentestesting Guide",
+      "category": "Azure",
+      "href": "/pdfs/cloud-pentesting/azure/Cloud%20-%20Azure%20Pentestesting%20Guide.pdf",
+      "page": "/cloud-pentesting/azure/ref-cloud-azure-pentestesting-guide",
+      "description": "Reference PDF: Cloud - Azure Pentestesting Guide (Azure)."
+    },
+    {
+      "title": "Cloud Pentesting cheatsheet",
+      "category": "Azure",
+      "href": "/pdfs/cloud-pentesting/azure/Cloud%20Pentesting%20cheatsheet.pdf",
+      "page": "/cloud-pentesting/azure/ref-cloud-pentesting-cheatsheet",
+      "description": "Reference PDF: Cloud Pentesting cheatsheet (Azure)."
+    },
+    {
+      "title": "Computer networking",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/Computer%20networking-2.pdf",
+      "page": "/network-pentesting/basics-learn/ref-computer-networking-2",
+      "description": "Reference PDF: Computer networking (Fundamentals)."
+    },
+    {
+      "title": "Computer Networking",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/Computer%20Networking.pdf",
+      "page": "/network-pentesting/basics-learn/ref-computer-networking",
+      "description": "Reference PDF: Computer Networking (Fundamentals)."
+    },
+    {
+      "title": "Computer Networking Basics Concept",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/Computer%20Networking%20Basics%20Concept.pdf",
+      "page": "/network-pentesting/basics-learn/ref-computer-networking-basics-concept",
+      "description": "Reference PDF: Computer Networking Basics Concept (Fundamentals)."
+    },
+    {
+      "title": "Container Security Checklist",
+      "category": "Container & Kubernetes Assessment",
+      "href": "/pdfs/container-and-kubernetes-assessment/Container%20Security%20Checklist.pdf",
+      "page": "/container-and-kubernetes-assessment/ref-container-security-checklist",
+      "description": "Reference PDF: Container Security Checklist (Container & Kubernetes Assessment)."
+    },
+    {
+      "title": "Cookies",
+      "category": "Cookies Relates Vulnerabilities",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/Cookies.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/ref-cookies",
+      "description": "Reference PDF: Cookies (Cookies Relates Vulnerabilities)."
+    },
+    {
+      "title": "cookies concept",
+      "category": "Cookies Relates Vulnerabilities",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/cookies%20concept.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/ref-cookies-concept",
+      "description": "Reference PDF: cookies concept (Cookies Relates Vulnerabilities)."
+    },
+    {
+      "title": "CROSS-ORIGIN RESOURCE SHARING (CORS)",
+      "category": "CORS",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/cors/CROSS-ORIGIN%20RESOURCE%20SHARING%20(CORS).pdf",
+      "page": "/web-application-pentesting/vulnerabilities/cors/ref-cross-origin-resource-sharing-cors",
+      "description": "Reference PDF: CROSS-ORIGIN RESOURCE SHARING (CORS) (CORS)."
+    },
+    {
+      "title": "Detailed Guide on Open Redirect",
+      "category": "Open Redirect",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/open-redirect/Detailed%20Guide%20on%20Open%20Redirect.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/open-redirect/ref-detailed-guide-on-open-redirect",
+      "description": "Reference PDF: Detailed Guide on Open Redirect (Open Redirect)."
+    },
+    {
+      "title": "Detailed Guide on Unrestricted File Upload",
+      "category": "Unrestricted File Upload",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/unrestricted-file-upload/Detailed%20Guide%20on%20Unrestricted%20File%20Upload.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/unrestricted-file-upload/ref-detailed-guide-on-unrestricted-file-upload",
+      "description": "Reference PDF: Detailed Guide on Unrestricted File Upload (Unrestricted File Upload)."
+    },
+    {
+      "title": "Detailed Guide on XXE Injection",
+      "category": "XML External Entity (XXE)",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/Detailed%20Guide%20on%20XXE%20Injection.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/ref-detailed-guide-on-xxe-injection",
+      "description": "Reference PDF: Detailed Guide on XXE Injection (XML External Entity (XXE))."
+    },
+    {
+      "title": "DevSecOps",
+      "category": "DevSecOps",
+      "href": "/pdfs/devsecops/DevSecOps.pdf",
+      "page": "/devsecops/ref-devsecops",
+      "description": "Reference PDF: DevSecOps (DevSecOps)."
+    },
+    {
+      "title": "eLearnSecurity Mobile Application Penetration Testing",
+      "category": "Fundamentals",
+      "href": "/pdfs/mobile-pentesting/android-pentesting/learn-basics/eLearnSecurity%20Mobile%20Application%20Penetration%20Testing.pdf",
+      "page": "/mobile-pentesting/android-pentesting/learn-basics/ref-elearnsecurity-mobile-application-penetration-testing",
+      "description": "Reference PDF: eLearnSecurity Mobile Application Penetration Testing (Fundamentals)."
+    },
+    {
+      "title": "End to End API Security",
+      "category": "API Pentesting",
+      "href": "/pdfs/api-pentesting/End%20to%20End%20API%20Security.pdf",
+      "page": "/api-pentesting/ref-end-to-end-api-security",
+      "description": "Reference PDF: End to End API Security (API Pentesting)."
+    },
+    {
+      "title": "External Network Penetration Testing",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/External%20Network%20Penetration%20Testing.pdf",
+      "page": "/network-pentesting/basics-learn/ref-external-network-penetration-testing",
+      "description": "Reference PDF: External Network Penetration Testing (Fundamentals)."
+    },
+    {
+      "title": "File Inclusion Vulnerabilities",
+      "category": "File Inclusion",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/file-inclusion/File%20Inclusion%20Vulnerabilities.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/file-inclusion/ref-file-inclusion-vulnerabilities",
+      "description": "Reference PDF: File Inclusion Vulnerabilities (File Inclusion)."
+    },
+    {
+      "title": "Getting_Started_in_Pentesting_Azure_1622190241",
+      "category": "Azure",
+      "href": "/pdfs/cloud-pentesting/azure/Getting_Started_in_Pentesting_Azure_1622190241.pdf",
+      "page": "/cloud-pentesting/azure/ref-getting-started-in-pentesting-azure-1622190241",
+      "description": "Reference PDF: Getting_Started_in_Pentesting_Azure_1622190241 (Azure)."
+    },
+    {
+      "title": "Guide on metasploitable-2 by hackingarticles.in",
+      "category": "Other",
+      "href": "/pdfs/infrastucture-security/other/Guide%20on%20metasploitable-2%20by%20hackingarticles.in.pdf",
+      "page": "/infrastucture-security/other/ref-guide-on-metasploitable-2-by-hackingarticles-in",
+      "description": "Reference PDF: Guide on metasploitable-2 by hackingarticles.in (Other)."
+    },
+    {
+      "title": "HTML_INJECTION",
+      "category": "HTML Injection",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/html-injection/HTML_INJECTION.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/html-injection/ref-html-injection",
+      "description": "Reference PDF: HTML_INJECTION (HTML Injection)."
+    },
+    {
+      "title": "Image OSINT.pdf",
+      "category": "OSINT",
+      "href": "/pdfs/osint/Image%20OSINT.pdf.pdf",
+      "page": "/osint/ref-image-osint-pdf",
+      "description": "Reference PDF: Image OSINT.pdf (OSINT)."
+    },
+    {
+      "title": "Infrastucture PT",
+      "category": "Infrastructure Security",
+      "href": "/pdfs/infrastucture-security/Infrastucture%20PT.pdf",
+      "page": "/infrastucture-security/ref-infrastucture-pt",
+      "description": "Reference PDF: Infrastucture PT (Infrastructure Security)."
+    },
+    {
+      "title": "Insecure Direct Object References (IDOR)",
+      "category": "IDOR",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/idor/Insecure%20Direct%20Object%20References%20(IDOR).pdf",
+      "page": "/web-application-pentesting/vulnerabilities/idor/ref-insecure-direct-object-references-idor",
+      "description": "Reference PDF: Insecure Direct Object References (IDOR) (IDOR)."
+    },
+    {
+      "title": "Linux & Shell Scripting for DevOps by DevOps Shack",
+      "category": "DevSecOps",
+      "href": "/pdfs/devsecops/Linux%20%26%20Shell%20Scripting%20for%20DevOps%20by%20DevOps%20Shack.pdf",
+      "page": "/devsecops/ref-linux-and-shell-scripting-for-devops-by-devops-shack",
+      "description": "Reference PDF: Linux & Shell Scripting for DevOps by DevOps Shack (DevSecOps)."
+    },
+    {
+      "title": "Linux_For_Networking_Professional__1692037154",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/Linux_For_Networking_Professional__1692037154.pdf",
+      "page": "/network-pentesting/basics-learn/ref-linux-for-networking-professional-1692037154",
+      "description": "Reference PDF: Linux_For_Networking_Professional__1692037154 (Fundamentals)."
+    },
+    {
+      "title": "Master Nmap in 60 Days – One Command at a Time",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/Master%20Nmap%20in%2060%20Days%20%E2%80%93%20One%20Command%20at%20a%20Time.pdf",
+      "page": "/network-pentesting/basics-learn/ref-master-nmap-in-60-days-one-command-at-a-time",
+      "description": "Reference PDF: Master Nmap in 60 Days – One Command at a Time (Fundamentals)."
+    },
+    {
+      "title": "Mobile & iOS pentesting guid by Yasin AĞIRBAŞ",
+      "category": "Mobile Pentesting",
+      "href": "/pdfs/mobile-pentesting/Mobile%20%20%26%20iOS%20pentesting%20guid%20by%20Yasin%20A%C4%9EIRBA%C5%9E.pdf",
+      "page": "/mobile-pentesting/ref-mobile-and-ios-pentesting-guid-by-yasin-ag-irbas",
+      "description": "Reference PDF: Mobile & iOS pentesting guid by Yasin AĞIRBAŞ (Mobile Pentesting)."
+    },
+    {
+      "title": "Mobile Testing Gudie",
+      "category": "Fundamentals",
+      "href": "/pdfs/mobile-pentesting/android-pentesting/learn-basics/Mobile%20Testing%20Gudie.pdf",
+      "page": "/mobile-pentesting/android-pentesting/learn-basics/ref-mobile-testing-gudie",
+      "description": "Reference PDF: Mobile Testing Gudie (Fundamentals)."
+    },
+    {
+      "title": "Network PT with Wireshark",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/Network%20PT%20with%20Wireshark.pdf",
+      "page": "/network-pentesting/basics-learn/ref-network-pt-with-wireshark",
+      "description": "Reference PDF: Network PT with Wireshark (Fundamentals)."
+    },
+    {
+      "title": "Network Security Check List",
+      "category": "Network Pentesting",
+      "href": "/pdfs/network-pentesting/Network%20Security%20Check%20%20List.pdf",
+      "page": "/network-pentesting/ref-network-security-check-list",
+      "description": "Reference PDF: Network Security Check List (Network Pentesting)."
+    },
+    {
+      "title": "Nmap Firewall Scan",
+      "category": "Firewall Penetration",
+      "href": "/pdfs/firewall-penetration/Nmap%20Firewall%20Scan.pdf",
+      "page": "/firewall-penetration/ref-nmap-firewall-scan",
+      "description": "Reference PDF: Nmap Firewall Scan (Firewall Penetration)."
+    },
+    {
+      "title": "Nmap for Red Teamers",
+      "category": "Other",
+      "href": "/pdfs/infrastucture-security/other/Nmap%20for%20Red%20Teamers.pdf",
+      "page": "/infrastucture-security/other/ref-nmap-for-red-teamers",
+      "description": "Reference PDF: Nmap for Red Teamers (Other)."
+    },
+    {
+      "title": "Ntwork-Penetration Course",
+      "category": "Fundamentals",
+      "href": "/pdfs/network-pentesting/basics-learn/Ntwork-Penetration%20Course.pdf",
+      "page": "/network-pentesting/basics-learn/ref-ntwork-penetration-course",
+      "description": "Reference PDF: Ntwork-Penetration Course (Fundamentals)."
+    },
+    {
+      "title": "Offensive Enumeration AD",
+      "category": "Active Directory Pentesting",
+      "href": "/pdfs/active-directory-pentesting/Offensive%20Enumeration%20AD.pdf",
+      "page": "/active-directory-pentesting/ref-offensive-enumeration-ad",
+      "description": "Reference PDF: Offensive Enumeration AD (Active Directory Pentesting)."
+    },
+    {
+      "title": "Osint",
+      "category": "OSINT",
+      "href": "/pdfs/osint/Osint.pdf",
+      "page": "/osint/ref-osint",
+      "description": "Reference PDF: Osint (OSINT)."
+    },
+    {
+      "title": "OWASP Top 10 API Security Risks",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/OWASP%20Top%2010%20API%20Security%20Risks.pdf",
+      "page": "/api-pentesting/rest-api/ref-owasp-top-10-api-security-risks",
+      "description": "Reference PDF: OWASP Top 10 API Security Risks (Rest API)."
+    },
+    {
+      "title": "OWASP top 10 API security risks-1",
+      "category": "Rest API",
+      "href": "/pdfs/api-pentesting/rest-api/OWASP%20top%2010%20API%20security%20risks-1.pdf",
+      "page": "/api-pentesting/rest-api/ref-owasp-top-10-api-security-risks-1",
+      "description": "Reference PDF: OWASP top 10 API security risks-1 (Rest API)."
+    },
+    {
+      "title": "Quick Revision of MySQL",
+      "category": "SQL Injection",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/Quick%20Revision%20of%20MySQL.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/sql-injection/ref-quick-revision-of-mysql",
+      "description": "Reference PDF: Quick Revision of MySQL (SQL Injection)."
+    },
+    {
+      "title": "Recon Like A Boss",
+      "category": "OSINT",
+      "href": "/pdfs/osint/Recon%20Like%20A%20Boss.pdf",
+      "page": "/osint/ref-recon-like-a-boss",
+      "description": "Reference PDF: Recon Like A Boss (OSINT)."
+    },
+    {
+      "title": "Reverse Shell",
+      "category": "Reverse Shell",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/reverse-shell/Reverse%20Shell.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/reverse-shell/ref-reverse-shell",
+      "description": "Reference PDF: Reverse Shell (Reverse Shell)."
+    },
+    {
+      "title": "Secure Coding Practices",
+      "category": "Secure Code Review",
+      "href": "/pdfs/secure-code-review/Secure%20Coding%20Practices.pdf",
+      "page": "/secure-code-review/ref-secure-coding-practices",
+      "description": "Reference PDF: Secure Coding Practices (Secure Code Review)."
+    },
+    {
+      "title": "Session_Task_7",
+      "category": "WordPress",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/Session_Task_7.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/wordpress/ref-session-task-7",
+      "description": "Reference PDF: Session_Task_7 (WordPress)."
+    },
+    {
+      "title": "Social Media OSINT",
+      "category": "OSINT",
+      "href": "/pdfs/osint/Social%20Media%20OSINT.pdf",
+      "page": "/osint/ref-social-media-osint",
+      "description": "Reference PDF: Social Media OSINT (OSINT)."
+    },
+    {
+      "title": "Source Code Review Guide from Cobalt",
+      "category": "Secure Code Review",
+      "href": "/pdfs/secure-code-review/Source%20Code%20Review%20Guide%20from%20Cobalt.pdf",
+      "page": "/secure-code-review/ref-source-code-review-guide-from-cobalt",
+      "description": "Reference PDF: Source Code Review Guide from Cobalt (Secure Code Review)."
+    },
+    {
+      "title": "SQL Injection",
+      "category": "SQL Injection",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/SQL%20Injection.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/sql-injection/ref-sql-injection",
+      "description": "Reference PDF: SQL Injection (SQL Injection)."
+    },
+    {
+      "title": "SQL_INJECTION",
+      "category": "SQL Injection",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/SQL_INJECTION.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/sql-injection/ref-sql-injection-2",
+      "description": "Reference PDF: SQL_INJECTION (SQL Injection)."
+    },
+    {
+      "title": "SSRF",
+      "category": "SSRF",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/ssrf/SSRF.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/ssrf/ref-ssrf",
+      "description": "Reference PDF: SSRF (SSRF)."
+    },
+    {
+      "title": "SSRF by Nikitha Yasala",
+      "category": "SSRF",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/ssrf/SSRF%20by%20Nikitha%20Yasala.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/ssrf/ref-ssrf-by-nikitha-yasala",
+      "description": "Reference PDF: SSRF by Nikitha Yasala (SSRF)."
+    },
+    {
+      "title": "subdomain takeover",
+      "category": "SubdomainTakeOver",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/subdomaintakeover/subdomain%20takeover.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/subdomaintakeover/ref-subdomain-takeover",
+      "description": "Reference PDF: subdomain takeover (SubdomainTakeOver)."
+    },
+    {
+      "title": "Subdomain Takeover-1",
+      "category": "SubdomainTakeOver",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/subdomaintakeover/Subdomain%20Takeover-1.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/subdomaintakeover/ref-subdomain-takeover-1",
+      "description": "Reference PDF: Subdomain Takeover-1 (SubdomainTakeOver)."
+    },
+    {
+      "title": "subdomain_takeover",
+      "category": "SubdomainTakeOver",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/subdomaintakeover/subdomain_takeover.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/subdomaintakeover/ref-subdomain-takeover-2",
+      "description": "Reference PDF: subdomain_takeover (SubdomainTakeOver)."
+    },
+    {
+      "title": "Test Cases As per Funtionalities",
+      "category": "Checklist & Methodology",
+      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/Test%20Cases%20As%20per%20Funtionalities.pdf",
+      "page": "/web-application-pentesting/checklist-and-methodology/ref-test-cases-as-per-funtionalities",
+      "description": "Reference PDF: Test Cases As per Funtionalities (Checklist & Methodology)."
+    },
+    {
+      "title": "The Devsecops Security Checklist",
+      "category": "DevSecOps",
+      "href": "/pdfs/devsecops/The%20Devsecops%20Security%20Checklist.pdf",
+      "page": "/devsecops/ref-the-devsecops-security-checklist",
+      "description": "Reference PDF: The Devsecops Security Checklist (DevSecOps)."
+    },
+    {
+      "title": "Thick Client Pentesting Checklist",
+      "category": "Thick Client Pentesting",
+      "href": "/pdfs/thick-client-pentesting/Thick%20Client%20Pentesting%20Checklist.pdf",
+      "page": "/thick-client-pentesting/ref-thick-client-pentesting-checklist",
+      "description": "Reference PDF: Thick Client Pentesting Checklist (Thick Client Pentesting)."
+    },
+    {
+      "title": "Threat Model",
+      "category": "Threat Modeling",
+      "href": "/pdfs/threat-modeling/Threat%20Model.pdf",
+      "page": "/threat-modeling/ref-threat-model",
+      "description": "Reference PDF: Threat Model (Threat Modeling)."
+    },
+    {
+      "title": "TOP 100 Vulnerabilities Step-by-Step Guide Handbook",
+      "category": "Checklist & Methodology",
+      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/TOP%20100%20Vulnerabilities%20Step-by-Step%20Guide%20Handbook.pdf",
+      "page": "/web-application-pentesting/checklist-and-methodology/ref-top-100-vulnerabilities-step-by-step-guide-handbook",
+      "description": "Reference PDF: TOP 100 Vulnerabilities Step-by-Step Guide Handbook (Checklist & Methodology)."
+    },
+    {
+      "title": "Top API Breaches",
+      "category": "API Pentesting",
+      "href": "/pdfs/api-pentesting/Top%20API%20Breaches.pdf",
+      "page": "/api-pentesting/ref-top-api-breaches",
+      "description": "Reference PDF: Top API Breaches (API Pentesting)."
+    },
+    {
+      "title": "Type of cookies",
+      "category": "Cookies Relates Vulnerabilities",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/Type%20of%20cookies.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/ref-type-of-cookies",
+      "description": "Reference PDF: Type of cookies (Cookies Relates Vulnerabilities)."
+    },
+    {
+      "title": "Web Application Advanced Hacking",
+      "category": "Advanced Techniques",
+      "href": "/pdfs/web-application-pentesting/advance-hacking/Web%20Application%20Advanced%20Hacking.pdf",
+      "page": "/web-application-pentesting/advance-hacking/ref-web-application-advanced-hacking",
+      "description": "Reference PDF: Web Application Advanced Hacking (Advanced Techniques)."
+    },
+    {
+      "title": "Web Application Exploit Check List",
+      "category": "Checklist & Exploitation",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/Web%20Application%20Exploit%20Check%20List%20.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/ref-web-application-exploit-check-list",
+      "description": "Reference PDF: Web Application Exploit Check List (Checklist & Exploitation)."
+    },
+    {
+      "title": "web application penetration testing",
+      "category": "Advanced Techniques",
+      "href": "/pdfs/web-application-pentesting/advance-hacking/web%20application%20penetration%20testing.pdf",
+      "page": "/web-application-pentesting/advance-hacking/ref-web-application-penetration-testing",
+      "description": "Reference PDF: web application penetration testing (Advanced Techniques)."
+    },
+    {
+      "title": "web application penetration testing",
+      "category": "Checklist & Exploitation",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/web%20application%20penetration%20testing.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/ref-web-application-penetration-testing",
+      "description": "Reference PDF: web application penetration testing (Checklist & Exploitation)."
+    },
+    {
+      "title": "Web Application Penetration Testing Complete Guide.",
+      "category": "Advanced Techniques",
+      "href": "/pdfs/web-application-pentesting/advance-hacking/Web%20Application%20Penetration%20Testing%20Complete%20Guide.%20.pdf",
+      "page": "/web-application-pentesting/advance-hacking/ref-web-application-penetration-testing-complete-guide",
+      "description": "Reference PDF: Web Application Penetration Testing Complete Guide. (Advanced Techniques)."
+    },
+    {
+      "title": "Web Application Penetration Testing Guide",
+      "category": "Checklist & Methodology",
+      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/Web%20Application%20Penetration%20Testing%20Guide.pdf",
+      "page": "/web-application-pentesting/checklist-and-methodology/ref-web-application-penetration-testing-guide",
+      "description": "Reference PDF: Web Application Penetration Testing Guide (Checklist & Methodology)."
+    },
+    {
+      "title": "Web Application Pentest Methodology",
+      "category": "Checklist & Methodology",
+      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/Web%20Application%20Pentest%20Methodology.pdf",
+      "page": "/web-application-pentesting/checklist-and-methodology/ref-web-application-pentest-methodology",
+      "description": "Reference PDF: Web Application Pentest Methodology (Checklist & Methodology)."
+    },
+    {
+      "title": "WebGoat- DeveloperWorkbook-Fortify Scan Results",
+      "category": "Sample-Reports",
+      "href": "/pdfs/secure-code-review/sample-reports/WebGoat-%20DeveloperWorkbook-Fortify%20Scan%20Results.pdf",
+      "page": "/secure-code-review/sample-reports/ref-webgoat-developerworkbook-fortify-scan-results",
+      "description": "Reference PDF: WebGoat- DeveloperWorkbook-Fortify Scan Results (Sample-Reports)."
+    },
+    {
+      "title": "Wifi Hacking",
+      "category": "Wi-Fi Pentesting",
+      "href": "/pdfs/wi-fi-pentesting/Wifi%20Hacking.pdf",
+      "page": "/wi-fi-pentesting/ref-wifi-hacking",
+      "description": "Reference PDF: Wifi Hacking (Wi-Fi Pentesting)."
+    },
+    {
+      "title": "Windows - Privilege Escalation",
+      "category": "Windows Privilege Escalation",
+      "href": "/pdfs/active-directory-pentesting/windows-privilege-escalation/Windows%20-%20Privilege%20Escalation.pdf",
+      "page": "/active-directory-pentesting/windows-privilege-escalation/ref-windows-privilege-escalation",
+      "description": "Reference PDF: Windows - Privilege Escalation (Windows Privilege Escalation)."
+    },
+    {
+      "title": "Windows Forensic",
+      "category": "Windows",
+      "href": "/pdfs/forensic/windows/Windows%20Forensic.pdf",
+      "page": "/forensic/windows/ref-windows-forensic",
+      "description": "Reference PDF: Windows Forensic (Windows)."
+    },
+    {
+      "title": "Wireless Pentesting",
+      "category": "Wi-Fi Pentesting",
+      "href": "/pdfs/wi-fi-pentesting/Wireless%20Pentesting.pdf",
+      "page": "/wi-fi-pentesting/ref-wireless-pentesting",
+      "description": "Reference PDF: Wireless Pentesting (Wi-Fi Pentesting)."
+    },
+    {
+      "title": "WordPress",
+      "category": "WordPress",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/WordPress.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/wordpress/ref-wordpress",
+      "description": "Reference PDF: WordPress (WordPress)."
+    },
+    {
+      "title": "WordPress-1",
+      "category": "WordPress",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/WordPress-1.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/wordpress/ref-wordpress-1",
+      "description": "Reference PDF: WordPress-1 (WordPress)."
+    },
+    {
+      "title": "XSS",
+      "category": "XSS",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/xss/XSS.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/xss/ref-xss",
+      "description": "Reference PDF: XSS (XSS)."
+    },
+    {
+      "title": "XSS Bypass",
+      "category": "XSS",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/xss/XSS%20Bypass.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/xss/ref-xss-bypass",
+      "description": "Reference PDF: XSS Bypass (XSS)."
+    },
+    {
+      "title": "XXE",
+      "category": "XML External Entity (XXE)",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/XXE.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/ref-xxe",
+      "description": "Reference PDF: XXE (XML External Entity (XXE))."
+    },
+    {
+      "title": "XXE Injection Attack",
+      "category": "XML External Entity (XXE)",
+      "href": "/pdfs/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/XXE%20Injection%20Attack.pdf",
+      "page": "/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/ref-xxe-injection-attack",
+      "description": "Reference PDF: XXE Injection Attack (XML External Entity (XXE))."
+    }
+  ]
+}

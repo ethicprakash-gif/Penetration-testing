@@ -1,0 +1,24 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1120"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="120" y1="220" x2="320" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0284c7"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="600" cy="-40" r="420" fill="#0284c7" opacity="0.10"/>
+  <g transform="translate(110,210)">
+    <path d="M60 0 0 14v30c0 26 18 45 60 56 42-11 60-30 60-56V14L60 0Z" fill="url(#accent)"/>
+    <path d="M42 45l12 13-12 13" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M62 71h17" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="270" y="288" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#f8fafc" letter-spacing="-2">PentestingEverything</text>
+  <text x="272" y="350" font-family="Inter, sans-serif" font-size="34" font-weight="500" fill="#94a3b8">A searchable knowledge base for offensive security</text>
+  <g font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#38bdf8">
+    <text x="272" y="430">Web · Cloud · Mobile · API · AD · Network · OSINT · LLM</text>
+  </g>
+</svg>
