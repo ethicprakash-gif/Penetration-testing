@@ -177,7 +177,7 @@
     {
       "key": "Infrastucture Security",
       "label": "Infrastructure Security",
-      "slug": "/infrastucture-security",
+      "slug": "/infrastructure-security",
       "docs": 1,
       "pdfs": 3,
       "platform": "Infrastructure"
@@ -246,7 +246,7 @@
       "title": "2023 API Security",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/2023%20API%20Security.pdf",
+      "href": "/pdfs/api-pentesting/2023%20API%20Security.pdf",
       "page": "/api-pentesting/references",
       "description": "2023 API Security — Rest API reference."
     },
@@ -254,7 +254,7 @@
       "title": "2023 Book For Web Pentesting",
       "category": "Advanced Techniques",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/advance-hacking/2023%20Book%20For%20Web%20Pentesting.pdf",
+      "href": "/pdfs/web-application-pentesting/2023%20Book%20For%20Web%20Pentesting.pdf",
       "page": "/web-application-pentesting/references",
       "description": "2023 Book For Web Pentesting — Advanced Techniques reference."
     },
@@ -262,7 +262,7 @@
       "title": "About No Rate limit vulnerability",
       "category": "Rate Limiting",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/rate-limiting/About%20No%20Rate%20limit%20vulnerability.pdf",
+      "href": "/pdfs/web-application-pentesting/About%20No%20Rate%20limit%20vulnerability.pdf",
       "page": "/web-application-pentesting/references",
       "description": "About No Rate limit vulnerability — Rate Limiting reference."
     },
@@ -270,7 +270,7 @@
       "title": "About SQL injection",
       "category": "SQL Injection",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/About%20SQL%20injection.pdf",
+      "href": "/pdfs/web-application-pentesting/About%20SQL%20injection.pdf",
       "page": "/web-application-pentesting/references",
       "description": "About SQL injection — SQL Injection reference."
     },
@@ -278,7 +278,7 @@
       "title": "About WordPress Vulnerabilities",
       "category": "WordPress",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/About%20WordPress%20Vulnerabilities.pdf",
+      "href": "/pdfs/web-application-pentesting/About%20WordPress%20Vulnerabilities.pdf",
       "page": "/web-application-pentesting/references",
       "description": "About WordPress Vulnerabilities — WordPress reference."
     },
@@ -286,7 +286,7 @@
       "title": "About XSS",
       "category": "XSS",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/xss/About%20XSS.pdf",
+      "href": "/pdfs/web-application-pentesting/About%20XSS.pdf",
       "page": "/web-application-pentesting/references",
       "description": "About XSS — XSS reference."
     },
@@ -302,7 +302,7 @@
       "title": "Active Directory Check List",
       "category": "AD with Windows",
       "categorySlug": "/active-directory-pentesting",
-      "href": "/pdfs/active-directory-pentesting/ad-with-linux/ad-with-windows/Active%20Directory%20Check%20List.pdf",
+      "href": "/pdfs/active-directory-pentesting/Active%20Directory%20Check%20List.pdf",
       "page": "/active-directory-pentesting/references",
       "description": "Active Directory Check List — AD with Windows reference."
     },
@@ -318,7 +318,7 @@
       "title": "API",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/API%20.pdf",
+      "href": "/pdfs/api-pentesting/API%20.pdf",
       "page": "/api-pentesting/references",
       "description": "API — Rest API reference."
     },
@@ -326,7 +326,7 @@
       "title": "api 2019",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/api%202019.pdf",
+      "href": "/pdfs/api-pentesting/api%202019.pdf",
       "page": "/api-pentesting/references",
       "description": "api 2019 — Rest API reference."
     },
@@ -334,7 +334,7 @@
       "title": "API PT with Basics concepts",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/API%20PT%20with%20Basics%20concepts.pdf",
+      "href": "/pdfs/api-pentesting/API%20PT%20with%20Basics%20concepts.pdf",
       "page": "/api-pentesting/references",
       "description": "API PT with Basics concepts — Rest API reference."
     },
@@ -342,7 +342,7 @@
       "title": "API Security Checklist",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/API%20Security%20Checklist%20.pdf",
+      "href": "/pdfs/api-pentesting/API%20Security%20Checklist%20.pdf",
       "page": "/api-pentesting/references",
       "description": "API Security Checklist — Rest API reference."
     },
@@ -358,7 +358,7 @@
       "title": "API SECURITY TESTING",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/API%20SECURITY%20TESTING%20.pdf",
+      "href": "/pdfs/api-pentesting/API%20SECURITY%20TESTING%20.pdf",
       "page": "/api-pentesting/references",
       "description": "API SECURITY TESTING — Rest API reference."
     },
@@ -366,7 +366,7 @@
       "title": "API Terminology Master",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/API%20Terminology%20Master.pdf",
+      "href": "/pdfs/api-pentesting/API%20Terminology%20Master.pdf",
       "page": "/api-pentesting/references",
       "description": "API Terminology Master — Rest API reference."
     },
@@ -374,7 +374,7 @@
       "title": "API Testing",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/API%20Testing%20.pdf",
+      "href": "/pdfs/api-pentesting/API%20Testing%20.pdf",
       "page": "/api-pentesting/references",
       "description": "API Testing — Rest API reference."
     },
@@ -382,7 +382,7 @@
       "title": "API_Penetration_Examples",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/API_Penetration_Examples.pdf",
+      "href": "/pdfs/api-pentesting/API_Penetration_Examples.pdf",
       "page": "/api-pentesting/references",
       "description": "API_Penetration_Examples — Rest API reference."
     },
@@ -390,7 +390,7 @@
       "title": "Attacking Active Directory With LInux",
       "category": "AD with Linux",
       "categorySlug": "/active-directory-pentesting",
-      "href": "/pdfs/active-directory-pentesting/ad-with-linux/Attacking%20Active%20Directory%20With%20LInux.pdf",
+      "href": "/pdfs/active-directory-pentesting/Attacking%20Active%20Directory%20With%20LInux.pdf",
       "page": "/active-directory-pentesting/references",
       "description": "Attacking Active Directory With LInux — AD with Linux reference."
     },
@@ -414,7 +414,7 @@
       "title": "AWS Cloud Security Checklist",
       "category": "AWS",
       "categorySlug": "/cloud-pentesting",
-      "href": "/pdfs/cloud-pentesting/aws/AWS%20Cloud%20Security%20Checklist.pdf",
+      "href": "/pdfs/cloud-pentesting/AWS%20Cloud%20Security%20Checklist.pdf",
       "page": "/cloud-pentesting/references",
       "description": "AWS Cloud Security Checklist — AWS reference."
     },
@@ -422,7 +422,7 @@
       "title": "AWS Pentesting",
       "category": "AWS",
       "categorySlug": "/cloud-pentesting",
-      "href": "/pdfs/cloud-pentesting/aws/AWS%20Pentesting.pdf",
+      "href": "/pdfs/cloud-pentesting/AWS%20Pentesting.pdf",
       "page": "/cloud-pentesting/references",
       "description": "AWS Pentesting — AWS reference."
     },
@@ -430,7 +430,7 @@
       "title": "AWS Security Incident Response Guide.pdf",
       "category": "AWS",
       "categorySlug": "/cloud-pentesting",
-      "href": "/pdfs/cloud-pentesting/aws/AWS%20Security%20Incident%20Response%20Guide.pdf.pdf",
+      "href": "/pdfs/cloud-pentesting/AWS%20Security%20Incident%20Response%20Guide.pdf.pdf",
       "page": "/cloud-pentesting/references",
       "description": "AWS Security Incident Response Guide.pdf — AWS reference."
     },
@@ -438,7 +438,7 @@
       "title": "Business Logic Bugs",
       "category": "Business Logic Flaw",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/business-logic-flaw/Business%20Logic%20Bugs.pdf",
+      "href": "/pdfs/web-application-pentesting/Business%20Logic%20Bugs.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Business Logic Bugs — Business Logic Flaw reference."
     },
@@ -446,7 +446,7 @@
       "title": "Business Logic bugs-1",
       "category": "Business Logic Flaw",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/business-logic-flaw/Business%20Logic%20bugs-1.pdf",
+      "href": "/pdfs/web-application-pentesting/Business%20Logic%20bugs-1.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Business Logic bugs-1 — Business Logic Flaw reference."
     },
@@ -454,7 +454,7 @@
       "title": "Checklist for Testing of Web Application",
       "category": "Checklist & Exploitation",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/Checklist%20for%20Testing%20of%20%20Web%20Application.pdf",
+      "href": "/pdfs/web-application-pentesting/Checklist%20for%20Testing%20of%20%20Web%20Application.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Checklist for Testing of Web Application — Checklist & Exploitation reference."
     },
@@ -470,7 +470,7 @@
       "title": "Cloud - Azure Pentestesting Guide",
       "category": "Azure",
       "categorySlug": "/cloud-pentesting",
-      "href": "/pdfs/cloud-pentesting/azure/Cloud%20-%20Azure%20Pentestesting%20Guide.pdf",
+      "href": "/pdfs/cloud-pentesting/Cloud%20-%20Azure%20Pentestesting%20Guide.pdf",
       "page": "/cloud-pentesting/references",
       "description": "Cloud - Azure Pentestesting Guide — Azure reference."
     },
@@ -478,7 +478,7 @@
       "title": "Cloud Pentesting cheatsheet",
       "category": "Azure",
       "categorySlug": "/cloud-pentesting",
-      "href": "/pdfs/cloud-pentesting/azure/Cloud%20Pentesting%20cheatsheet.pdf",
+      "href": "/pdfs/cloud-pentesting/Cloud%20Pentesting%20cheatsheet.pdf",
       "page": "/cloud-pentesting/references",
       "description": "Cloud Pentesting cheatsheet — Azure reference."
     },
@@ -486,7 +486,7 @@
       "title": "Computer networking",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/Computer%20networking-2.pdf",
+      "href": "/pdfs/network-pentesting/Computer%20networking-2.pdf",
       "page": "/network-pentesting/references",
       "description": "Computer networking — Fundamentals reference."
     },
@@ -494,7 +494,7 @@
       "title": "Computer Networking",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/Computer%20Networking.pdf",
+      "href": "/pdfs/network-pentesting/Computer%20Networking.pdf",
       "page": "/network-pentesting/references",
       "description": "Computer Networking — Fundamentals reference."
     },
@@ -502,7 +502,7 @@
       "title": "Computer Networking Basics Concept",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/Computer%20Networking%20Basics%20Concept.pdf",
+      "href": "/pdfs/network-pentesting/Computer%20Networking%20Basics%20Concept.pdf",
       "page": "/network-pentesting/references",
       "description": "Computer Networking Basics Concept — Fundamentals reference."
     },
@@ -518,7 +518,7 @@
       "title": "Cookies",
       "category": "Cookies Relates Vulnerabilities",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/Cookies.pdf",
+      "href": "/pdfs/web-application-pentesting/Cookies.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Cookies — Cookies Relates Vulnerabilities reference."
     },
@@ -526,7 +526,7 @@
       "title": "cookies concept",
       "category": "Cookies Relates Vulnerabilities",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/cookies%20concept.pdf",
+      "href": "/pdfs/web-application-pentesting/cookies%20concept.pdf",
       "page": "/web-application-pentesting/references",
       "description": "cookies concept — Cookies Relates Vulnerabilities reference."
     },
@@ -534,7 +534,7 @@
       "title": "CROSS-ORIGIN RESOURCE SHARING (CORS)",
       "category": "CORS",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/cors/CROSS-ORIGIN%20RESOURCE%20SHARING%20(CORS).pdf",
+      "href": "/pdfs/web-application-pentesting/CROSS-ORIGIN%20RESOURCE%20SHARING%20(CORS).pdf",
       "page": "/web-application-pentesting/references",
       "description": "CROSS-ORIGIN RESOURCE SHARING (CORS) — CORS reference."
     },
@@ -542,7 +542,7 @@
       "title": "Detailed Guide on Open Redirect",
       "category": "Open Redirect",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/open-redirect/Detailed%20Guide%20on%20Open%20Redirect.pdf",
+      "href": "/pdfs/web-application-pentesting/Detailed%20Guide%20on%20Open%20Redirect.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Detailed Guide on Open Redirect — Open Redirect reference."
     },
@@ -550,7 +550,7 @@
       "title": "Detailed Guide on Unrestricted File Upload",
       "category": "Unrestricted File Upload",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/unrestricted-file-upload/Detailed%20Guide%20on%20Unrestricted%20File%20Upload.pdf",
+      "href": "/pdfs/web-application-pentesting/Detailed%20Guide%20on%20Unrestricted%20File%20Upload.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Detailed Guide on Unrestricted File Upload — Unrestricted File Upload reference."
     },
@@ -558,7 +558,7 @@
       "title": "Detailed Guide on XXE Injection",
       "category": "XML External Entity (XXE)",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/Detailed%20Guide%20on%20XXE%20Injection.pdf",
+      "href": "/pdfs/web-application-pentesting/Detailed%20Guide%20on%20XXE%20Injection.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Detailed Guide on XXE Injection — XML External Entity (XXE) reference."
     },
@@ -574,7 +574,7 @@
       "title": "eLearnSecurity Mobile Application Penetration Testing",
       "category": "Fundamentals",
       "categorySlug": "/mobile-pentesting",
-      "href": "/pdfs/mobile-pentesting/android-pentesting/learn-basics/eLearnSecurity%20Mobile%20Application%20Penetration%20Testing.pdf",
+      "href": "/pdfs/mobile-pentesting/eLearnSecurity%20Mobile%20Application%20Penetration%20Testing.pdf",
       "page": "/mobile-pentesting/references",
       "description": "eLearnSecurity Mobile Application Penetration Testing — Fundamentals reference."
     },
@@ -590,7 +590,7 @@
       "title": "External Network Penetration Testing",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/External%20Network%20Penetration%20Testing.pdf",
+      "href": "/pdfs/network-pentesting/External%20Network%20Penetration%20Testing.pdf",
       "page": "/network-pentesting/references",
       "description": "External Network Penetration Testing — Fundamentals reference."
     },
@@ -598,7 +598,7 @@
       "title": "File Inclusion Vulnerabilities",
       "category": "File Inclusion",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/file-inclusion/File%20Inclusion%20Vulnerabilities.pdf",
+      "href": "/pdfs/web-application-pentesting/File%20Inclusion%20Vulnerabilities.pdf",
       "page": "/web-application-pentesting/references",
       "description": "File Inclusion Vulnerabilities — File Inclusion reference."
     },
@@ -606,23 +606,23 @@
       "title": "Getting_Started_in_Pentesting_Azure_1622190241",
       "category": "Azure",
       "categorySlug": "/cloud-pentesting",
-      "href": "/pdfs/cloud-pentesting/azure/Getting_Started_in_Pentesting_Azure_1622190241.pdf",
+      "href": "/pdfs/cloud-pentesting/Getting_Started_in_Pentesting_Azure_1622190241.pdf",
       "page": "/cloud-pentesting/references",
       "description": "Getting_Started_in_Pentesting_Azure_1622190241 — Azure reference."
     },
     {
       "title": "Guide on metasploitable-2 by hackingarticles.in",
       "category": "Other",
-      "categorySlug": "/infrastucture-security",
-      "href": "/pdfs/infrastucture-security/other/Guide%20on%20metasploitable-2%20by%20hackingarticles.in.pdf",
-      "page": "/infrastucture-security/references",
+      "categorySlug": "/infrastructure-security",
+      "href": "/pdfs/infrastructure-security/Guide%20on%20metasploitable-2%20by%20hackingarticles.in.pdf",
+      "page": "/infrastructure-security/references",
       "description": "Guide on metasploitable-2 by hackingarticles.in — Other reference."
     },
     {
       "title": "HTML_INJECTION",
       "category": "HTML Injection",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/html-injection/HTML_INJECTION.pdf",
+      "href": "/pdfs/web-application-pentesting/HTML_INJECTION.pdf",
       "page": "/web-application-pentesting/references",
       "description": "HTML_INJECTION — HTML Injection reference."
     },
@@ -637,16 +637,16 @@
     {
       "title": "Infrastucture PT",
       "category": "Infrastructure Security",
-      "categorySlug": "/infrastucture-security",
-      "href": "/pdfs/infrastucture-security/Infrastucture%20PT.pdf",
-      "page": "/infrastucture-security/references",
+      "categorySlug": "/infrastructure-security",
+      "href": "/pdfs/infrastructure-security/Infrastucture%20PT.pdf",
+      "page": "/infrastructure-security/references",
       "description": "Infrastucture PT — Infrastructure Security reference."
     },
     {
       "title": "Insecure Direct Object References (IDOR)",
       "category": "IDOR",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/idor/Insecure%20Direct%20Object%20References%20(IDOR).pdf",
+      "href": "/pdfs/web-application-pentesting/Insecure%20Direct%20Object%20References%20(IDOR).pdf",
       "page": "/web-application-pentesting/references",
       "description": "Insecure Direct Object References (IDOR) — IDOR reference."
     },
@@ -662,7 +662,7 @@
       "title": "Linux_For_Networking_Professional__1692037154",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/Linux_For_Networking_Professional__1692037154.pdf",
+      "href": "/pdfs/network-pentesting/Linux_For_Networking_Professional__1692037154.pdf",
       "page": "/network-pentesting/references",
       "description": "Linux_For_Networking_Professional__1692037154 — Fundamentals reference."
     },
@@ -670,7 +670,7 @@
       "title": "Master Nmap in 60 Days – One Command at a Time",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/Master%20Nmap%20in%2060%20Days%20%E2%80%93%20One%20Command%20at%20a%20Time.pdf",
+      "href": "/pdfs/network-pentesting/Master%20Nmap%20in%2060%20Days%20%E2%80%93%20One%20Command%20at%20a%20Time.pdf",
       "page": "/network-pentesting/references",
       "description": "Master Nmap in 60 Days – One Command at a Time — Fundamentals reference."
     },
@@ -686,7 +686,7 @@
       "title": "Mobile Testing Gudie",
       "category": "Fundamentals",
       "categorySlug": "/mobile-pentesting",
-      "href": "/pdfs/mobile-pentesting/android-pentesting/learn-basics/Mobile%20Testing%20Gudie.pdf",
+      "href": "/pdfs/mobile-pentesting/Mobile%20Testing%20Gudie.pdf",
       "page": "/mobile-pentesting/references",
       "description": "Mobile Testing Gudie — Fundamentals reference."
     },
@@ -694,7 +694,7 @@
       "title": "Network PT with Wireshark",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/Network%20PT%20with%20Wireshark.pdf",
+      "href": "/pdfs/network-pentesting/Network%20PT%20with%20Wireshark.pdf",
       "page": "/network-pentesting/references",
       "description": "Network PT with Wireshark — Fundamentals reference."
     },
@@ -717,16 +717,16 @@
     {
       "title": "Nmap for Red Teamers",
       "category": "Other",
-      "categorySlug": "/infrastucture-security",
-      "href": "/pdfs/infrastucture-security/other/Nmap%20for%20Red%20Teamers.pdf",
-      "page": "/infrastucture-security/references",
+      "categorySlug": "/infrastructure-security",
+      "href": "/pdfs/infrastructure-security/Nmap%20for%20Red%20Teamers.pdf",
+      "page": "/infrastructure-security/references",
       "description": "Nmap for Red Teamers — Other reference."
     },
     {
       "title": "Ntwork-Penetration Course",
       "category": "Fundamentals",
       "categorySlug": "/network-pentesting",
-      "href": "/pdfs/network-pentesting/basics-learn/Ntwork-Penetration%20Course.pdf",
+      "href": "/pdfs/network-pentesting/Ntwork-Penetration%20Course.pdf",
       "page": "/network-pentesting/references",
       "description": "Ntwork-Penetration Course — Fundamentals reference."
     },
@@ -750,7 +750,7 @@
       "title": "OWASP Top 10 API Security Risks",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/OWASP%20Top%2010%20API%20Security%20Risks.pdf",
+      "href": "/pdfs/api-pentesting/OWASP%20Top%2010%20API%20Security%20Risks.pdf",
       "page": "/api-pentesting/references",
       "description": "OWASP Top 10 API Security Risks — Rest API reference."
     },
@@ -758,7 +758,7 @@
       "title": "OWASP top 10 API security risks-1",
       "category": "Rest API",
       "categorySlug": "/api-pentesting",
-      "href": "/pdfs/api-pentesting/rest-api/OWASP%20top%2010%20API%20security%20risks-1.pdf",
+      "href": "/pdfs/api-pentesting/OWASP%20top%2010%20API%20security%20risks-1.pdf",
       "page": "/api-pentesting/references",
       "description": "OWASP top 10 API security risks-1 — Rest API reference."
     },
@@ -766,7 +766,7 @@
       "title": "Quick Revision of MySQL",
       "category": "SQL Injection",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/Quick%20Revision%20of%20MySQL.pdf",
+      "href": "/pdfs/web-application-pentesting/Quick%20Revision%20of%20MySQL.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Quick Revision of MySQL — SQL Injection reference."
     },
@@ -782,7 +782,7 @@
       "title": "Reverse Shell",
       "category": "Reverse Shell",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/reverse-shell/Reverse%20Shell.pdf",
+      "href": "/pdfs/web-application-pentesting/Reverse%20Shell.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Reverse Shell — Reverse Shell reference."
     },
@@ -798,7 +798,7 @@
       "title": "Session_Task_7",
       "category": "WordPress",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/Session_Task_7.pdf",
+      "href": "/pdfs/web-application-pentesting/Session_Task_7.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Session_Task_7 — WordPress reference."
     },
@@ -822,7 +822,7 @@
       "title": "SQL Injection",
       "category": "SQL Injection",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/SQL%20Injection.pdf",
+      "href": "/pdfs/web-application-pentesting/SQL%20Injection.pdf",
       "page": "/web-application-pentesting/references",
       "description": "SQL Injection — SQL Injection reference."
     },
@@ -830,7 +830,7 @@
       "title": "SQL_INJECTION",
       "category": "SQL Injection",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/sql-injection/SQL_INJECTION.pdf",
+      "href": "/pdfs/web-application-pentesting/SQL_INJECTION.pdf",
       "page": "/web-application-pentesting/references",
       "description": "SQL_INJECTION — SQL Injection reference."
     },
@@ -838,7 +838,7 @@
       "title": "SSRF",
       "category": "SSRF",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/ssrf/SSRF.pdf",
+      "href": "/pdfs/web-application-pentesting/SSRF.pdf",
       "page": "/web-application-pentesting/references",
       "description": "SSRF — SSRF reference."
     },
@@ -846,7 +846,7 @@
       "title": "SSRF by Nikitha Yasala",
       "category": "SSRF",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/ssrf/SSRF%20by%20Nikitha%20Yasala.pdf",
+      "href": "/pdfs/web-application-pentesting/SSRF%20by%20Nikitha%20Yasala.pdf",
       "page": "/web-application-pentesting/references",
       "description": "SSRF by Nikitha Yasala — SSRF reference."
     },
@@ -854,7 +854,7 @@
       "title": "subdomain takeover",
       "category": "SubdomainTakeOver",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/subdomaintakeover/subdomain%20takeover.pdf",
+      "href": "/pdfs/web-application-pentesting/subdomain%20takeover.pdf",
       "page": "/web-application-pentesting/references",
       "description": "subdomain takeover — SubdomainTakeOver reference."
     },
@@ -862,7 +862,7 @@
       "title": "Subdomain Takeover-1",
       "category": "SubdomainTakeOver",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/subdomaintakeover/Subdomain%20Takeover-1.pdf",
+      "href": "/pdfs/web-application-pentesting/Subdomain%20Takeover-1.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Subdomain Takeover-1 — SubdomainTakeOver reference."
     },
@@ -870,7 +870,7 @@
       "title": "subdomain_takeover",
       "category": "SubdomainTakeOver",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/subdomaintakeover/subdomain_takeover.pdf",
+      "href": "/pdfs/web-application-pentesting/subdomain_takeover.pdf",
       "page": "/web-application-pentesting/references",
       "description": "subdomain_takeover — SubdomainTakeOver reference."
     },
@@ -878,7 +878,7 @@
       "title": "Test Cases As per Funtionalities",
       "category": "Checklist & Methodology",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/Test%20Cases%20As%20per%20Funtionalities.pdf",
+      "href": "/pdfs/web-application-pentesting/Test%20Cases%20As%20per%20Funtionalities.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Test Cases As per Funtionalities — Checklist & Methodology reference."
     },
@@ -910,7 +910,7 @@
       "title": "TOP 100 Vulnerabilities Step-by-Step Guide Handbook",
       "category": "Checklist & Methodology",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/TOP%20100%20Vulnerabilities%20Step-by-Step%20Guide%20Handbook.pdf",
+      "href": "/pdfs/web-application-pentesting/TOP%20100%20Vulnerabilities%20Step-by-Step%20Guide%20Handbook.pdf",
       "page": "/web-application-pentesting/references",
       "description": "TOP 100 Vulnerabilities Step-by-Step Guide Handbook — Checklist & Methodology reference."
     },
@@ -926,7 +926,7 @@
       "title": "Type of cookies",
       "category": "Cookies Relates Vulnerabilities",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/cookies-relates-vulnerabilities/Type%20of%20cookies.pdf",
+      "href": "/pdfs/web-application-pentesting/Type%20of%20cookies.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Type of cookies — Cookies Relates Vulnerabilities reference."
     },
@@ -934,7 +934,7 @@
       "title": "Web Application Advanced Hacking",
       "category": "Advanced Techniques",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/advance-hacking/Web%20Application%20Advanced%20Hacking.pdf",
+      "href": "/pdfs/web-application-pentesting/Web%20Application%20Advanced%20Hacking.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Web Application Advanced Hacking — Advanced Techniques reference."
     },
@@ -942,7 +942,7 @@
       "title": "Web Application Exploit Check List",
       "category": "Checklist & Exploitation",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/Web%20Application%20Exploit%20Check%20List%20.pdf",
+      "href": "/pdfs/web-application-pentesting/Web%20Application%20Exploit%20Check%20List%20.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Web Application Exploit Check List — Checklist & Exploitation reference."
     },
@@ -950,7 +950,7 @@
       "title": "web application penetration testing",
       "category": "Advanced Techniques",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/advance-hacking/web%20application%20penetration%20testing.pdf",
+      "href": "/pdfs/web-application-pentesting/web%20application%20penetration%20testing.pdf",
       "page": "/web-application-pentesting/references",
       "description": "web application penetration testing — Advanced Techniques reference."
     },
@@ -958,7 +958,7 @@
       "title": "web application penetration testing",
       "category": "Checklist & Exploitation",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/cheack-llist-and-exploit/web%20application%20penetration%20testing.pdf",
+      "href": "/pdfs/web-application-pentesting/web%20application%20penetration%20testing-2.pdf",
       "page": "/web-application-pentesting/references",
       "description": "web application penetration testing — Checklist & Exploitation reference."
     },
@@ -966,7 +966,7 @@
       "title": "Web Application Penetration Testing Complete Guide.",
       "category": "Advanced Techniques",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/advance-hacking/Web%20Application%20Penetration%20Testing%20Complete%20Guide.%20.pdf",
+      "href": "/pdfs/web-application-pentesting/Web%20Application%20Penetration%20Testing%20Complete%20Guide.%20.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Web Application Penetration Testing Complete Guide. — Advanced Techniques reference."
     },
@@ -974,7 +974,7 @@
       "title": "Web Application Penetration Testing Guide",
       "category": "Checklist & Methodology",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/Web%20Application%20Penetration%20Testing%20Guide.pdf",
+      "href": "/pdfs/web-application-pentesting/Web%20Application%20Penetration%20Testing%20Guide.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Web Application Penetration Testing Guide — Checklist & Methodology reference."
     },
@@ -982,7 +982,7 @@
       "title": "Web Application Pentest Methodology",
       "category": "Checklist & Methodology",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/checklist-and-methodology/Web%20Application%20Pentest%20Methodology.pdf",
+      "href": "/pdfs/web-application-pentesting/Web%20Application%20Pentest%20Methodology.pdf",
       "page": "/web-application-pentesting/references",
       "description": "Web Application Pentest Methodology — Checklist & Methodology reference."
     },
@@ -990,7 +990,7 @@
       "title": "WebGoat- DeveloperWorkbook-Fortify Scan Results",
       "category": "Sample-Reports",
       "categorySlug": "/secure-code-review",
-      "href": "/pdfs/secure-code-review/sample-reports/WebGoat-%20DeveloperWorkbook-Fortify%20Scan%20Results.pdf",
+      "href": "/pdfs/secure-code-review/WebGoat-%20DeveloperWorkbook-Fortify%20Scan%20Results.pdf",
       "page": "/secure-code-review/references",
       "description": "WebGoat- DeveloperWorkbook-Fortify Scan Results — Sample-Reports reference."
     },
@@ -1006,7 +1006,7 @@
       "title": "Windows - Privilege Escalation",
       "category": "Windows Privilege Escalation",
       "categorySlug": "/active-directory-pentesting",
-      "href": "/pdfs/active-directory-pentesting/windows-privilege-escalation/Windows%20-%20Privilege%20Escalation.pdf",
+      "href": "/pdfs/active-directory-pentesting/Windows%20-%20Privilege%20Escalation.pdf",
       "page": "/active-directory-pentesting/references",
       "description": "Windows - Privilege Escalation — Windows Privilege Escalation reference."
     },
@@ -1014,7 +1014,7 @@
       "title": "Windows Forensic",
       "category": "Windows",
       "categorySlug": "/forensic",
-      "href": "/pdfs/forensic/windows/Windows%20Forensic.pdf",
+      "href": "/pdfs/forensic/Windows%20Forensic.pdf",
       "page": "/forensic/references",
       "description": "Windows Forensic — Windows reference."
     },
@@ -1030,7 +1030,7 @@
       "title": "WordPress",
       "category": "WordPress",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/WordPress.pdf",
+      "href": "/pdfs/web-application-pentesting/WordPress.pdf",
       "page": "/web-application-pentesting/references",
       "description": "WordPress — WordPress reference."
     },
@@ -1038,7 +1038,7 @@
       "title": "WordPress-1",
       "category": "WordPress",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/wordpress/WordPress-1.pdf",
+      "href": "/pdfs/web-application-pentesting/WordPress-1.pdf",
       "page": "/web-application-pentesting/references",
       "description": "WordPress-1 — WordPress reference."
     },
@@ -1046,7 +1046,7 @@
       "title": "XSS",
       "category": "XSS",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/xss/XSS.pdf",
+      "href": "/pdfs/web-application-pentesting/XSS.pdf",
       "page": "/web-application-pentesting/references",
       "description": "XSS — XSS reference."
     },
@@ -1054,7 +1054,7 @@
       "title": "XSS Bypass",
       "category": "XSS",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/xss/XSS%20Bypass.pdf",
+      "href": "/pdfs/web-application-pentesting/XSS%20Bypass.pdf",
       "page": "/web-application-pentesting/references",
       "description": "XSS Bypass — XSS reference."
     },
@@ -1062,7 +1062,7 @@
       "title": "XXE",
       "category": "XML External Entity (XXE)",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/XXE.pdf",
+      "href": "/pdfs/web-application-pentesting/XXE.pdf",
       "page": "/web-application-pentesting/references",
       "description": "XXE — XML External Entity (XXE) reference."
     },
@@ -1070,7 +1070,7 @@
       "title": "XXE Injection Attack",
       "category": "XML External Entity (XXE)",
       "categorySlug": "/web-application-pentesting",
-      "href": "/pdfs/web-application-pentesting/vulnerabilities/xml-external-entity-xxe/XXE%20Injection%20Attack.pdf",
+      "href": "/pdfs/web-application-pentesting/XXE%20Injection%20Attack.pdf",
       "page": "/web-application-pentesting/references",
       "description": "XXE Injection Attack — XML External Entity (XXE) reference."
     }

@@ -145,6 +145,11 @@ function prettyLabel(name: string): string {
   return name.replace(/\s+/g, ' ').trim();
 }
 
+/** Slug for routes/folders — applies the same typo fixes as labels so URLs are clean too. */
+function pathSlug(name: string): string {
+  return slugify(prettyLabel(name));
+}
+
 function yamlString(s: string): string {
   return '"' + s.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, ' ').trim() + '"';
 }
@@ -334,7 +339,7 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
   }
 
   // --- Folder index (from README) ---
-  let indexSlug = '/' + segments.map(slugify).join('/');
+  let indexSlug = '/' + segments.map(pathSlug).join('/');
   if (segments.length === 0) indexSlug = '/overview';
   indexSlug = uniqueSlug(indexSlug);
   if (readme) {
@@ -376,7 +381,7 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
     const {title, body, description, words} = normalize(fs.readFileSync(abs, 'utf8'));
     const base = md.name.replace(/\.md$/i, '');
     const finalTitle = title || prettyLabel(base);
-    const docSlug = uniqueSlug(indexSlug + '/' + slugify(base));
+    const docSlug = uniqueSlug(indexSlug + '/' + pathSlug(base));
     const docFile = docSlug.split('/').pop()! + '.md';
     const tags = deriveTags(topCategory, segments, base);
     const meta: DocMeta = {
@@ -396,10 +401,12 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
     bumpCategory(topCategory, topLabel, 'docs');
   }
 
-  // --- PDFs → copy binary + collect into the category's single References page ---
+  // --- PDFs → copy binary into ONE flat References folder per category + collect ---
+  const catSlugBase = pathSlug(segments[0] ?? topCategory);
   for (const pdf of pdfFiles) {
     const abs = path.join(srcDir, pdf.name);
-    const relPdf = uniqueStatic(path.join(...segments.map(slugify), pdf.name));
+    // Flat storage: static/pdfs/<category>/<file>.pdf — a single References folder per category.
+    const relPdf = uniqueStatic(path.join(catSlugBase, pdf.name));
     const destPdf = path.join(PDF_OUT, relPdf);
     ensureDir(path.dirname(destPdf));
     fs.copyFileSync(abs, destPdf);
@@ -411,7 +418,7 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
     const sizeKb = Math.round(fs.statSync(abs).size / 1024);
     // Group label = the sub-path inside the category (segments beyond the top one).
     const group = segments.slice(1).map(prettyLabel).join(' › ') || 'General';
-    const catSlug = slugify(topCategory);
+    const catSlug = pathSlug(topCategory);
 
     (catRefs[topCategory] ??= []).push({title, href: publicPath, sizeKb, group});
     pdfs.push({title, category: topLabel, categorySlug: '/' + catSlug, href: publicPath, page: `/${catSlug}/references`, description: `${title} — ${topLabel} reference.`});
@@ -422,7 +429,7 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
   for (const sub of subDirs) {
     processFolder(
       path.join(srcDir, sub.name),
-      path.join(outDir, slugify(sub.name)),
+      path.join(outDir, pathSlug(sub.name)),
       [...segments, sub.name],
       topCategory,
     );
@@ -466,7 +473,7 @@ function topPosition(topCategory: string, segments: string[]): number {
 
 function bumpCategory(top: string, label: string, kind: 'docs' | 'pdfs') {
   const key = top;
-  if (!categoryCounts[key]) categoryCounts[key] = {docs: 0, pdfs: 0, label: prettyLabel(label), slug: slugify(top)};
+  if (!categoryCounts[key]) categoryCounts[key] = {docs: 0, pdfs: 0, label: prettyLabel(label), slug: pathSlug(top)};
   categoryCounts[key][kind]++;
 }
 
@@ -510,7 +517,7 @@ function main() {
 
   for (const dir of topDirs) {
     report.categories++;
-    const topSlug = slugify(dir);
+    const topSlug = pathSlug(dir);
     processFolder(path.join(ROOT, dir), path.join(DOCS, topSlug), [dir], dir);
     // One consolidated References page per top-level category (all its PDFs).
     writeReferencesPage(dir, topSlug);

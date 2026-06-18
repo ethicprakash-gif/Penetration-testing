@@ -2,20 +2,33 @@ import React, {useMemo, useState} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import {FileText, Search, ExternalLink} from 'lucide-react';
+import {FileText, Search, ExternalLink, Download, Library} from 'lucide-react';
+import CategoryIcon from '@site/src/components/CategoryIcon';
 import manifest from '@site/src/data/manifest.json';
 
 type Pdf = {title: string; category: string; categorySlug: string; href: string; page: string; description: string};
+type Category = {key: string; label: string};
+
+const LABEL_TO_KEY = new Map((manifest.categories as Category[]).map((c) => [c.label, c.key]));
 
 function PdfCard({p}: {p: Pdf}): React.JSX.Element {
   const url = useBaseUrl(p.href);
   return (
-    <a className="pe-card" href={url} target="_blank" rel="noopener noreferrer">
-      <div className="pe-card__icon"><FileText size={22} /></div>
-      <h3 className="pe-card__title" style={{fontSize: '0.98rem'}}>{p.title}</h3>
-      <p className="pe-card__desc">Open reference PDF</p>
-      <div className="pe-card__meta"><span>Open <ExternalLink size={12} style={{verticalAlign: '-1px'}} /></span></div>
-    </a>
+    <div className="pe-ref-row">
+      <div className="pe-ref-row__icon" aria-hidden="true"><FileText size={20} /></div>
+      <div className="pe-ref-row__body">
+        <span className="pe-ref-row__title">{p.title}</span>
+        <span className="pe-ref-row__sub">{p.category}</span>
+      </div>
+      <div className="pe-ref-row__actions">
+        <a className="pe-btn pe-btn--primary pe-btn--sm" href={url} target="_blank" rel="noopener noreferrer" aria-label={`Open ${p.title}`}>
+          <ExternalLink size={15} /> Open
+        </a>
+        <a className="pe-btn pe-btn--ghost pe-btn--sm" href={url} download aria-label={`Download ${p.title}`}>
+          <Download size={15} />
+        </a>
+      </div>
+    </div>
   );
 }
 
@@ -34,42 +47,46 @@ export default function References(): React.JSX.Element {
     return Array.from(map.entries()).sort((a, b) => a[0].localeCompare(b[0]));
   }, [query, pdfs]);
 
+  const total = pdfs.length;
+  const shown = grouped.reduce((n, [, items]) => n + items.length, 0);
+
   return (
     <Layout title="Reference Library" description="Curated cybersecurity reference PDFs across every testing domain.">
-      <div className="container margin-vert--xl">
-        <div className="pe-section__head" style={{marginBottom: '2rem'}}>
-          <div className="pe-eyebrow">Library</div>
-          <h1 className="pe-section__title">Reference Library</h1>
-          <p className="pe-section__sub">{pdfs.length} curated PDF references across {manifest.categories.length} domains.</p>
+      <header className="pe-reflib__hero">
+        <div className="container">
+          <div className="pe-reflib__badge"><Library size={15} /> {total} documents · {manifest.categories.length} domains</div>
+          <h1 className="pe-reflib__title">Reference Library</h1>
+          <p className="pe-reflib__sub">Every curated PDF in one place — open in a new tab or download for offline use.</p>
+          <div className="pe-reflib__search">
+            <Search size={18} aria-hidden="true" />
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Filter references by title or domain…"
+              aria-label="Filter references"
+            />
+            {query && <span className="pe-reflib__count">{shown} match{shown === 1 ? '' : 'es'}</span>}
+          </div>
         </div>
+      </header>
 
-        <div className="pe-pdf" style={{padding: '0.6rem 1rem', alignItems: 'center', maxWidth: '34rem', margin: '0 auto 2.5rem'}}>
-          <Search size={18} style={{flex: 'none', opacity: 0.6}} />
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Filter references…"
-            aria-label="Filter references"
-            style={{flex: 1, border: 'none', background: 'transparent', outline: 'none', font: 'inherit', color: 'inherit'}}
-          />
-        </div>
-
+      <main className="container margin-vert--xl">
         {grouped.map(([category, items]) => (
-          <section key={category} style={{marginBottom: '2.5rem'}}>
-            <h2 style={{fontSize: '1.25rem', borderBottom: '1px solid var(--pe-border)', paddingBottom: '0.4rem', display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem'}}>
-              <span>{category} <span style={{color: 'var(--pe-muted)', fontWeight: 400, fontSize: '0.9rem'}}>({items.length})</span></span>
-              <Link to={items[0].page} style={{fontSize: '0.85rem', fontWeight: 500}}>View in section →</Link>
-            </h2>
-            <div className="pe-grid pe-grid--3">
-              {items.map((p) => (
-                <PdfCard key={p.href} p={p} />
-              ))}
+          <section key={category} className="pe-reflib__section">
+            <div className="pe-reflib__cat">
+              <span className="pe-reflib__cat-icon"><CategoryIcon categoryKey={LABEL_TO_KEY.get(category) ?? ''} size={20} /></span>
+              <h2 className="pe-reflib__cat-title">{category}</h2>
+              <span className="pe-chip">{items.length}</span>
+              {items[0]?.page && <Link className="pe-reflib__cat-link" to={items[0].page}>Open section →</Link>}
+            </div>
+            <div className="pe-grid pe-grid--2">
+              {items.map((p) => <PdfCard key={p.href} p={p} />)}
             </div>
           </section>
         ))}
         {grouped.length === 0 && <p style={{textAlign: 'center', color: 'var(--pe-muted)'}}>No references match “{query}”.</p>}
-      </div>
+      </main>
     </Layout>
   );
 }

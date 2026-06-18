@@ -30,7 +30,7 @@ const PATHS: Path[] = [
     steps: [
       {label: 'Cloud pentesting (AWS / Azure / GCP)', slug: '/cloud-pentesting', categoryKey: 'Cloud Pentesting'},
       {label: 'Container & Kubernetes assessment', slug: '/container-and-kubernetes-assessment', categoryKey: 'Container & Kubernetes  Assessment'},
-      {label: 'Infrastructure security', slug: '/infrastucture-security', categoryKey: 'Infrastucture Security'},
+      {label: 'Infrastructure security', slug: '/infrastructure-security', categoryKey: 'Infrastucture Security'},
       {label: 'Network pentesting', slug: '/network-pentesting', categoryKey: 'Network Pentesting'},
     ],
   },

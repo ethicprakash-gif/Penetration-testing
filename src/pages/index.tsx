@@ -154,41 +154,50 @@ function Maintainers(): React.JSX.Element {
           <h2 className="pe-section__title">Maintainer &amp; Contributors</h2>
           <p className="pe-section__sub">Built and maintained in the open by the security community.</p>
         </div>
-        <div className="pe-maint">
-          <div className="pe-maint__card">
-            <img className="pe-maint__avatar" src={MAINTAINER.avatar} alt={MAINTAINER.name} loading="lazy" width={88} height={88} />
-            <p className="pe-maint__name">{MAINTAINER.name}</p>
-            <p className="pe-maint__role">Project Maintainer · @{MAINTAINER.handle}</p>
-            <div className="pe-maint__links">
-              <a className="pe-maint__link" href={MAINTAINER.github} target="_blank" rel="noopener noreferrer"><Github size={16} /> GitHub</a>
-              <a className="pe-maint__link" href={MAINTAINER.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={16} /> LinkedIn</a>
-              <a className="pe-maint__link" href={MAINTAINER.website} target="_blank" rel="noopener noreferrer"><Globe size={16} /> Website</a>
-            </div>
-          </div>
-          <div className="pe-contrib">
-            <h3 className="pe-card__title" style={{marginBottom: '0.25rem'}}>Contributors</h3>
-            <p className="pe-card__desc" style={{marginBottom: '0.4rem'}}>
-              {contributors.length > 0
-                ? `${contributors.length} people have contributed documentation, tools, and fixes.`
-                : 'This project welcomes contributions from the community.'}
-            </p>
-            {contributors.length > 0 && (
-              <div className="pe-contrib__grid">
-                {contributors.map((c) => (
-                  <a key={c.login} className="pe-contrib__person" href={c.profile} target="_blank" rel="noopener noreferrer" title={c.name}>
-                    <img className="pe-contrib__avatar" src={c.avatar} alt={c.name} loading="lazy" width={48} height={48} />
-                  </a>
-                ))}
+
+        <div className="pe-people">
+          {/* Maintainer */}
+          <figure className="pe-people__maintainer">
+            <img className="pe-people__avatar" src={MAINTAINER.avatar} alt={MAINTAINER.name} loading="lazy" width={96} height={96} />
+            <figcaption className="pe-people__body">
+              <span className="pe-people__badge">Project Maintainer</span>
+              <p className="pe-people__name">{MAINTAINER.name}</p>
+              <p className="pe-people__handle">@{MAINTAINER.handle}</p>
+              <div className="pe-people__links">
+                <a className="pe-iconbtn" href={MAINTAINER.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github size={18} /></a>
+                <a className="pe-iconbtn" href={MAINTAINER.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin size={18} /></a>
+                <a className="pe-iconbtn" href={MAINTAINER.website} target="_blank" rel="noopener noreferrer" aria-label="Website"><Globe size={18} /></a>
               </div>
+            </figcaption>
+          </figure>
+
+          {/* Contributors */}
+          <div className="pe-people__contrib">
+            <h3 className="pe-people__contrib-title">
+              Contributors {contributors.length > 0 && <span className="pe-people__count">{contributors.length}</span>}
+            </h3>
+            {contributors.length > 0 ? (
+              <ul className="pe-people__avatars">
+                {contributors.map((c) => (
+                  <li key={c.login}>
+                    <a href={c.profile} target="_blank" rel="noopener noreferrer" title={c.name}>
+                      <img src={c.avatar} alt={c.name} loading="lazy" width={56} height={56} />
+                      <span>{(c.name || c.login).split(' ')[0]}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="pe-card__desc">This project welcomes contributions from the community.</p>
             )}
-            <div>
-              <a className="pe-btn pe-btn--ghost" href={`${REPO_URL}/graphs/contributors`} target="_blank" rel="noopener noreferrer">
-                <Github size={16} /> View all contributors
+            <div className="pe-people__actions">
+              <a className="pe-btn pe-btn--ghost pe-btn--sm" href={`${REPO_URL}/graphs/contributors`} target="_blank" rel="noopener noreferrer">
+                <Github size={15} /> All contributors
               </a>
+              <Link className="pe-btn pe-btn--primary pe-btn--sm" to="/contributing">
+                <Heart size={15} /> Become a contributor
+              </Link>
             </div>
-            <p className="pe-card__desc" style={{marginTop: '1rem', display: 'flex', alignItems: 'center', gap: '0.35rem'}}>
-              <Heart size={14} /> Want to help? See the <Link to="/contributing">contributing guide</Link>.
-            </p>
           </div>
         </div>
       </div>

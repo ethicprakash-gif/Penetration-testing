@@ -21,7 +21,7 @@
     ],
     "words": 450
   },
-  "/web-application-pentesting/vulnerabilities/artibtray-cookies-flag": {
+  "/web-application-pentesting/vulnerabilities/arbitrary-cookie-flags": {
     "readingTime": 1,
     "difficulty": "Intermediate",
     "platform": "Web",
@@ -305,7 +305,7 @@
     ],
     "words": 0
   },
-  "/web-application-pentesting/vulnerabilities/outdate-tls-version": {
+  "/web-application-pentesting/vulnerabilities/outdated-tls-version": {
     "readingTime": 1,
     "difficulty": "Intermediate",
     "platform": "Web",
@@ -1129,7 +1129,7 @@
     ],
     "words": 0
   },
-  "/infrastucture-security": {
+  "/infrastructure-security": {
     "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Infrastructure",
@@ -1139,7 +1139,7 @@
     ],
     "words": 460
   },
-  "/infrastucture-security/references": {
+  "/infrastructure-security/references": {
     "readingTime": 1,
     "difficulty": "Beginner",
     "platform": "Infrastructure",

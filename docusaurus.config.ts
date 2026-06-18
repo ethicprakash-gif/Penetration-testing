@@ -170,7 +170,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} PentestingEverything contributors. Content licensed per the repository LICENSE. Built with Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} PentestingEverything · Maintained by <a href="${GITHUB_URL.replace('/PentestingEverything', '')}" target="_blank" rel="noopener noreferrer">Madhurendra Kumar (m14r41)</a> · Content licensed under the repository <a href="${GITHUB_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a>.`,
     },
     prism: {
       theme: prismThemes.github,
