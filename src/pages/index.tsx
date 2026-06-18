@@ -32,7 +32,7 @@ function Hero(): React.JSX.Element {
       <div className="container">
         <div className={styles.heroInner}>
           <span className={styles.badge}>
-            <ShieldCheck size={15} /> Offensive security knowledge base
+            <ShieldCheck size={15} /> A complete pentesting solution across every domain
           </span>
           <h1 className={styles.title}>
             Pentest <span className={styles.gradient}>everything</span>.<br />

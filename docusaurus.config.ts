@@ -14,7 +14,7 @@ const GITHUB_URL = `https://github.com/${ORG}/${REPO}`;
 
 const config: Config = {
   title: 'PentestingEverything',
-  tagline: 'A practical, searchable knowledge base for offensive security',
+  tagline: 'A complete pentesting solution across web, cloud, mobile, network, API, AD and more',
   favicon: 'img/favicon.svg',
 
   url: SITE_URL,
