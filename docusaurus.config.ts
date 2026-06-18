@@ -136,10 +136,8 @@ const config: Config = {
         {to: '/learning-paths', label: 'Learning Paths', position: 'left'},
         {to: '/contributing', label: 'Contribute', position: 'left'},
         {
-          href: GITHUB_URL,
+          type: 'custom-githubStats',
           position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
         },
       ],
     },
