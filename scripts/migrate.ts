@@ -331,6 +331,10 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
 
   const readme = mdFiles.find((e) => isReadme(e.name));
   const topLabel = prettyLabel(segments[segments.length - 1] ?? topCategory);
+  // A source "References" sub-folder holds only PDFs; its files are surfaced on the
+  // category's consolidated References page, so it must NOT create its own category/page
+  // (that would collide with the generated `<category>/references` route).
+  const isRefFolder = segments.length > 1 && /^references$/i.test(segments[segments.length - 1]);
 
   // Copy any local images alongside content so relative refs keep working.
   for (const img of imgFiles) {
@@ -341,37 +345,37 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
   // --- Folder index (from README) ---
   let indexSlug = '/' + segments.map(pathSlug).join('/');
   if (segments.length === 0) indexSlug = '/overview';
-  indexSlug = uniqueSlug(indexSlug);
-  if (readme) {
-    const abs = path.join(srcDir, readme.name);
-    const {title, body, description, words} = normalize(fs.readFileSync(abs, 'utf8'));
-    const finalTitle = title || topLabel;
-    const tags = deriveTags(topCategory, segments, readme.name);
-    const meta: DocMeta = {
-      readingTime: Math.max(1, Math.round(words / 200)),
-      difficulty: difficultyFor(topLabel, body),
-      platform: PLATFORM[topCategory] ?? 'General',
-      tags, words,
-    };
-    docmeta[indexSlug] = meta;
-    const fm = buildFrontmatter({
-      title: finalTitle, label: topLabel, slug: indexSlug,
-      description: description || `${topLabel} — methodology, techniques, and references.`,
-      tags, editUrl: ghEdit(abs), lastUpdate: gitDate(abs), sidebarPos: 0,
-    });
-    fs.writeFileSync(path.join(outDir, 'index.md'), fm + '\n' + body);
-    report.indexPages++;
-    report.docsWritten++;
-    bumpCategory(topCategory, topLabel, 'docs');
-  } else if (mdFiles.length > 0 || pdfFiles.length > 0 || subDirs.length > 0) {
-    // Folder with content but no README → generated index so the category is clickable,
-    // pinned to the clean folder slug (e.g. /cloud-pentesting) rather than /category/...
-    writeCategory(outDir, topLabel, topPosition(topCategory, segments), `Documentation and references for ${topLabel}.`, indexSlug);
-    usedSlugs.add(indexSlug.toLowerCase());
+  if (!isRefFolder) {
+    indexSlug = uniqueSlug(indexSlug);
+    if (readme) {
+      const abs = path.join(srcDir, readme.name);
+      const {title, body, description, words} = normalize(fs.readFileSync(abs, 'utf8'));
+      const finalTitle = title || topLabel;
+      const tags = deriveTags(topCategory, segments, readme.name);
+      const meta: DocMeta = {
+        readingTime: Math.max(1, Math.round(words / 200)),
+        difficulty: difficultyFor(topLabel, body),
+        platform: PLATFORM[topCategory] ?? 'General',
+        tags, words,
+      };
+      docmeta[indexSlug] = meta;
+      const fm = buildFrontmatter({
+        title: finalTitle, label: topLabel, slug: indexSlug,
+        description: description || `${topLabel} — methodology, techniques, and references.`,
+        tags, editUrl: ghEdit(abs), lastUpdate: gitDate(abs), sidebarPos: 0,
+      });
+      fs.writeFileSync(path.join(outDir, 'index.md'), fm + '\n' + body);
+      report.indexPages++;
+      report.docsWritten++;
+      bumpCategory(topCategory, topLabel, 'docs');
+      // _category_.json for ordering/label (index.md provides the link target).
+      writeCategory(outDir, topLabel, topPosition(topCategory, segments));
+    } else if (mdFiles.length > 0 || subDirs.length > 0) {
+      // Folder with content but no README → generated index pinned to the clean slug.
+      writeCategory(outDir, topLabel, topPosition(topCategory, segments), `Documentation and references for ${topLabel}.`, indexSlug);
+      usedSlugs.add(indexSlug.toLowerCase());
+    }
   }
-
-  // --- _category_.json for ordering/label (when an index.md exists, no link needed) ---
-  if (readme) writeCategory(outDir, topLabel, topPosition(topCategory, segments));
 
   // --- Non-README markdown docs ---
   let pos = 1;
@@ -416,8 +420,9 @@ function processFolder(srcDir: string, outDir: string, segments: string[], topCa
     const title = prettyLabel(base);
     const publicPath = '/pdfs/' + relPdf.split(path.sep).map(encodeURIComponent).join('/');
     const sizeKb = Math.round(fs.statSync(abs).size / 1024);
-    // Group label = the sub-path inside the category (segments beyond the top one).
-    const group = segments.slice(1).map(prettyLabel).join(' › ') || 'General';
+    // Group label = the sub-path inside the category. References folders → a single
+    // flat "General" group so the consolidated page reads as one clean list.
+    const group = isRefFolder ? 'General' : (segments.slice(1).map(prettyLabel).join(' › ') || 'General');
     const catSlug = pathSlug(topCategory);
 
     (catRefs[topCategory] ??= []).push({title, href: publicPath, sizeKb, group});
