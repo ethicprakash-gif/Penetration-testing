@@ -4,7 +4,7 @@
 
 **A complete, searchable penetration-testing knowledge base across 23 security domains.**
 
-### 🌐 Live website: **[pentest.m14r41.in](https://pentest.m14r41.in)**
+### Live website: **[pentest.m14r41.in](https://pentest.m14r41.in)**
 
 [Live Website](https://pentest.m14r41.in) · [PentestingChecklist](https://checklist.m14r41.in) · [Contribute](https://github.com/m14r41/PentestingEverything/blob/main/CONTRIBUTING.md) · [Report an Issue](https://github.com/m14r41/PentestingEverything/issues)
 
