@@ -1,13 +1,13 @@
 ---
 title: Contributing Guide
-description: How to add or improve documentation in the PentestingEverything knowledge base — fork, edit, preview, and open a pull request.
+description: How to add or improve documentation in the PentestingEverything knowledge base, fork, edit, preview, and open a pull request.
 ---
 
 # Contributing Guide
 
 Thanks for helping improve **PentestingEverything**. This site is generated automatically
 from the repository's content folders, so contributing is mostly about **adding Markdown
-files and PDFs in the right place** — the navigation, search index, metadata, and reference
+files and PDFs in the right place**: the navigation, search index, metadata, and reference
 pages are all built for you.
 
 :::tip The golden rule
@@ -35,7 +35,7 @@ Content folders (source of truth)  ──►  bun run migrate  ──►  docs/ 
 | Node.js | 18 or newer |
 | Bun | latest (`curl -fsSL https://bun.sh/install \| bash`) |
 
-## Step 1 — Fork the repository
+## Step 1: Fork the repository
 
 Click **Fork** on the [repository page](https://github.com/m14r41/PentestingEverything),
 then clone your fork:
@@ -45,13 +45,13 @@ git clone https://github.com/<your-username>/PentestingEverything.git
 cd PentestingEverything
 ```
 
-## Step 2 — Create a branch
+## Step 2: Create a branch
 
 ```bash
 git checkout -b add-graphql-idor-notes
 ```
 
-## Step 3 — Run the site locally
+## Step 3: Run the site locally
 
 ```bash
 bun install
@@ -59,7 +59,7 @@ bun start
 # opens http://localhost:3000 with live reload
 ```
 
-## Step 4 — Make your change
+## Step 4: Make your change
 
 ### Add a new topic or technique
 
@@ -70,7 +70,7 @@ mkdir -p "Web Application Pentesting/Vulnerabilities/Prototype Pollution"
 $EDITOR "Web Application Pentesting/Vulnerabilities/Prototype Pollution/README.md"
 ```
 
-A minimal page is just Markdown — frontmatter (title, slug, tags, reading time) is
+A minimal page is just Markdown, frontmatter (title, slug, tags, reading time) is
 generated automatically. You can still override any field by adding your own frontmatter:
 
 ```markdown
@@ -86,6 +86,23 @@ Short description of the vulnerability…
 ## How to test
 ...
 ```
+
+### Add a whole new category
+
+A category is simply a **top-level folder** at the repo root. Create one with a `README.md`
+and it becomes a new sidebar section, homepage card, and search entry automatically:
+
+```bash
+mkdir -p "Threat Intelligence"
+$EDITOR "Threat Intelligence/README.md"
+```
+
+By default the new category sorts alphabetically after the existing ones and uses a generic
+icon. To make it first-class (all optional, none required for it to appear), a maintainer can:
+
+- add the folder name to `TOP_ORDER` and the `PLATFORM` map in `scripts/migrate.ts` (custom order + platform tag),
+- map it to an icon in `src/components/CategoryIcon.tsx`,
+- add a row to the Table of Contents in the root `README.md`.
 
 ### Improve an existing page
 
@@ -104,7 +121,7 @@ cp ~/Downloads/"GraphQL Cheat Sheet.pdf" "API Pentesting/GraphQL/"
 It is automatically copied, de-duplicated, and listed on the **API Pentesting → References**
 page. You do not create a page for it.
 
-## Step 5 — Preview and verify
+## Step 5: Preview and verify
 
 ```bash
 bun run build      # regenerates everything and checks for broken links
@@ -112,7 +129,7 @@ bun run build      # regenerates everything and checks for broken links
 
 Fix any warnings the build reports for files you touched.
 
-## Step 6 — Commit, push, open a Pull Request
+## Step 6: Commit, push, open a Pull Request
 
 ```bash
 git add -A
@@ -125,10 +142,10 @@ you added or changed** and **why**. A maintainer will review it.
 
 ## Content style guidelines
 
-- **Be accurate and practical** — prefer real commands, payloads, and steps over theory.
+- **Be accurate and practical**: prefer real commands, payloads, and steps over theory.
 - **One topic per folder.** Keep titles specific (e.g. *Blind SSRF*, not *Misc*).
 - **Use fenced code blocks** with a language tag (` ```bash `, ` ```http `) for highlighting.
-- **Cite sources** where relevant. Keep a neutral, professional tone — no emoji.
+- **Cite sources** where relevant. Keep a neutral, professional tone, no emoji.
 - **Only contribute material you have the right to share.** Respect the repository
   [LICENSE](https://github.com/m14r41/PentestingEverything/blob/main/LICENSE).
 
@@ -136,10 +153,71 @@ you added or changed** and **why**. A maintainer will review it.
 
 | You want to… | Do this |
 | --- | --- |
+| Add a vulnerability / technique | New folder + `README.md` under a category's `Vulnerabilities/` |
+| Add a whole new category | New **top-level** folder + `README.md` at the repo root |
 | Add a technique page | New folder + `README.md` under a category |
 | Add sub-notes to a topic | Another `*.md` in the same folder |
 | Add a cheat sheet / PDF | Drop the PDF in the category folder |
 | Fix a typo on a page | Use the page's “Edit this page” link |
 | Re-order a section | Add `sidebar_position` to the page frontmatter |
 
-Happy hacking — and thank you for contributing.
+## Navigation: top menu & sidebar
+
+The site has two navigation layers.
+
+**1. Top navbar** (the menu bar across the top, including its dropdown submenus). Controlled in
+`docusaurus.config.ts` under `themeConfig.navbar.items`:
+
+- **Simple link:** `{to: '/references', label: 'References'}` (internal page) or
+  `{href: 'https://example.com', label: 'External'}` (external site).
+- **Dropdown / submenu:** a `dropdown` item with its own `items` list. For example the
+  **Top Projects** menu:
+
+  ```ts
+  {
+    type: 'dropdown',
+    label: 'Top Projects',
+    position: 'left',
+    items: [
+      {label: 'PentestingChecklist', href: 'https://checklist.m14r41.in/'},
+      {label: 'wordlistForger', href: 'https://github.com/m14r41/wordlistForger'},
+    ],
+  }
+  ```
+
+  To change a submenu, add, remove, or reorder entries in its `items` array.
+- **Other item types in use:** `docSidebar` (the "Start Pentesting" knowledge-base menu),
+  `search`, and a custom GitHub-stats widget. `position` is `'left'` or `'right'`.
+
+**2. Left sidebar** (the knowledge-base menu and its sub-menus). This is **auto-generated from
+the folder tree**, so you never edit it by hand:
+
+- A top-level folder becomes a sidebar section (a category).
+- A subfolder becomes a nested sub-menu, e.g. `Web Application Pentesting/Vulnerabilities/XSS`.
+- A `README.md` is that section's landing page; other `*.md` files are its pages.
+- Sections are collapsible. Top-level order comes from `TOP_ORDER`; order inside a folder comes
+  from each page's `sidebar_position` frontmatter (lower number = higher in the list).
+
+## Configuration reference (maintainers)
+
+Content is fully automatic, but a few **presentation** details are controlled by the files
+below. You rarely need these, but here is the complete map:
+
+| To control… | Edit | Notes |
+| --- | --- | --- |
+| **Category order** (sidebar + homepage) | `scripts/migrate.ts` → `TOP_ORDER` | List of folder names in display order; any category not listed falls alphabetically after |
+| **Category platform tag** (e.g. "Web", "Cloud") | `scripts/migrate.ts` → `PLATFORM` | Folder name to tag; defaults to `General` |
+| **Category / homepage icon** | `src/components/CategoryIcon.tsx` → `MAP` | Folder name to a Lucide icon; defaults to `ShieldCheck`. The map's order does not matter |
+| **Display label** (when a folder name is not ideal) | `scripts/migrate.ts` → `LABEL_FIXES` | Folder name to pretty label; folders are never renamed on disk |
+| **Folders ignored** (not turned into categories) | `scripts/migrate.ts` → `EXCLUDE` / `EXCLUDE_FILES` | e.g. `src`, `scripts`, `static`, `docs` |
+| **Page order within a category** | the page's `sidebar_position` frontmatter | lower number = higher in the list |
+| **Navbar, footer, site title, favicon/logo** | `docusaurus.config.ts` | standard Docusaurus config |
+| **Page title / slug / tags** | auto-generated by `migrate`; override via frontmatter | only add frontmatter if you need a custom value |
+
+:::caution Names must match exactly
+In `TOP_ORDER`, `PLATFORM`, and `CategoryIcon`, the key must match the **actual folder name
+exactly**, including quirks like `Infrastucture Security` and the double space in
+`Container & Kubernetes  Assessment`. A mismatch silently falls back to the default.
+:::
+
+Happy hacking, and thank you for contributing.

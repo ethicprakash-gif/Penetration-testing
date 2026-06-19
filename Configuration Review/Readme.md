@@ -100,7 +100,7 @@ This phase often involves **manual inspection** and the use of automated tools t
 
 ---
 
-## 🛠 Tools for Configuration Review
+## Tools for Configuration Review
 
 | Tool                        | Purpose                                            |
 | --------------------------- | -------------------------------------------------- |

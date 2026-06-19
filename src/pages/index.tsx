@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
-import {ArrowRight, BookOpen, Search, ShieldCheck, FileText, Route, Github, Linkedin, Globe, Heart} from 'lucide-react';
+import {ArrowRight, BookOpen, Search, ShieldCheck, FileText, Route, Github, Linkedin, Globe, Heart, ListChecks} from 'lucide-react';
 import CategoryIcon from '@site/src/components/CategoryIcon';
 import manifest from '@site/src/data/manifest.json';
 import styles from './index.module.css';
@@ -10,7 +10,7 @@ type Category = {key: string; label: string; slug: string; docs: number; pdfs: n
 type Contributor = {login: string; name: string; avatar: string; profile: string};
 
 const MAINTAINER = {
-  name: 'Madhurendra Kumar',
+  name: 'm14r41',
   handle: 'm14r41',
   avatar: 'https://github.com/m14r41.png',
   github: 'https://github.com/m14r41',
@@ -36,11 +36,11 @@ function Hero(): React.JSX.Element {
           </span>
           <h1 className={styles.title}>
             Pentest <span className={styles.gradient}>everything</span>.<br />
-            Find it in seconds.
+            All domains in one place.
           </h1>
           <p className={styles.subtitle}>
-            A curated, searchable reference covering web, cloud, mobile, network, API, AD and
-            more — methodology, checklists, payloads and field-tested references, all in one place.
+            A complete solution for penetration testing and VAPT across web, mobile, API,
+            network, cloud, Active Directory, SAST and more.
           </p>
           <div className={styles.actions}>
             <Link className="pe-btn pe-btn--primary" to="/overview">
@@ -162,7 +162,6 @@ function Maintainers(): React.JSX.Element {
             <figcaption className="pe-people__body">
               <span className="pe-people__badge">Project Maintainer</span>
               <p className="pe-people__name">{MAINTAINER.name}</p>
-              <p className="pe-people__handle">@{MAINTAINER.handle}</p>
               <div className="pe-people__links">
                 <a className="pe-iconbtn" href={MAINTAINER.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github size={18} /></a>
                 <a className="pe-iconbtn" href={MAINTAINER.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin size={18} /></a>
@@ -205,13 +204,42 @@ function Maintainers(): React.JSX.Element {
   );
 }
 
+function ChecklistPromo(): React.JSX.Element {
+  return (
+    <section className="pe-section">
+      <div className="container">
+        <div className={styles.promo}>
+          <div className={styles.promoIcon}><ListChecks size={26} /></div>
+          <div className={styles.promoBody}>
+            <div className="pe-eyebrow">Practical companion</div>
+            <h2 className={styles.promoTitle}>PentestingChecklist</h2>
+            <p className={styles.promoText}>
+              This site is the deep reference. <strong>PentestingChecklist</strong> is the
+              hands-on, tick-as-you-go companion: a structured checklist across 23 platforms
+              with progress tracking, notes, and export. Read the technique here, track it there.
+            </p>
+          </div>
+          <a
+            className={`pe-btn pe-btn--primary ${styles.promoBtn}`}
+            href="https://checklist.m14r41.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Open Checklist <ArrowRight size={16} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home(): React.JSX.Element {
   return (
     <Layout
-      title="Pentest Everything — Offensive Security Knowledge Base"
-      description="A curated, searchable cybersecurity knowledge base covering web, cloud, mobile, network, API, Active Directory, OSINT and more.">
+      title="Pentest Everything: Offensive Security Knowledge Base"
+      description="A complete solution for penetration testing and VAPT across web, mobile, API, Thick client, Network, SAST, SAST, SCA and more.">
       <Hero />
       <main>
+        <ChecklistPromo />
         <Categories />
         <Features />
         <Paths />

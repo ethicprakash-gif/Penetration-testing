@@ -7,7 +7,7 @@
       "Web",
       "Web Application Pentesting"
     ],
-    "words": 2460
+    "words": 2439
   },
   "/web-application-pentesting/vulnerabilities/application-logic-flaws": {
     "readingTime": 2,
@@ -31,10 +31,10 @@
       "Vulnerabilities",
       "Arbitrary Cookie Flags"
     ],
-    "words": 0
+    "words": 297
   },
   "/web-application-pentesting/vulnerabilities/back-button-attack": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -43,7 +43,7 @@
       "Vulnerabilities",
       "Back button attack"
     ],
-    "words": 0
+    "words": 306
   },
   "/web-application-pentesting/vulnerabilities/broken-authentication": {
     "readingTime": 1,
@@ -55,7 +55,7 @@
       "Vulnerabilities",
       "Broken Authentication"
     ],
-    "words": 0
+    "words": 297
   },
   "/web-application-pentesting/vulnerabilities/bruteforce-attack": {
     "readingTime": 1,
@@ -67,7 +67,7 @@
       "Vulnerabilities",
       "BruteForce Attack"
     ],
-    "words": 0
+    "words": 285
   },
   "/web-application-pentesting/vulnerabilities/cors": {
     "readingTime": 3,
@@ -103,7 +103,7 @@
       "Vulnerabilities",
       "Captcha Bypass"
     ],
-    "words": 0
+    "words": 298
   },
   "/web-application-pentesting/vulnerabilities/clickjacking": {
     "readingTime": 3,
@@ -139,7 +139,7 @@
       "Vulnerabilities",
       "Command Injection"
     ],
-    "words": 0
+    "words": 297
   },
   "/web-application-pentesting/vulnerabilities/credential-stuffing": {
     "readingTime": 1,
@@ -151,7 +151,7 @@
       "Vulnerabilities",
       "Credential Stuffing"
     ],
-    "words": 0
+    "words": 283
   },
   "/web-application-pentesting/vulnerabilities/cross-site-request-forgery-csrf": {
     "readingTime": 4,
@@ -173,7 +173,7 @@
       "Web Application Pentesting",
       "Vulnerabilities"
     ],
-    "words": 825
+    "words": 805
   },
   "/web-application-pentesting/vulnerabilities/directory-traversal": {
     "readingTime": 1,
@@ -188,7 +188,7 @@
     "words": 201
   },
   "/web-application-pentesting/vulnerabilities/host-header-injection": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -197,10 +197,10 @@
       "Vulnerabilities",
       "Host Header Injection"
     ],
-    "words": 0
+    "words": 300
   },
   "/web-application-pentesting/vulnerabilities/idor": {
-    "readingTime": 6,
+    "readingTime": 5,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -209,7 +209,7 @@
       "Vulnerabilities",
       "IDOR"
     ],
-    "words": 1107
+    "words": 1081
   },
   "/web-application-pentesting/vulnerabilities/improper-error-handling": {
     "readingTime": 1,
@@ -221,7 +221,7 @@
       "Vulnerabilities",
       "Improper Error Handling"
     ],
-    "words": 0
+    "words": 287
   },
   "/web-application-pentesting/vulnerabilities/information-disclosure": {
     "readingTime": 1,
@@ -233,7 +233,7 @@
       "Vulnerabilities",
       "Information Disclosure"
     ],
-    "words": 0
+    "words": 291
   },
   "/web-application-pentesting/vulnerabilities/insecure-object-storage": {
     "readingTime": 1,
@@ -245,21 +245,21 @@
       "Vulnerabilities",
       "Insecure Object Storage"
     ],
-    "words": 0
+    "words": 270
   },
   "/web-application-pentesting/vulnerabilities/insufficient-security-controls": {
     "readingTime": 1,
-    "difficulty": "Intermediate",
+    "difficulty": "Advanced",
     "platform": "Web",
     "tags": [
       "Web",
       "Web Application Pentesting",
       "Vulnerabilities"
     ],
-    "words": 0
+    "words": 281
   },
   "/web-application-pentesting/vulnerabilities/insufficient-transport-layer-protection": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -267,7 +267,7 @@
       "Web Application Pentesting",
       "Vulnerabilities"
     ],
-    "words": 0
+    "words": 317
   },
   "/web-application-pentesting/vulnerabilities/misconfigured-http-headers": {
     "readingTime": 1,
@@ -279,10 +279,10 @@
       "Vulnerabilities",
       "Misconfigured HTTP Headers"
     ],
-    "words": 0
+    "words": 271
   },
   "/web-application-pentesting/vulnerabilities/open-file-upload": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -291,10 +291,10 @@
       "Vulnerabilities",
       "Open File Upload"
     ],
-    "words": 9
+    "words": 305
   },
   "/web-application-pentesting/vulnerabilities/open-redirect": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -303,10 +303,10 @@
       "Vulnerabilities",
       "Open Redirect"
     ],
-    "words": 0
+    "words": 335
   },
   "/web-application-pentesting/vulnerabilities/outdated-tls-version": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -315,7 +315,7 @@
       "Vulnerabilities",
       "Outdated TLS Version"
     ],
-    "words": 0
+    "words": 307
   },
   "/web-application-pentesting/vulnerabilities/path-traversal": {
     "readingTime": 1,
@@ -327,10 +327,10 @@
       "Vulnerabilities",
       "Path Traversal"
     ],
-    "words": 0
+    "words": 294
   },
   "/web-application-pentesting/vulnerabilities/privilege-escalation": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Advanced",
     "platform": "Web",
     "tags": [
@@ -339,10 +339,10 @@
       "Vulnerabilities",
       "Privilege Escalation"
     ],
-    "words": 0
+    "words": 316
   },
   "/web-application-pentesting/vulnerabilities/race-condition": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -351,11 +351,11 @@
       "Vulnerabilities",
       "Race Condition"
     ],
-    "words": 0
+    "words": 300
   },
   "/web-application-pentesting/vulnerabilities/remote-code-execution-rce": {
-    "readingTime": 1,
-    "difficulty": "Advanced",
+    "readingTime": 2,
+    "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
       "Web",
@@ -363,7 +363,7 @@
       "Vulnerabilities",
       "Remote Code Execution (RCE)"
     ],
-    "words": 134
+    "words": 355
   },
   "/web-application-pentesting/vulnerabilities/sql-injection": {
     "readingTime": 4,
@@ -375,7 +375,7 @@
       "Vulnerabilities",
       "SQL Injection"
     ],
-    "words": 829
+    "words": 810
   },
   "/web-application-pentesting/vulnerabilities/sql-injection/2nd-order-sql-injection": {
     "readingTime": 3,
@@ -387,7 +387,7 @@
       "Vulnerabilities",
       "SQL Injection"
     ],
-    "words": 545
+    "words": 518
   },
   "/web-application-pentesting/vulnerabilities/ssrf": {
     "readingTime": 3,
@@ -411,7 +411,7 @@
       "Vulnerabilities",
       "Security Header Missing"
     ],
-    "words": 0
+    "words": 281
   },
   "/web-application-pentesting/vulnerabilities/server-misconfigurations": {
     "readingTime": 1,
@@ -423,7 +423,7 @@
       "Vulnerabilities",
       "Server Misconfigurations"
     ],
-    "words": 0
+    "words": 298
   },
   "/web-application-pentesting/vulnerabilities/server-side-template-injection-ssti": {
     "readingTime": 6,
@@ -437,7 +437,7 @@
     "words": 1299
   },
   "/web-application-pentesting/vulnerabilities/session-fixation": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -446,10 +446,10 @@
       "Vulnerabilities",
       "Session Fixation"
     ],
-    "words": 0
+    "words": 336
   },
   "/web-application-pentesting/vulnerabilities/unrestricted-file-upload": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -458,7 +458,7 @@
       "Vulnerabilities",
       "Unrestricted File Upload"
     ],
-    "words": 0
+    "words": 319
   },
   "/web-application-pentesting/vulnerabilities/unsecured-api-endpoints": {
     "readingTime": 1,
@@ -470,21 +470,21 @@
       "Vulnerabilities",
       "Unsecured API Endpoints"
     ],
-    "words": 0
+    "words": 299
   },
   "/web-application-pentesting/vulnerabilities/unvalidated-redirects-and-forwards": {
-    "readingTime": 1,
-    "difficulty": "Intermediate",
+    "readingTime": 2,
+    "difficulty": "Advanced",
     "platform": "Web",
     "tags": [
       "Web",
       "Web Application Pentesting",
       "Vulnerabilities"
     ],
-    "words": 0
+    "words": 301
   },
   "/web-application-pentesting/vulnerabilities/weak-ciphers": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -493,10 +493,10 @@
       "Vulnerabilities",
       "Weak Ciphers"
     ],
-    "words": 0
+    "words": 300
   },
   "/web-application-pentesting/vulnerabilities/web-cache-deception": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -505,7 +505,7 @@
       "Vulnerabilities",
       "Web Cache Deception"
     ],
-    "words": 0
+    "words": 344
   },
   "/web-application-pentesting/vulnerabilities/xml-external-entity-xxe": {
     "readingTime": 1,
@@ -531,18 +531,6 @@
     ],
     "words": 2172
   },
-  "/web-application-pentesting/vulnerabilities/xss/cross-site-scripting": {
-    "readingTime": 2,
-    "difficulty": "Intermediate",
-    "platform": "Web",
-    "tags": [
-      "Web",
-      "Web Application Pentesting",
-      "Vulnerabilities",
-      "XSS"
-    ],
-    "words": 484
-  },
   "/web-application-pentesting/vulnerabilities/xss/dom-xss": {
     "readingTime": 4,
     "difficulty": "Intermediate",
@@ -553,10 +541,22 @@
       "Vulnerabilities",
       "XSS"
     ],
-    "words": 714
+    "words": 709
+  },
+  "/web-application-pentesting/vulnerabilities/xss/cross-site-scripting": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Web",
+    "tags": [
+      "Web",
+      "Web Application Pentesting",
+      "Vulnerabilities",
+      "XSS"
+    ],
+    "words": 485
   },
   "/web-application-pentesting/vulnerabilities/tabnabbing": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Web",
     "tags": [
@@ -565,7 +565,67 @@
       "Vulnerabilities",
       "tabnabbing"
     ],
-    "words": 0
+    "words": 304
+  },
+  "/web-application-pentesting/vulnerabilities/http-request-smuggling": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Web",
+    "tags": [
+      "Web",
+      "Web Application Pentesting",
+      "Vulnerabilities",
+      "HTTP Request Smuggling"
+    ],
+    "words": 427
+  },
+  "/web-application-pentesting/vulnerabilities/web-cache-poisoning": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Web",
+    "tags": [
+      "Web",
+      "Web Application Pentesting",
+      "Vulnerabilities",
+      "Web Cache Poisoning"
+    ],
+    "words": 432
+  },
+  "/web-application-pentesting/vulnerabilities/jwt-attacks": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Web",
+    "tags": [
+      "Web",
+      "Web Application Pentesting",
+      "Vulnerabilities",
+      "JWT Attacks"
+    ],
+    "words": 401
+  },
+  "/web-application-pentesting/vulnerabilities/graphql-injection": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Web",
+    "tags": [
+      "Web",
+      "Web Application Pentesting",
+      "Vulnerabilities",
+      "GraphQL Injection"
+    ],
+    "words": 415
+  },
+  "/web-application-pentesting/vulnerabilities/web-llm-prompt-injection": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Web",
+    "tags": [
+      "Web",
+      "Web Application Pentesting",
+      "Vulnerabilities",
+      "Web LLM Prompt Injection"
+    ],
+    "words": 481
   },
   "/web-application-pentesting/references": {
     "readingTime": 1,
@@ -577,14 +637,24 @@
     "words": 0
   },
   "/api-pentesting": {
-    "readingTime": 10,
+    "readingTime": 11,
     "difficulty": "Advanced",
     "platform": "API",
     "tags": [
       "API",
       "API Pentesting"
     ],
-    "words": 1914
+    "words": 2132
+  },
+  "/api-pentesting/mass-assignment-cheatsheet": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "API",
+    "tags": [
+      "API",
+      "API Pentesting"
+    ],
+    "words": 304
   },
   "/api-pentesting/graphql": {
     "readingTime": 2,
@@ -617,134 +687,84 @@
     ],
     "words": 0
   },
-  "/network-pentesting": {
-    "readingTime": 33,
+  "/secure-code-review": {
+    "readingTime": 7,
     "difficulty": "Intermediate",
-    "platform": "Network",
+    "platform": "Source Code",
     "tags": [
-      "Network",
-      "Network Pentesting"
+      "Source Code",
+      "Secure Code Review"
     ],
-    "words": 6665
+    "words": 1411
   },
-  "/network-pentesting/references": {
+  "/secure-code-review/troubleshoot": {
+    "readingTime": 1,
+    "difficulty": "Intermediate",
+    "platform": "Source Code",
+    "tags": [
+      "Source Code",
+      "Secure Code Review"
+    ],
+    "words": 169
+  },
+  "/secure-code-review/challenge": {
+    "readingTime": 1,
+    "difficulty": "Intermediate",
+    "platform": "Source Code",
+    "tags": [
+      "Source Code",
+      "Secure Code Review"
+    ],
+    "words": 255
+  },
+  "/secure-code-review/sast-kotlin": {
+    "readingTime": 7,
+    "difficulty": "Intermediate",
+    "platform": "Source Code",
+    "tags": [
+      "Source Code",
+      "Secure Code Review"
+    ],
+    "words": 1356
+  },
+  "/secure-code-review/sast-python": {
+    "readingTime": 7,
+    "difficulty": "Intermediate",
+    "platform": "Source Code",
+    "tags": [
+      "Source Code",
+      "Secure Code Review"
+    ],
+    "words": 1318
+  },
+  "/secure-code-review/sast-java": {
+    "readingTime": 6,
+    "difficulty": "Intermediate",
+    "platform": "Source Code",
+    "tags": [
+      "Source Code",
+      "Secure Code Review"
+    ],
+    "words": 1194
+  },
+  "/secure-code-review/references": {
     "readingTime": 1,
     "difficulty": "Beginner",
-    "platform": "Network",
-    "tags": [
-      "References"
-    ],
-    "words": 0
-  },
-  "/active-directory-pentesting": {
-    "readingTime": 22,
-    "difficulty": "Intermediate",
-    "platform": "Windows / AD",
-    "tags": [
-      "Windows / AD",
-      "Active Directory Pentesting"
-    ],
-    "words": 4352
-  },
-  "/active-directory-pentesting/windows-privilege-escalation/windowssensitive-file": {
-    "readingTime": 1,
-    "difficulty": "Intermediate",
-    "platform": "Windows / AD",
-    "tags": [
-      "Windows / AD",
-      "Active Directory Pentesting",
-      "Windows Privilege Escalation"
-    ],
-    "words": 1
-  },
-  "/active-directory-pentesting/references": {
-    "readingTime": 1,
-    "difficulty": "Beginner",
-    "platform": "Windows / AD",
-    "tags": [
-      "References"
-    ],
-    "words": 0
-  },
-  "/cloud-pentesting": {
-    "readingTime": 2,
-    "difficulty": "Intermediate",
-    "platform": "Cloud",
-    "tags": [
-      "Cloud",
-      "Cloud Pentesting"
-    ],
-    "words": 339
-  },
-  "/cloud-pentesting/aws": {
-    "readingTime": 2,
-    "difficulty": "Intermediate",
-    "platform": "Cloud",
-    "tags": [
-      "Cloud",
-      "Cloud Pentesting",
-      "AWS"
-    ],
-    "words": 430
-  },
-  "/cloud-pentesting/azure": {
-    "readingTime": 3,
-    "difficulty": "Intermediate",
-    "platform": "Cloud",
-    "tags": [
-      "Cloud",
-      "Cloud Pentesting",
-      "Azure"
-    ],
-    "words": 622
-  },
-  "/cloud-pentesting/gcp": {
-    "readingTime": 2,
-    "difficulty": "Intermediate",
-    "platform": "Cloud",
-    "tags": [
-      "Cloud",
-      "Cloud Pentesting",
-      "GCP"
-    ],
-    "words": 349
-  },
-  "/cloud-pentesting/references": {
-    "readingTime": 1,
-    "difficulty": "Beginner",
-    "platform": "Cloud",
-    "tags": [
-      "References"
-    ],
-    "words": 0
-  },
-  "/container-and-kubernetes-assessment": {
-    "readingTime": 4,
-    "difficulty": "Intermediate",
-    "platform": "Kubernetes",
-    "tags": [
-      "Kubernetes"
-    ],
-    "words": 734
-  },
-  "/container-and-kubernetes-assessment/references": {
-    "readingTime": 1,
-    "difficulty": "Beginner",
-    "platform": "Kubernetes",
+    "platform": "Source Code",
     "tags": [
       "References"
     ],
     "words": 0
   },
   "/mobile-pentesting": {
-    "readingTime": 1,
+    "readingTime": 2,
     "difficulty": "Intermediate",
     "platform": "Mobile",
     "tags": [
       "Mobile",
       "Mobile Pentesting"
     ],
-    "words": 164
+    "words": 364
   },
   "/mobile-pentesting/android-pentesting": {
     "readingTime": 12,
@@ -755,7 +775,7 @@
       "Mobile Pentesting",
       "Android Pentesting"
     ],
-    "words": 2404
+    "words": 2376
   },
   "/mobile-pentesting/android-pentesting/basic-learn": {
     "readingTime": 5,
@@ -818,7 +838,7 @@
       "Desktop",
       "Thick Client Pentesting"
     ],
-    "words": 2437
+    "words": 2327
   },
   "/thick-client-pentesting/references": {
     "readingTime": 1,
@@ -829,272 +849,102 @@
     ],
     "words": 0
   },
-  "/iot-pentesting": {
-    "readingTime": 5,
-    "difficulty": "Intermediate",
-    "platform": "IoT",
-    "tags": [
-      "IoT",
-      "IoT Pentesting"
-    ],
-    "words": 1033
-  },
-  "/iot-pentesting/fundamentals": {
+  "/cloud-pentesting": {
     "readingTime": 2,
     "difficulty": "Intermediate",
-    "platform": "IoT",
+    "platform": "Cloud",
     "tags": [
-      "IoT",
-      "IoT Pentesting"
+      "Cloud",
+      "Cloud Pentesting"
     ],
-    "words": 336
+    "words": 330
   },
-  "/wi-fi-pentesting": {
-    "readingTime": 6,
-    "difficulty": "Intermediate",
-    "platform": "Wireless",
-    "tags": [
-      "Wireless",
-      "Wi-Fi Pentesting"
-    ],
-    "words": 1260
-  },
-  "/wi-fi-pentesting/references": {
+  "/cloud-pentesting/subdomain-takeover-cheatsheet": {
     "readingTime": 1,
-    "difficulty": "Beginner",
-    "platform": "Wireless",
+    "difficulty": "Advanced",
+    "platform": "Cloud",
     "tags": [
-      "References"
+      "Cloud",
+      "Cloud Pentesting"
     ],
-    "words": 0
+    "words": 291
   },
-  "/blockchain-pentesting": {
+  "/cloud-pentesting/aws": {
     "readingTime": 2,
     "difficulty": "Intermediate",
-    "platform": "Blockchain",
+    "platform": "Cloud",
     "tags": [
-      "Blockchain",
-      "BlockChain Pentesting"
+      "Cloud",
+      "Cloud Pentesting",
+      "AWS"
     ],
-    "words": 341
+    "words": 430
   },
-  "/blockchain-pentesting/blockchainpentesting-2": {
-    "readingTime": 4,
-    "difficulty": "Intermediate",
-    "platform": "Blockchain",
-    "tags": [
-      "Blockchain",
-      "BlockChain Pentesting"
-    ],
-    "words": 886
-  },
-  "/llm-security-assessment": {
-    "readingTime": 5,
-    "difficulty": "Intermediate",
-    "platform": "AI / LLM",
-    "tags": [
-      "AI / LLM",
-      "LLM Security Assessment"
-    ],
-    "words": 1005
-  },
-  "/mcp-security-assessment": {
-    "readingTime": 7,
-    "difficulty": "Intermediate",
-    "platform": "AI / LLM",
-    "tags": [
-      "AI / LLM",
-      "MCP Security Assessment"
-    ],
-    "words": 1305
-  },
-  "/osint": {
-    "readingTime": 7,
-    "difficulty": "Intermediate",
-    "platform": "OSINT",
-    "tags": [
-      "OSINT"
-    ],
-    "words": 1349
-  },
-  "/osint/references": {
-    "readingTime": 1,
-    "difficulty": "Beginner",
-    "platform": "OSINT",
-    "tags": [
-      "References"
-    ],
-    "words": 0
-  },
-  "/phishing-assessment": {
-    "readingTime": 1,
-    "difficulty": "Intermediate",
-    "platform": "Social Eng.",
-    "tags": [
-      "Social Eng.",
-      "Phishing Assessment"
-    ],
-    "words": 261
-  },
-  "/phishing-assessment/methodology": {
-    "readingTime": 2,
-    "difficulty": "Intermediate",
-    "platform": "Social Eng.",
-    "tags": [
-      "Social Eng.",
-      "Phishing Assessment"
-    ],
-    "words": 351
-  },
-  "/secure-code-review": {
-    "readingTime": 7,
-    "difficulty": "Intermediate",
-    "platform": "Source Code",
-    "tags": [
-      "Source Code",
-      "Secure Code Review"
-    ],
-    "words": 1411
-  },
-  "/secure-code-review/challenge": {
-    "readingTime": 1,
-    "difficulty": "Intermediate",
-    "platform": "Source Code",
-    "tags": [
-      "Source Code",
-      "Secure Code Review"
-    ],
-    "words": 257
-  },
-  "/secure-code-review/sast-kotlin": {
-    "readingTime": 7,
-    "difficulty": "Intermediate",
-    "platform": "Source Code",
-    "tags": [
-      "Source Code",
-      "Secure Code Review"
-    ],
-    "words": 1356
-  },
-  "/secure-code-review/sast-python": {
-    "readingTime": 7,
-    "difficulty": "Intermediate",
-    "platform": "Source Code",
-    "tags": [
-      "Source Code",
-      "Secure Code Review"
-    ],
-    "words": 1318
-  },
-  "/secure-code-review/sast-java": {
-    "readingTime": 6,
-    "difficulty": "Intermediate",
-    "platform": "Source Code",
-    "tags": [
-      "Source Code",
-      "Secure Code Review"
-    ],
-    "words": 1194
-  },
-  "/secure-code-review/troubleshoot": {
-    "readingTime": 1,
-    "difficulty": "Intermediate",
-    "platform": "Source Code",
-    "tags": [
-      "Source Code",
-      "Secure Code Review"
-    ],
-    "words": 169
-  },
-  "/secure-code-review/references": {
-    "readingTime": 1,
-    "difficulty": "Beginner",
-    "platform": "Source Code",
-    "tags": [
-      "References"
-    ],
-    "words": 0
-  },
-  "/configuration-review": {
-    "readingTime": 4,
-    "difficulty": "Intermediate",
-    "platform": "Config",
-    "tags": [
-      "Config",
-      "Configuration Review"
-    ],
-    "words": 701
-  },
-  "/configuration-review/usingnipper": {
+  "/cloud-pentesting/azure": {
     "readingTime": 3,
     "difficulty": "Intermediate",
-    "platform": "Config",
+    "platform": "Cloud",
     "tags": [
-      "Config",
-      "Configuration Review"
+      "Cloud",
+      "Cloud Pentesting",
+      "Azure"
     ],
-    "words": 576
+    "words": 622
   },
-  "/devsecops": {
-    "readingTime": 18,
-    "difficulty": "Beginner",
-    "platform": "DevSecOps",
-    "tags": [
-      "DevSecOps"
-    ],
-    "words": 3613
-  },
-  "/devsecops/sca-assessment": {
-    "readingTime": 5,
+  "/cloud-pentesting/gcp": {
+    "readingTime": 2,
     "difficulty": "Intermediate",
-    "platform": "DevSecOps",
+    "platform": "Cloud",
     "tags": [
-      "DevSecOps"
+      "Cloud",
+      "Cloud Pentesting",
+      "GCP"
     ],
-    "words": 959
+    "words": 349
   },
-  "/devsecops/references": {
+  "/cloud-pentesting/references": {
     "readingTime": 1,
     "difficulty": "Beginner",
-    "platform": "DevSecOps",
+    "platform": "Cloud",
     "tags": [
       "References"
     ],
     "words": 0
   },
-  "/ci-cd-pentesting": {
-    "readingTime": 5,
+  "/network-pentesting": {
+    "readingTime": 1,
     "difficulty": "Intermediate",
-    "platform": "CI/CD",
+    "platform": "Network",
     "tags": [
-      "CI/CD",
-      "CI-CD Pentesting"
+      "Network",
+      "Network Pentesting"
     ],
-    "words": 1045
+    "words": 269
   },
-  "/ci-cd-pentesting/references": {
+  "/network-pentesting/metasploitable-pentest-report": {
+    "readingTime": 32,
+    "difficulty": "Intermediate",
+    "platform": "Network",
+    "tags": [
+      "Network",
+      "Network Pentesting"
+    ],
+    "words": 6416
+  },
+  "/network-pentesting/service-enumeration-cheatsheet": {
+    "readingTime": 1,
+    "difficulty": "Intermediate",
+    "platform": "Network",
+    "tags": [
+      "Network",
+      "Network Pentesting"
+    ],
+    "words": 82
+  },
+  "/network-pentesting/references": {
     "readingTime": 1,
     "difficulty": "Beginner",
-    "platform": "CI/CD",
-    "tags": [
-      "References"
-    ],
-    "words": 0
-  },
-  "/threat-modeling": {
-    "readingTime": 7,
-    "difficulty": "Intermediate",
-    "platform": "Design",
-    "tags": [
-      "Design",
-      "Threat Modeling"
-    ],
-    "words": 1369
-  },
-  "/threat-modeling/references": {
-    "readingTime": 1,
-    "difficulty": "Beginner",
-    "platform": "Design",
+    "platform": "Network",
     "tags": [
       "References"
     ],
@@ -1118,7 +968,7 @@
       "Network",
       "Firewall Penetration"
     ],
-    "words": 348
+    "words": 337
   },
   "/firewall-penetration/references": {
     "readingTime": 1,
@@ -1148,6 +998,265 @@
     ],
     "words": 0
   },
+  "/llm-security-assessment": {
+    "readingTime": 5,
+    "difficulty": "Intermediate",
+    "platform": "AI / LLM",
+    "tags": [
+      "AI / LLM",
+      "LLM Security Assessment"
+    ],
+    "words": 1005
+  },
+  "/mcp-security-assessment": {
+    "readingTime": 7,
+    "difficulty": "Intermediate",
+    "platform": "AI / LLM",
+    "tags": [
+      "AI / LLM",
+      "MCP Security Assessment"
+    ],
+    "words": 1305
+  },
+  "/active-directory-pentesting": {
+    "readingTime": 22,
+    "difficulty": "Intermediate",
+    "platform": "Windows / AD",
+    "tags": [
+      "Windows / AD",
+      "Active Directory Pentesting"
+    ],
+    "words": 4352
+  },
+  "/active-directory-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Windows / AD",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
+  "/container-and-kubernetes-assessment": {
+    "readingTime": 5,
+    "difficulty": "Intermediate",
+    "platform": "Kubernetes",
+    "tags": [
+      "Kubernetes"
+    ],
+    "words": 906
+  },
+  "/container-and-kubernetes-assessment/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Kubernetes",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
+  "/iot-pentesting": {
+    "readingTime": 5,
+    "difficulty": "Intermediate",
+    "platform": "IoT",
+    "tags": [
+      "IoT",
+      "IoT Pentesting"
+    ],
+    "words": 1033
+  },
+  "/iot-pentesting/fundamentals": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "IoT",
+    "tags": [
+      "IoT",
+      "IoT Pentesting"
+    ],
+    "words": 328
+  },
+  "/wi-fi-pentesting": {
+    "readingTime": 7,
+    "difficulty": "Intermediate",
+    "platform": "Wireless",
+    "tags": [
+      "Wireless",
+      "Wi-Fi Pentesting"
+    ],
+    "words": 1451
+  },
+  "/wi-fi-pentesting/wpa-cracking-cheatsheet": {
+    "readingTime": 1,
+    "difficulty": "Intermediate",
+    "platform": "Wireless",
+    "tags": [
+      "Wireless",
+      "Wi-Fi Pentesting"
+    ],
+    "words": 81
+  },
+  "/wi-fi-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Wireless",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
+  "/blockchain-pentesting": {
+    "readingTime": 3,
+    "difficulty": "Advanced",
+    "platform": "Blockchain",
+    "tags": [
+      "Blockchain",
+      "BlockChain Pentesting"
+    ],
+    "words": 542
+  },
+  "/blockchain-pentesting/blockchainpentesting-2": {
+    "readingTime": 4,
+    "difficulty": "Intermediate",
+    "platform": "Blockchain",
+    "tags": [
+      "Blockchain",
+      "BlockChain Pentesting"
+    ],
+    "words": 886
+  },
+  "/osint": {
+    "readingTime": 8,
+    "difficulty": "Intermediate",
+    "platform": "OSINT",
+    "tags": [
+      "OSINT"
+    ],
+    "words": 1566
+  },
+  "/osint/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "OSINT",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
+  "/phishing-assessment": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Social Eng.",
+    "tags": [
+      "Social Eng.",
+      "Phishing Assessment"
+    ],
+    "words": 455
+  },
+  "/phishing-assessment/methodology": {
+    "readingTime": 2,
+    "difficulty": "Intermediate",
+    "platform": "Social Eng.",
+    "tags": [
+      "Social Eng.",
+      "Phishing Assessment"
+    ],
+    "words": 341
+  },
+  "/configuration-review": {
+    "readingTime": 4,
+    "difficulty": "Intermediate",
+    "platform": "Config",
+    "tags": [
+      "Config",
+      "Configuration Review"
+    ],
+    "words": 700
+  },
+  "/configuration-review/usingnipper": {
+    "readingTime": 3,
+    "difficulty": "Intermediate",
+    "platform": "Config",
+    "tags": [
+      "Config",
+      "Configuration Review"
+    ],
+    "words": 559
+  },
+  "/devsecops": {
+    "readingTime": 18,
+    "difficulty": "Beginner",
+    "platform": "DevSecOps",
+    "tags": [
+      "DevSecOps"
+    ],
+    "words": 3532
+  },
+  "/devsecops/sca-assessment": {
+    "readingTime": 4,
+    "difficulty": "Intermediate",
+    "platform": "DevSecOps",
+    "tags": [
+      "DevSecOps"
+    ],
+    "words": 890
+  },
+  "/devsecops/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "DevSecOps",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
+  "/ci-cd-pentesting": {
+    "readingTime": 6,
+    "difficulty": "Intermediate",
+    "platform": "CI/CD",
+    "tags": [
+      "CI/CD",
+      "CI-CD Pentesting"
+    ],
+    "words": 1242
+  },
+  "/ci-cd-pentesting/secret-scanning-cheatsheet": {
+    "readingTime": 1,
+    "difficulty": "Intermediate",
+    "platform": "CI/CD",
+    "tags": [
+      "CI/CD",
+      "CI-CD Pentesting"
+    ],
+    "words": 142
+  },
+  "/ci-cd-pentesting/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "CI/CD",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
+  "/threat-modeling": {
+    "readingTime": 7,
+    "difficulty": "Intermediate",
+    "platform": "Design",
+    "tags": [
+      "Design",
+      "Threat Modeling"
+    ],
+    "words": 1369
+  },
+  "/threat-modeling/references": {
+    "readingTime": 1,
+    "difficulty": "Beginner",
+    "platform": "Design",
+    "tags": [
+      "References"
+    ],
+    "words": 0
+  },
   "/forensic": {
     "readingTime": 1,
     "difficulty": "Intermediate",
@@ -1156,7 +1265,7 @@
       "Forensics",
       "Forensic"
     ],
-    "words": 31
+    "words": 211
   },
   "/forensic/fundamentals": {
     "readingTime": 1,
@@ -1166,7 +1275,7 @@
       "Forensics",
       "Forensic"
     ],
-    "words": 293
+    "words": 292
   },
   "/forensic/mobile": {
     "readingTime": 3,
@@ -1200,13 +1309,13 @@
     "words": 0
   },
   "/overview": {
-    "readingTime": 7,
+    "readingTime": 8,
     "difficulty": "Beginner",
     "platform": "General",
     "tags": [
       "Overview"
     ],
-    "words": 1396
+    "words": 1550
   },
   "/overview/help": {
     "readingTime": 3,
@@ -1215,7 +1324,7 @@
     "tags": [
       "Overview"
     ],
-    "words": 526
+    "words": 525
   },
   "/overview/contributing": {
     "readingTime": 1,
@@ -1224,6 +1333,6 @@
     "tags": [
       "Overview"
     ],
-    "words": 166
+    "words": 159
   }
 }

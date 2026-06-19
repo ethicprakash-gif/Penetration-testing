@@ -9,7 +9,7 @@ an incident or supporting an investigation, the same core principles apply.
 - **Preserve first, analyse later.** Work on copies, never the original evidence.
 - **Maintain integrity.** Hash evidence (e.g. SHA-256) at acquisition and verify it has
   not changed before and after analysis.
-- **Document everything.** Who did what, when, and with which tool — the **chain of
+- **Document everything.** Who did what, when, and with which tool, the **chain of
   custody** is as important as the findings.
 
 ## Order of volatility

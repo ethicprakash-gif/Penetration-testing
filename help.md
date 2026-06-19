@@ -150,7 +150,7 @@ git diff main..feature-branch
 
 # Reset Local Main to Match GitHub
 
-⚠️ Discards local commits.
+Discards local commits.
 
 ```bash
 git checkout main

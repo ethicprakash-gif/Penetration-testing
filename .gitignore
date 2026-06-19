@@ -25,3 +25,6 @@ yarn-error.log*
 .idea
 .vscode/*
 !.vscode/extensions.json
+
+# Internal build report (kept local, not published)
+MIGRATION_REPORT.md

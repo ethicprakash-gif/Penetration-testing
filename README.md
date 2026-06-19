@@ -1,5 +1,9 @@
+**PentestingEverything** is an open-source, comprehensive penetration-testing knowledge base. It brings together methodology, checklists, payloads, commands, and field-tested references across 23 domains: web, API, mobile, network, cloud, Active Directory, OSINT, and more. The goal is simple: give you the concise, practical knowledge to assess any target, from scoping an engagement to hunting a specific vulnerability class to writing the report.
+
+> **Practical companion: [PentestingChecklist](https://checklist.m14r41.in/).** This project is the knowledge base; the checklist is the hands-on, tick-as-you-go companion. A structured checklist across 23 platforms (web, API, mobile, cloud, AD and more) with progress tracking, notes, and export. Use them side by side.
+
 <details>
-<summary><b> 🔜 Upcoming New Resources soon!</b></summary>
+<summary><b>Upcoming New Resources soon!</b></summary>
 
 ```python
 Your ideas, suggestions, and contributions are always welcome!
@@ -54,7 +58,7 @@ Your ideas, suggestions, and contributions are always welcome!
 
 <div align="right">
   <details>
-    <summary >🌐 Language</summary>
+    <summary >Language</summary>
     <div>
       <div align="right">
         <p><a href="https://openaitx.github.io/view.html?user=m14r41&project=PentestingEverything&lang=en">English</a></p>
@@ -171,7 +175,7 @@ Your ideas, suggestions, and contributions are always welcome!
 ---
 
 
-## 2.1. 👨‍💻Contributors👩‍💻
+## 2.1. Contributors
 
 >I appreciate your interest in contributing! please read [Contribution Guidelines](https://github.com/m14r41/PentestingEverything/blob/master/CONTRIBUTING.md).
 
@@ -184,7 +188,7 @@ Your ideas, suggestions, and contributions are always welcome!
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://kurozy.xyz"><img src="https://avatars.githubusercontent.com/u/81830783?v=4?s=100" width="100px;" alt="Marko Živanović"/><br /><sub><b>Marko Živanović</b></sub></a><br /><a href="#tool-KurozyOS" title="Tools">🔧</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://m14r41.in"><img src="https://avatars.githubusercontent.com/u/95265573?v=4?s=100" width="100px;" alt="Madhurendra kumar"/><br /><sub><b>Madhurendra kumar</b></sub></a><br /><a href="https://github.com/m14r41/PentestingEverything/commits?author=m14r41" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://m14r41.in"><img src="https://avatars.githubusercontent.com/u/95265573?v=4?s=100" width="100px;" alt="m14r41"/><br /><sub><b>m14r41</b></sub></a><br /><a href="https://github.com/m14r41/PentestingEverything/commits?author=m14r41" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/saim1011"><img src="https://avatars.githubusercontent.com/u/116882904?v=4?s=100" width="100px;" alt="0xanon"/><br /><sub><b>0xanon</b></sub></a><br /><a href="https://github.com/m14r41/PentestingEverything/commits?author=saim1011" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/InfoBugs"><img src="https://avatars.githubusercontent.com/u/96067790?v=4?s=100" width="100px;" alt="InfoBugs"/><br /><sub><b>InfoBugs</b></sub></a><br /><a href="https://github.com/m14r41/PentestingEverything/commits?author=InfoBugs" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://rtnthakur.github.io/rats.com/"><img src="https://avatars.githubusercontent.com/u/100836712?v=4?s=100" width="100px;" alt="Ratnesh kumar"/><br /><sub><b>Ratnesh kumar</b></sub></a><br /><a href="https://github.com/m14r41/PentestingEverything/commits?author=rtnthakur" title="Code">💻</a></td>
@@ -212,8 +216,18 @@ Your ideas, suggestions, and contributions are always welcome!
 
 ---
 
+## Content and Attribution
+
+This project is open source (MIT) and includes third-party material such as PDFs
+and documents that belong to their original owners. It is shared in good faith for
+education only. If any of it is yours and you want it credited differently or
+removed, just ask and it will be handled promptly. See
+[CONTENT_REMOVAL.md](https://github.com/m14r41/PentestingEverything/blob/main/CONTENT_REMOVAL.md).
+
+---
+
 <h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a>
+<p><a href="https://www.buymeacoffee.com/m14r41"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="m14r41" /></a></p>
 
 
 

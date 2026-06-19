@@ -22,6 +22,24 @@ export default function Root({children}: {children: React.ReactNode}): React.JSX
         const pct = max > 0 ? (el.scrollTop / max) * 100 : 0;
         setProgress(pct);
         setShowTop(el.scrollTop > 600);
+        // Keep the active item visible inside the sticky right-hand TOC: Docusaurus
+        // highlights it but does not scroll the TOC, so on long pages the highlight
+        // drifts out of view. Nudge only the TOC's own scroll, never the page.
+        const toc = document.querySelector('.theme-doc-toc-desktop');
+        if (toc) {
+          const actives = toc.querySelectorAll('.table-of-contents__link--active');
+          const active = actives[actives.length - 1] as HTMLElement | undefined;
+          if (active) {
+            const t = toc.getBoundingClientRect();
+            const a = active.getBoundingClientRect();
+            const margin = 48;
+            if (a.top < t.top + margin) {
+              toc.scrollTop -= t.top + margin - a.top;
+            } else if (a.bottom > t.bottom - margin) {
+              toc.scrollTop += a.bottom - (t.bottom - margin);
+            }
+          }
+        }
       });
     };
     window.addEventListener('scroll', onScroll, {passive: true});

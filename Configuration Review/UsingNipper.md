@@ -1,8 +1,8 @@
 
 
-# 🛰️ Auditing Network Devices Using Nipper
+# Auditing Network Devices Using Nipper
 
-## 📌 What is Nipper?
+## What is Nipper?
 
 **Nipper (Network Infrastructure Parser)** is a powerful open-source tool (also available as a commercial product via Titania) used for **auditing the configurations of network devices** like:
 
@@ -14,7 +14,7 @@ It analyzes **device configuration files** and produces detailed  **security aud
 
 ---
 
-## 🎯 Why Use Nipper in Pentesting or Configuration Review?
+## Why Use Nipper in Pentesting or Configuration Review?
 
 Nipper is especially useful when:
 
@@ -24,7 +24,7 @@ Nipper is especially useful when:
 
 ---
 
-## 🔧 How Nipper Works
+## How Nipper Works
 
 1. **Input** : You provide Nipper with a configuration file (e.g., from a Cisco device).
 2. **Analysis** : Nipper parses the config and identifies security weaknesses.
@@ -32,7 +32,7 @@ Nipper is especially useful when:
 
 ---
 
-## 📂 Supported Devices
+## Supported Devices
 
 * **Cisco IOS / IOS-XE / NX-OS / ASA**
 * **Juniper ScreenOS / JunOS**
@@ -44,7 +44,7 @@ Nipper is especially useful when:
 
 ---
 
-## 🚀 Using Nipper (Basic Steps)
+## Using Nipper (Basic Steps)
 
 ### 1. **Install Nipper**
 
@@ -79,21 +79,21 @@ nipper --input cisco-router-config.txt --output nipper-report.html --vendor cisc
 
 ---
 
-## 📊 What Nipper Can Detect
+## What Nipper Can Detect
 
 | Category                               | Examples                                                  |
 | -------------------------------------- | --------------------------------------------------------- |
-| 🔓**Authentication Issues**      | No password on VTY lines, weak enable passwords           |
-| 🔥**Firewall Misconfigurations** | Overly permissive ACLs, missing deny rules                |
-| 🚧**Routing Weaknesses**         | Insecure routing protocols, RIPv1, missing authentication |
-| 🔐**Crypto Misuse**              | Use of outdated hashing algorithms (MD5, DES)             |
-| 🌐**Remote Access Risks**        | Telnet enabled, SNMPv1/2 used                             |
-| 📋**Logging/Auditing Gaps**      | Missing or misconfigured logging destinations             |
-| 📡**Services Exposure**          | Unused services running, management interfaces open       |
+| **Authentication Issues**      | No password on VTY lines, weak enable passwords           |
+| **Firewall Misconfigurations** | Overly permissive ACLs, missing deny rules                |
+| **Routing Weaknesses**         | Insecure routing protocols, RIPv1, missing authentication |
+| **Crypto Misuse**              | Use of outdated hashing algorithms (MD5, DES)             |
+| **Remote Access Risks**        | Telnet enabled, SNMPv1/2 used                             |
+| **Logging/Auditing Gaps**      | Missing or misconfigured logging destinations             |
+| **Services Exposure**          | Unused services running, management interfaces open       |
 
 ---
 
-## 📄 Sample Finding (Cisco Config)
+## Sample Finding (Cisco Config)
 
 ```
 Finding: VTY lines allow Telnet
@@ -104,7 +104,7 @@ Remediation: Use 'transport input ssh' and ensure SSH is properly configured.
 
 ---
 
-## 📁 Sample Nipper Report Structure
+## Sample Nipper Report Structure
 
 * Executive Summary
 * Device Information
@@ -112,11 +112,11 @@ Remediation: Use 'transport input ssh' and ensure SSH is properly configured.
 * Vulnerabilities (categorized)
 * Risk Ratings
 * Recommendations & Remediations
-* Compliance Mapping (PCI DSS, NIST, etc. — in commercial version)
+* Compliance Mapping (PCI DSS, NIST, etc., in commercial version)
 
 ---
 
-## 🛡️ Integration with Compliance Standards
+## Integration with Compliance Standards
 
 Commercial Nipper versions can map findings to:
 
@@ -130,7 +130,7 @@ This makes it easier for security teams to validate **compliance requirements** 
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 * Always use the  **latest device config backup** .
 * Pair Nipper results with  **manual verification** .
@@ -139,14 +139,14 @@ This makes it easier for security teams to validate **compliance requirements** 
 
 ---
 
-## 🧠 Summary
+## Summary
 
 | Aspect      | Value                                               |
 | ----------- | --------------------------------------------------- |
-| 🛠 Tool     | **Nipper**                                    |
-| 🎯 Goal     | Audit network device configurations                 |
-| 🎁 Output   | Detailed security report (HTML, PDF, TXT)           |
-| ✅ Use Case | Pentesting, compliance checks, config reviews       |
-| ⚠️ Focus  | Misconfigurations, poor ACLs, weak crypto, exposure |
+| Tool     | **Nipper**                                    |
+| Goal     | Audit network device configurations                 |
+| Output   | Detailed security report (HTML, PDF, TXT)           |
+| Use Case | Pentesting, compliance checks, config reviews       |
+| Focus  | Misconfigurations, poor ACLs, weak crypto, exposure |
 
 

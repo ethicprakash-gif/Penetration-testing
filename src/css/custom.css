@@ -79,8 +79,33 @@
 html { scroll-behavior: smooth; }
 
 /* ----- Navbar ----- */
-.navbar { backdrop-filter: saturate(180%) blur(12px); }
+/*
+ * Apply the blur only on desktop. `backdrop-filter` turns .navbar into a
+ * containing block for its position:fixed descendants — on mobile that traps the
+ * full-height navbar sidebar (the hamburger menu) inside the 64px navbar, so the
+ * menu drawer collapses and appears empty. Desktop has no mobile drawer, so the
+ * effect is safe there.
+ */
+@media (min-width: 997px) {
+  .navbar { backdrop-filter: saturate(180%) blur(12px); }
+}
 .navbar__title { font-weight: 800; letter-spacing: -0.02em; }
+/* Keep multi-word nav labels on a single line instead of wrapping ("Start
+   Pentesting", "Learning Paths", etc.), and tighten spacing on medium screens. */
+.navbar__item,
+.navbar__link { white-space: nowrap; }
+@media (min-width: 997px) and (max-width: 1200px) {
+  .navbar__link { padding-left: 0.5rem; padding-right: 0.5rem; }
+  /* free space so the nav items don't collide with search on medium screens
+     (higher specificity so it beats the base .pe-ghstats rule regardless of order) */
+  .navbar .pe-ghstats { display: none; }
+}
+/* With six top-level items the desktop bar is cramped below ~1100px, so switch
+   to the hamburger there (it opens the full-height nav sidebar). */
+@media (max-width: 1100px) {
+  .navbar__toggle { display: inherit; }
+  .navbar__items > .navbar__item { display: none; }
+}
 
 .header-github-link::before {
   content: '';

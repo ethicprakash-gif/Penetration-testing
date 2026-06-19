@@ -6,23 +6,23 @@
 
 | Capability                          | `grep`         | **Trivy**      | **Checkov**        | Priority    |
 | ----------------------------------- | -------------- | -------------- | ------------------ | ----------- |
-| Known Vulnerabilities (CVE)         | ❌ No           | ✅ Yes          | ✅ Yes              | 🔴 Critical |
-| OS package vulnerabilities          | ❌ No           | ✅ Yes          | ✅ Yes              | 🔴 Critical |
-| Application dependency CVEs         | ❌ No           | ✅ Yes          | ✅ Yes              | 🔴 Critical |
-| Software Composition Analysis (SCA) | ❌ No           | ✅ Yes          | ✅ Yes              | 🔴 Critical |
-| Misconfiguration detection          | ❌ No           | ✅ Yes          | ✅ Yes              | 🔴 Critical |
-| Infrastructure as Code (IaC) scan   | ❌ No           | ✅ Yes          | ✅ Yes              | 🔴 Critical |
-| Kubernetes (YAML, Helm, Kustomize)  | ❌ No           | ✅ Yes          | ✅ Yes              | 🔴 Critical |
-| Docker image scan                   | ❌ No           | ✅ Yes          | ✅ Yes              | 🟠 High     |
-| Dockerfile scan                     | ⚠️ Text match  | ✅ Yes          | ✅ Yes              | 🟠 High     |
-| Compliance / policy checks          | ❌ No           | ⚠️ Limited     | ✅ Yes              | 🟠 High     |
-| Graph-based analysis                | ❌ No           | ❌ No           | ✅ Yes              | 🟠 High     |
-| Runtime security / container scan   | ❌ No           | ⚠️ Image-based | ❌ No               | 🟡 Medium   |
-| Secrets detection                   | ⚠️ Basic match | ✅ Yes          | ⚠️ Limited         | 🟡 Medium   |
-| Static code analysis                | ❌ No           | ⚠️ Limited     | ✅ Yes              | 🟡 Medium   |
-| Filesystem scan                     | ⚠️ Text only   | ✅ Yes          | ⚠️ IaC & code only | 🟢 Low      |
-| Text / keyword search               | ✅ Yes          | ❌ No           | ❌ No               | 🟢 Low      |
-| SBOM generation                     | ❌ No           | ✅ Yes          | ❌ No               | 🟢 Low      |
+| Known Vulnerabilities (CVE)         | No           | Yes          | Yes              | Critical |
+| OS package vulnerabilities          | No           | Yes          | Yes              | Critical |
+| Application dependency CVEs         | No           | Yes          | Yes              | Critical |
+| Software Composition Analysis (SCA) | No           | Yes          | Yes              | Critical |
+| Misconfiguration detection          | No           | Yes          | Yes              | Critical |
+| Infrastructure as Code (IaC) scan   | No           | Yes          | Yes              | Critical |
+| Kubernetes (YAML, Helm, Kustomize)  | No           | Yes          | Yes              | Critical |
+| Docker image scan                   | No           | Yes          | Yes              | High     |
+| Dockerfile scan                     | Text match  | Yes          | Yes              | High     |
+| Compliance / policy checks          | No           | Limited     | Yes              | High     |
+| Graph-based analysis                | No           | No           | Yes              | High     |
+| Runtime security / container scan   | No           | Image-based | No               | Medium   |
+| Secrets detection                   | Basic match | Yes          | Limited         | Medium   |
+| Static code analysis                | No           | Limited     | Yes              | Medium   |
+| Filesystem scan                     | Text only   | Yes          | IaC & code only | Low      |
+| Text / keyword search               | Yes          | No           | No               | Low      |
+| SBOM generation                     | No           | Yes          | No               | Low      |
 
 
 ## Comprehensive Security & Container Scanning Terminology
@@ -30,7 +30,7 @@
 | Term                                    | What It Is                                      | What Gets Scanned                                | Why It Matters                                                                     |
 | --------------------------------------- | ----------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | **SBOM** (Software Bill of Materials)   | A complete inventory of all software components | OS packages, libraries, versions, dependencies   | Lets you know **exactly what’s inside** your software and respond fast to new CVEs |
-| **SCA** (Software Composition Analysis) | Security analysis of third-party libraries      | Open-source dependencies, transitive deps        | Most apps are open source — this finds **hidden risks**                            |
+| **SCA** (Software Composition Analysis) | Security analysis of third-party libraries      | Open-source dependencies, transitive deps        | Most apps are open source, this finds **hidden risks**                            |
 | **IaC** (Infrastructure as Code)        | Code that defines infrastructure                | Kubernetes YAML, Terraform, Helm, CloudFormation | Prevents **insecure cloud and cluster setups**                                     |
 | **Docker Image**                        | Static app package                              | OS, packages, app code, libraries                | Finds vulnerabilities **before deployment**                                        |
 | **Container**                           | Running Docker image                            | Runtime OS, packages, processes                  | Detects risks in **what is actually running**                                      |

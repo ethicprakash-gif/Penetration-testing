@@ -45,7 +45,7 @@ const EXCLUDE = new Set([
 const EXCLUDE_FILES = new Set([
   'package.json', 'tsconfig.json', 'docusaurus.config.ts', 'sidebars.ts',
   '.gitignore', '.all-contributorsrc', 'action.sh', 'update.sh', 'LICENSE',
-  'NOTICE.md', 'MIGRATION_REPORT.md',
+  'NOTICE.md', 'MIGRATION_REPORT.md', 'CONTRIBUTING.md',
 ]);
 
 // Polished display labels (display ONLY — folders on disk are never renamed).
@@ -63,13 +63,13 @@ const LABEL_FIXES: Record<string, string> = {
 
 // Top-level category ordering for a sensible learning flow. Unlisted → alphabetical after.
 const TOP_ORDER = [
-  'Web Application Pentesting', 'API Pentesting', 'Network Pentesting',
-  'Active Directory Pentesting', 'Cloud Pentesting', 'Container & Kubernetes  Assessment',
-  'Mobile Pentesting', 'Thick Client Pentesting', 'IoT Pentesting', 'Wi-Fi Pentesting',
-  'BlockChain Pentesting', 'LLM Security Assessment', 'MCP Security Assessment',
-  'OSINT', 'Phishing Assessment', 'Secure Code Review', 'Configuration Review',
-  'DevSecOps', 'CI-CD Pentesting', 'Threat Modeling', 'Firewall Penetration',
-  'Infrastucture Security', 'Forensic',
+  'Web Application Pentesting', 'API Pentesting', 'Secure Code Review',
+  'Mobile Pentesting', 'Thick Client Pentesting', 'Cloud Pentesting',
+  'Network Pentesting', 'Firewall Penetration', 'Infrastucture Security',
+  'LLM Security Assessment', 'MCP Security Assessment', 'Active Directory Pentesting',
+  'Container & Kubernetes  Assessment', 'IoT Pentesting', 'Wi-Fi Pentesting',
+  'BlockChain Pentesting', 'OSINT', 'Phishing Assessment', 'Configuration Review',
+  'DevSecOps', 'CI-CD Pentesting', 'Threat Modeling', 'Forensic',
 ];
 
 // Platform tag inferred from the top-level category.

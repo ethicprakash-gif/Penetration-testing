@@ -1,48 +1,26 @@
 # Contributing to PentestingEverything
 
-We welcome contributions to the PentestingEverything repository. Please follow these guidelines:
+Thanks for helping improve **PentestingEverything**. Contributing is mostly about adding
+Markdown files in the right folder; the site (navigation, search, references) builds itself.
 
-1. Fork the repository and create your branch from `main`.
+**Full step-by-step guide:** [pentest.m14r41.in/contributing](https://pentest.m14r41.in/contributing)
+covers adding a vulnerability, adding a new category, how the menu and sidebar work, and the
+configuration reference.
 
-2. Make sure your code is in `markdown formate`.
+## Quick start
 
-3. Commit your changes with clear commit messages in created branch.
+1. Fork the repo and branch from `main`.
+2. Add or edit Markdown under the relevant category folder (start with a `# Heading`; no frontmatter needed).
+3. Preview locally with `bun install && bun start`.
+4. Commit with a clear message and open a Pull Request describing what changed and why.
 
-4. Create a Pull Request (PR) and provide a detailed description of your changes.
+## Ground rules
 
-Thank you so much for contributing to **PentestingEverything**!
+- Be accurate and practical, cite reputable sources, and keep a neutral, professional tone.
+- Only contribute material you have the right to share, under the [MIT License](https://github.com/m14r41/PentestingEverything/blob/main/LICENSE).
+- This project is for lawful, ethical security research only. If you are unsure whether a
+  contribution fits, please ask before submitting.
 
----
+## Contact
 
-By contributing to this project, you agree to the [MIT License](./LICENSE).
-
-
-
-**Note** 
-  >Please note that we do not condone or support any illegal or unethical activities. All contributions must align with the ethical hacking practices and responsible use of penetration testing tools. If you have any questions or are unsure whether your contribution is appropriate, please don't hesitate to reach out to us for clarification.
-
----
-
-
-<div align="center">
-  <h2>Contact Details</h2>
-  <div id="contact">
-    <a href="mailto:your.email@example.com">
-      <img src="https://img.shields.io/badge/Email-green?style=for-the-badge&logo=mail.ru&logoColor=white" alt="Email Badge"/>
-    </a>
-    <a href="https://www.linkedin.com/in/m14r41/">
-      <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-    </a>
-    <a href="https://twitter.com/M14_R41">
-      <img src="https://img.shields.io/badge/Twitter-red?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
-    </a>
-    <a href="https://github.com/M14R41">
-      <img src="https://img.shields.io/badge/Github-blue?style=for-the-badge&logo=Github&logoColor=white" alt="Github Badge"/>
-    </a>
-  </div>
-</div>
-
-
-
-
-
+[Website](https://m14r41.in) · [LinkedIn](https://www.linkedin.com/in/m14r41/) · [GitHub](https://github.com/m14r41)

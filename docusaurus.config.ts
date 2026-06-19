@@ -11,11 +11,12 @@ const REPO = process.env.GH_REPO ?? 'PentestingEverything';
 const SITE_URL = process.env.SITE_URL ?? 'https://pentest.m14r41.in';
 const BASE_URL = process.env.BASE_URL ?? '/';
 const GITHUB_URL = `https://github.com/${ORG}/${REPO}`;
+const IS_PROD = process.env.NODE_ENV === 'production';
 
 const config: Config = {
   title: 'PentestingEverything',
   tagline: 'A complete pentesting solution across web, cloud, mobile, network, API, AD and more',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/brand.svg',
 
   url: SITE_URL,
   baseUrl: BASE_URL,
@@ -100,6 +101,20 @@ const config: Config = {
       tagName: 'meta',
       attributes: {name: 'theme-color', content: '#0ea5e9'},
     },
+    ...(IS_PROD
+      ? [
+          {
+            tagName: 'script',
+            attributes: {async: 'true', src: 'https://www.googletagmanager.com/gtag/js?id=G-L16KL7RKER'},
+          },
+          {
+            tagName: 'script',
+            attributes: {},
+            innerHTML:
+              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L16KL7RKER');",
+          },
+        ]
+      : []),
   ],
 
   themeConfig: {
@@ -122,19 +137,44 @@ const config: Config = {
       title: 'PentestingEverything',
       logo: {
         alt: 'PentestingEverything',
-        src: 'img/logo.svg',
+        src: 'img/brand.svg',
       },
-      hideOnScroll: true,
+      hideOnScroll: false,
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Knowledge Base',
+          label: 'Start Pentesting',
         },
         {to: '/references', label: 'References', position: 'left'},
         {to: '/learning-paths', label: 'Learning Paths', position: 'left'},
         {to: '/contributing', label: 'Contribute', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Top Projects',
+          position: 'left',
+          items: [
+            // The practical companion to this knowledge base; promoted first.
+            {label: 'PentestingChecklist', href: 'https://checklist.m14r41.in/'},
+            {label: 'wordlistForger', href: 'https://github.com/m14r41/wordlistForger'},
+            {label: 'scan4secrets', href: 'https://github.com/m14r41/scan4secrets'},
+            {label: 'Scripting4Hackers', href: 'https://github.com/m14r41/Scripting4Hackers'},
+            {label: 'Clickjacking-Poc', href: 'https://github.com/m14r41/Clickjacking-Poc'},
+          ],
+        },
+        {
+          type: 'dropdown',
+          label: 'Live Resources',
+          position: 'left',
+          items: [
+            {label: 'clickjacking.m14r41.in', href: 'https://clickjacking.m14r41.in'},
+            {label: 'cvss.m14r41.in', href: 'https://cvss.m14r41.in'},
+            {label: 'sqlmap.m14r41.in', href: 'https://sqlmap.m14r41.in'},
+            {label: 'reverse-shell.m14r41.in', href: 'https://reverse-shell.m14r41.in'},
+            {label: 'csrf.m14r41.in', href: 'https://csrf.m14r41.in'},
+          ],
+        },
         {
           type: 'custom-githubStats',
           position: 'right',
@@ -147,7 +187,7 @@ const config: Config = {
         {
           title: 'Project',
           items: [
-            {label: 'Knowledge Base', to: '/'},
+            {label: 'Start Pentesting', to: '/'},
             {label: 'Learning Paths', to: '/learning-paths'},
             {label: 'References', to: '/references'},
           ],
@@ -163,12 +203,13 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {label: 'License', href: `${GITHUB_URL}/blob/main/LICENSE`},
-            {label: 'Original Repository', href: 'https://github.com/m14r41/PentestingEverything'},
+            {label: 'Pentesting Checklist', href: 'https://checklist.m14r41.in/'},
+            {label: 'GitHub Repository', href: GITHUB_URL},
+            {label: 'Content & Attribution', href: `${GITHUB_URL}/blob/main/CONTENT_REMOVAL.md`},
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} PentestingEverything · Maintained by <a href="${GITHUB_URL.replace('/PentestingEverything', '')}" target="_blank" rel="noopener noreferrer">Madhurendra Kumar (m14r41)</a> · Content licensed under the repository <a href="${GITHUB_URL}/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">LICENSE</a>.`,
+      copyright: `© ${new Date().getFullYear()} PentestingEverything · Maintained by <a href="${GITHUB_URL.replace('/PentestingEverything', '')}" target="_blank" rel="noopener noreferrer">m14r41</a>`,
     },
     prism: {
       theme: prismThemes.github,

@@ -2,47 +2,64 @@
 
 Docker is a platform that uses container technology to automate application deployment, ensuring consistent performance across different environments. It enhances portability, efficiency, version control, and orchestration for scalable and isolated application deployment. However, Docker can have security issues such as vulnerabilities in container images, misconfigurations, and risks associated with shared kernel resources.
 
+## Core Concepts
+
+Container and Kubernetes assessment evaluates how images, containers, and the orchestrator are built and configured. Containers share the host kernel rather than fully virtualizing it, so the central question is whether an attacker can break out of a container or move laterally across the cluster.
+
+**Methodology / Phases:**
+- Scan images: check base images and layers for vulnerabilities, embedded secrets, and excessive contents.
+- Review runtime config: privileged containers, mounted host paths, capabilities, and exposed sockets (e.g. the Docker socket).
+- Test container escape: kernel exploits, misconfigurations, and dangerous mounts that reach the host.
+- Assess the cluster: Kubernetes RBAC, service accounts, network policies, secrets handling, and the API server exposure.
+- Map lateral movement: from a pod to other pods, nodes, the control plane, and cloud metadata/credentials.
+
+**Key Concepts / What to look for:**
+- Privileged and over-capable containers: `--privileged`, added capabilities, and host namespace sharing.
+- Dangerous mounts: the Docker socket, host filesystem, or `/proc` exposed inside a container.
+- Image hygiene: vulnerable packages, hardcoded secrets, and outdated or unpinned base images.
+- Kubernetes RBAC and secrets: overly broad roles, default tokens, and plaintext or readable secrets.
+- Weak isolation: missing network policies, exposed dashboards/kubelet, and reachable cloud metadata.
 
 | Credit          | Details                                   |
 |-----------------|-------------------------------------------|
 | CSbyGB         | [CSbyGB](https://github.com/CSbyGB)       |
 |    Madhurendra Kumar             |  [m14r41](https://github.com/m14r41/PentestingEverything/edit/main/DockerContainer%20Pentesting/README.md)                   |
 
-## 👉 What is Docker?
-- 🌟 [Docker Overview on Docker Docs](https://lnkd.in/eRkNTVNu)
-- 🌟 [What is Docker and How it Works on Simplilearn](https://lnkd.in/ep8T7yUM)
-- 🌟 [Linux Containers - Basic Concepts by Lucian Carata](https://lnkd.in/eJDs9khW)
+## What is Docker?
+- [Docker Overview on Docker Docs](https://lnkd.in/eRkNTVNu)
+- [What is Docker and How it Works on Simplilearn](https://lnkd.in/ep8T7yUM)
+- [Linux Containers - Basic Concepts by Lucian Carata](https://lnkd.in/eJDs9khW)
 
-## 👉 Docker Pentest & Security Resources
-- 🌟 [My Pentips about Docker on C.S by G.B](https://lnkd.in/eV_fPjsP)
-- 🌟 2 amazing blog posts by Dana Epp (I recommend subscribing to his newsletter):
-  - ⭐ [Defeating a Dockerized API to Get Access to Source Code](https://lnkd.in/eYGpm3Pe)
-  - ⭐ [Finding API Secrets in Hidden Layers within Docker Containers](https://lnkd.in/eFPJrejZ)
-- 🌟 [Docker Vulnerabilities on CVE Details](https://lnkd.in/eFjysgbX)
-- 🌟 [Privilege Escalation via Docker by Chris Foster](https://lnkd.in/e5cJtJcx)
-- 🌟 [The Dirty COW Kernel Exploit](https://lnkd.in/ew-5vuEf)
-- 🌟 [Breaking Out of Docker via runC - CVE-2019-5736 by Yuval Avrahami](https://lnkd.in/ePhSRRmW)
-- 🌟 [Understanding Docker Container Escapes by Dominik Czarnota on TrailofBits](https://lnkd.in/ee-9HJX6)
-- 🌟 [Awesome Docker Security by Myugan](https://lnkd.in/esVcibK8)
-- 🌟 [Docker Security Cheat Sheet by OWASP® Foundation](https://lnkd.in/eGDBhgai)
-- 🌟 [Docker Security Course - Hackersploit](https://lnkd.in/ey-dVnh4)
+## Docker Pentest & Security Resources
+- [My Pentips about Docker on C.S by G.B](https://lnkd.in/eV_fPjsP)
+- 2 amazing blog posts by Dana Epp (I recommend subscribing to his newsletter):
+  - [Defeating a Dockerized API to Get Access to Source Code](https://lnkd.in/eYGpm3Pe)
+  - [Finding API Secrets in Hidden Layers within Docker Containers](https://lnkd.in/eFPJrejZ)
+- [Docker Vulnerabilities on CVE Details](https://lnkd.in/eFjysgbX)
+- [Privilege Escalation via Docker by Chris Foster](https://lnkd.in/e5cJtJcx)
+- [The Dirty COW Kernel Exploit](https://lnkd.in/ew-5vuEf)
+- [Breaking Out of Docker via runC - CVE-2019-5736 by Yuval Avrahami](https://lnkd.in/ePhSRRmW)
+- [Understanding Docker Container Escapes by Dominik Czarnota on TrailofBits](https://lnkd.in/ee-9HJX6)
+- [Awesome Docker Security by Myugan](https://lnkd.in/esVcibK8)
+- [Docker Security Cheat Sheet by OWASP® Foundation](https://lnkd.in/eGDBhgai)
+- [Docker Security Course - Hackersploit](https://lnkd.in/ey-dVnh4)
 
-## 👉 Read Writeups
-- ⭐ [Hack The Box UltraTech](https://lnkd.in/eRW8Xtyk)
-- ⭐ [Hack The Box Toolbox](https://lnkd.in/e4R6BeRz)
-- ⭐ [Hack The Box Shoppy](https://lnkd.in/e3iekCMJ)
-- ⭐ [Hack The Box Mentor](https://lnkd.in/enXAHbKh)
+## Read Writeups
+- [Hack The Box UltraTech](https://lnkd.in/eRW8Xtyk)
+- [Hack The Box Toolbox](https://lnkd.in/e4R6BeRz)
+- [Hack The Box Shoppy](https://lnkd.in/e3iekCMJ)
+- [Hack The Box Mentor](https://lnkd.in/enXAHbKh)
 
-## 👉 Practice
-- 🌟 [TryHackMe UltraTech Box](https://lnkd.in/eGHg-KZn)
-- ⭐ [Writeup UltraTech](https://lnkd.in/eRW8Xtyk)
-- 🌟 [Root-Me Docker - I Am Groot](https://lnkd.in/eyBwWC7J)
-- ⭐ [Docker - Talk Through Me](https://lnkd.in/eTYEtFKd)
-- ⭐ [Supply Chain Attack - Docker](https://lnkd.in/ezH7237x)
-- ⭐ [Docker Layers](https://lnkd.in/eZs5JQ7S)
-- ⭐ [Docker - Sys-Admin’s Docker](https://lnkd.in/enDBbwa3)
-- 🌟 [Damn Vulnerable Docker Container by Julian Scionti](https://lnkd.in/eyj8uyux)
-- 🌟 [Docker Host Attacks on Attackdefense](https://lnkd.in/e78jYrz2)
+## Practice
+- [TryHackMe UltraTech Box](https://lnkd.in/eGHg-KZn)
+- [Writeup UltraTech](https://lnkd.in/eRW8Xtyk)
+- [Root-Me Docker - I Am Groot](https://lnkd.in/eyBwWC7J)
+- [Docker - Talk Through Me](https://lnkd.in/eTYEtFKd)
+- [Supply Chain Attack - Docker](https://lnkd.in/ezH7237x)
+- [Docker Layers](https://lnkd.in/eZs5JQ7S)
+- [Docker - Sys-Admin’s Docker](https://lnkd.in/enDBbwa3)
+- [Damn Vulnerable Docker Container by Julian Scionti](https://lnkd.in/eyj8uyux)
+- [Docker Host Attacks on Attackdefense](https://lnkd.in/e78jYrz2)
 
 
  

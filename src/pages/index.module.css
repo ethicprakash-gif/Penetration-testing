@@ -60,3 +60,39 @@
 @media (max-width: 700px) { .statsBar { grid-template-columns: repeat(2, 1fr); } }
 
 .surface { background: var(--ifm-background-surface-color); }
+
+/* ----- PentestingChecklist companion promo ----- */
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.75rem 2rem;
+  border: 1px solid var(--pe-border, var(--ifm-toc-border-color));
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 160% at 0% 0%, color-mix(in srgb, var(--ifm-color-primary) 12%, transparent), transparent 55%),
+    var(--ifm-background-surface-color);
+}
+.promoIcon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+}
+.promoBody { flex: 1 1 auto; min-width: 0; }
+.promoTitle {
+  margin: 0.1rem 0 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.promoText { margin: 0; color: var(--pe-muted, var(--ifm-color-emphasis-700)); max-width: 46rem; }
+.promoBtn { flex: 0 0 auto; white-space: nowrap; }
+@media (max-width: 768px) {
+  .promo { flex-direction: column; align-items: flex-start; padding: 1.5rem; }
+  .promoBtn { width: 100%; justify-content: center; }
+}

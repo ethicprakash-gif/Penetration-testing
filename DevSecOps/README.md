@@ -39,22 +39,22 @@ DevSecOps is an extension of the DevOps methodology that integrates security pra
 
 | **Category**           | **Tools** | **Review** |
 |------------------------|----------|------------|
-| **Code Security & SAST (Static Application Security Testing)** | 🔹 **SonarQube**  <br> 🔹 **Checkmarx**  <br> 🔹 **Veracode**  <br> 🔹 **Semgrep**  <br> 🔹 **Bandit**  <br> 🔹 **OWASP Dependency-Check**  | ✅ SonarQube provides strong **code quality & security analysis** for multiple languages.<br> ✅ Checkmarx & Veracode offer **enterprise-grade SAST** with deep insights but can be **costly**.<br> ✅ Semgrep is lightweight & great for **custom security rules**.<br> ✅ Bandit is **Python-specific** for code vulnerabilities.<br> ✅ OWASP Dependency-Check helps **identify vulnerable dependencies**. |
-| **Software Composition Analysis (SCA)** | 🔹 **Snyk**  <br> 🔹 **WhiteSource**  <br> 🔹 **BlackDuck**  <br> 🔹 **OWASP Dependency-Check**  | ✅ Snyk is **developer-friendly** and integrates well with CI/CD pipelines.<br> ✅ WhiteSource & BlackDuck provide **comprehensive dependency scanning**, but setup can be complex.<br> ✅ OWASP Dependency-Check is **open-source & free**, useful for **basic security checks**. |
-| **Container & Kubernetes Security** | 🔹 **Trivy**  <br> 🔹 **Anchore**  <br> 🔹 **Clair**  <br> 🔹 **Sysdig Secure**  <br> 🔹 **Aqua Security**  <br> 🔹 **kube-hunter**  <br> 🔹 **kube-bench**  | ✅ Trivy is **fast, lightweight, and great for container scanning**.<br> ✅ Anchore & Clair offer **deep container security** but may require **more configuration**.<br> ✅ Sysdig Secure & Aqua provide **runtime security** for Kubernetes.<br> ✅ kube-hunter & kube-bench help detect **Kubernetes-specific vulnerabilities**. |
-| **Secrets & Credential Scanning** | 🔹 **GitLeaks**  <br> 🔹 **TruffleHog**  <br> 🔹 **Detect-Secrets**  <br> 🔹 **AWS Secrets Manager**  | ✅ GitLeaks & TruffleHog scan for **hardcoded secrets in repos**.<br> ✅ Detect-Secrets is **maintained by Yelp**, useful for pre-commit checks.<br> ✅ AWS Secrets Manager helps **securely store & manage secrets**. |
-| **CI/CD Security & Compliance** | 🔹 **GitHub Advanced Security**  <br> 🔹 **GitLab Security Scanning**  <br> 🔹 **Jenkins Security Plugins**  <br> 🔹 **OWASP ZAP (DAST Integration)**  <br> 🔹 **Tenable.io**  | ✅ GitHub Advanced Security offers **code scanning, secret detection & dependency security**.<br> ✅ GitLab Security integrates well with **GitLab CI/CD**.<br> ✅ Jenkins plugins allow **security testing in pipelines**, but require **manual configuration**.<br> ✅ OWASP ZAP is great for **DAST (Dynamic Application Security Testing)** in **CI/CD pipelines**.<br> ✅ Tenable.io helps in **vulnerability management & compliance**. |
-| **Cloud Security & Compliance** | 🔹 **Prowler (AWS Security)**  <br> 🔹 **ScoutSuite**  <br> 🔹 **CloudSploit**  <br> 🔹 **Cloud Custodian**  <br> 🔹 **Steampipe**  | ✅ Prowler is **focused on AWS security best practices**.<br> ✅ ScoutSuite is **multi-cloud**, covering AWS, GCP, and Azure.<br> ✅ CloudSploit is **easy to set up for compliance monitoring**.<br> ✅ Cloud Custodian helps **automate cloud security policies**.<br> ✅ Steampipe allows **SQL-like queries to audit cloud configurations**. |
-| **Infrastructure as Code (IaC) Security** | 🔹 **Terraform Validator**  <br> 🔹 **Checkov**  <br> 🔹 **TFSec**  <br> 🔹 **KICS**  <br> 🔹 **CloudFormation Guard**  | ✅ Checkov is **one of the best for Terraform, Kubernetes, CloudFormation**.<br> ✅ TFSec is **lightweight** and great for Terraform security scanning.<br> ✅ KICS (by Checkmarx) is **versatile**, supporting multiple IaC formats.<br> ✅ CloudFormation Guard helps enforce **security policies in AWS CloudFormation**. |
+| **Code Security & SAST (Static Application Security Testing)** | **SonarQube**  <br> **Checkmarx**  <br> **Veracode**  <br> **Semgrep**  <br> **Bandit**  <br> **OWASP Dependency-Check**  | SonarQube provides strong **code quality & security analysis** for multiple languages.<br> Checkmarx & Veracode offer **enterprise-grade SAST** with deep insights but can be **costly**.<br> Semgrep is lightweight & great for **custom security rules**.<br> Bandit is **Python-specific** for code vulnerabilities.<br> OWASP Dependency-Check helps **identify vulnerable dependencies**. |
+| **Software Composition Analysis (SCA)** | **Snyk**  <br> **WhiteSource**  <br> **BlackDuck**  <br> **OWASP Dependency-Check**  | Snyk is **developer-friendly** and integrates well with CI/CD pipelines.<br> WhiteSource & BlackDuck provide **comprehensive dependency scanning**, but setup can be complex.<br> OWASP Dependency-Check is **open-source & free**, useful for **basic security checks**. |
+| **Container & Kubernetes Security** | **Trivy**  <br> **Anchore**  <br> **Clair**  <br> **Sysdig Secure**  <br> **Aqua Security**  <br> **kube-hunter**  <br> **kube-bench**  | Trivy is **fast, lightweight, and great for container scanning**.<br> Anchore & Clair offer **deep container security** but may require **more configuration**.<br> Sysdig Secure & Aqua provide **runtime security** for Kubernetes.<br> kube-hunter & kube-bench help detect **Kubernetes-specific vulnerabilities**. |
+| **Secrets & Credential Scanning** | **GitLeaks**  <br> **TruffleHog**  <br> **Detect-Secrets**  <br> **AWS Secrets Manager**  | GitLeaks & TruffleHog scan for **hardcoded secrets in repos**.<br> Detect-Secrets is **maintained by Yelp**, useful for pre-commit checks.<br> AWS Secrets Manager helps **securely store & manage secrets**. |
+| **CI/CD Security & Compliance** | **GitHub Advanced Security**  <br> **GitLab Security Scanning**  <br> **Jenkins Security Plugins**  <br> **OWASP ZAP (DAST Integration)**  <br> **Tenable.io**  | GitHub Advanced Security offers **code scanning, secret detection & dependency security**.<br> GitLab Security integrates well with **GitLab CI/CD**.<br> Jenkins plugins allow **security testing in pipelines**, but require **manual configuration**.<br> OWASP ZAP is great for **DAST (Dynamic Application Security Testing)** in **CI/CD pipelines**.<br> Tenable.io helps in **vulnerability management & compliance**. |
+| **Cloud Security & Compliance** | **Prowler (AWS Security)**  <br> **ScoutSuite**  <br> **CloudSploit**  <br> **Cloud Custodian**  <br> **Steampipe**  | Prowler is **focused on AWS security best practices**.<br> ScoutSuite is **multi-cloud**, covering AWS, GCP, and Azure.<br> CloudSploit is **easy to set up for compliance monitoring**.<br> Cloud Custodian helps **automate cloud security policies**.<br> Steampipe allows **SQL-like queries to audit cloud configurations**. |
+| **Infrastructure as Code (IaC) Security** | **Terraform Validator**  <br> **Checkov**  <br> **TFSec**  <br> **KICS**  <br> **CloudFormation Guard**  | Checkov is **one of the best for Terraform, Kubernetes, CloudFormation**.<br> TFSec is **lightweight** and great for Terraform security scanning.<br> KICS (by Checkmarx) is **versatile**, supporting multiple IaC formats.<br> CloudFormation Guard helps enforce **security policies in AWS CloudFormation**. |
 
 
 ---
 
 ### **Final Thoughts:**
-🔹 **Best for Enterprises**: **Checkmarx, Veracode, Snyk, Aqua Security, Sysdig Secure**  
-🔹 **Best for Open-Source/Free Users**: **Trivy, OWASP ZAP, Prowler, Checkov, GitLeaks**  
-🔹 **Best for Cloud Security**: **Prowler (AWS), ScoutSuite (Multi-Cloud), Cloud Custodian**  
-🔹 **Best for Developers**: **Semgrep, Snyk, Bandit, Detect-Secrets, Checkov**  
+**Best for Enterprises**: **Checkmarx, Veracode, Snyk, Aqua Security, Sysdig Secure**  
+**Best for Open-Source/Free Users**: **Trivy, OWASP ZAP, Prowler, Checkov, GitLeaks**  
+**Best for Cloud Security**: **Prowler (AWS), ScoutSuite (Multi-Cloud), Cloud Custodian**  
+**Best for Developers**: **Semgrep, Snyk, Bandit, Detect-Secrets, Checkov**  
 
 ---
 
@@ -67,7 +67,7 @@ DevSecOps is an extension of the DevOps methodology that integrates security pra
 | **Scope** | Identifies risks in **external libraries & frameworks** (e.g., NPM, PyPI, Maven). | Detects security flaws in **proprietary application code**. |
 | **Detection** | Finds **known vulnerabilities (CVEs)** in open-source components. | Finds **code-level security issues** like SQL Injection, XSS, RCE, etc. |
 | **Method** | Uses vulnerability databases (NVD, OSS Index, Snyk, etc.) to match dependencies. | Uses **static code analysis** (pattern matching, data flow analysis). |
-| **Examples of Tools** | 🔹 **Snyk** <br> 🔹 **WhiteSource** <br> 🔹 **BlackDuck** <br> 🔹 **OWASP Dependency-Check** | 🔹 **SonarQube** <br> 🔹 **Checkmarx** <br> 🔹 **Veracode** <br> 🔹 **Semgrep** |
+| **Examples of Tools** | **Snyk** <br> **WhiteSource** <br> **BlackDuck** <br> **OWASP Dependency-Check** | **SonarQube** <br> **Checkmarx** <br> **Veracode** <br> **Semgrep** |
 | **False Positives** | Low (matches against known vulnerability databases). | Higher (requires tuning & rule customization). |
 | **DevSecOps Integration** | Works at **build-time**, inside CI/CD pipelines. | Used **during development** & **CI/CD** for early detection. |
 | **Remediation** | Suggests **dependency updates** or patches. | Requires **code changes & fixes by developers**. |
@@ -78,9 +78,9 @@ DevSecOps is an extension of the DevOps methodology that integrates security pra
 - **SSC = Focuses on the source code** (proprietary code security).  
 
 ### **Which One Should Use?**  
-✅ **For Open-Source & Third-Party Dependency Risks → SCA**  
-✅ **For Custom Application Code Vulnerabilities → SSC**  
-✅ **For Full Security Coverage → Use Both** in your DevSecOps pipeline! 🚀  
+**For Open-Source & Third-Party Dependency Risks → SCA**  
+**For Custom Application Code Vulnerabilities → SSC**  
+**For Full Security Coverage → Use Both** in your DevSecOps pipeline!  
 
 
 

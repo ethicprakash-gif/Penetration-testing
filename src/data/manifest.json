@@ -1,16 +1,16 @@
 {
   "stats": {
-    "docs": 98,
+    "docs": 108,
     "pdfs": 104,
     "categories": 23,
-    "topics": 202
+    "topics": 212
   },
   "categories": [
     {
       "key": "Web Application Pentesting",
       "label": "Web Application Pentesting",
       "slug": "/web-application-pentesting",
-      "docs": 48,
+      "docs": 53,
       "pdfs": 43,
       "platform": "Web"
     },
@@ -18,41 +18,17 @@
       "key": "API Pentesting",
       "label": "API Pentesting",
       "slug": "/api-pentesting",
-      "docs": 3,
+      "docs": 4,
       "pdfs": 14,
       "platform": "API"
     },
     {
-      "key": "Network Pentesting",
-      "label": "Network Pentesting",
-      "slug": "/network-pentesting",
-      "docs": 1,
-      "pdfs": 9,
-      "platform": "Network"
-    },
-    {
-      "key": "Active Directory Pentesting",
-      "label": "Active Directory Pentesting",
-      "slug": "/active-directory-pentesting",
-      "docs": 2,
-      "pdfs": 6,
-      "platform": "Windows / AD"
-    },
-    {
-      "key": "Cloud Pentesting",
-      "label": "Cloud Pentesting",
-      "slug": "/cloud-pentesting",
-      "docs": 4,
-      "pdfs": 6,
-      "platform": "Cloud"
-    },
-    {
-      "key": "Container & Kubernetes  Assessment",
-      "label": "Container & Kubernetes Assessment",
-      "slug": "/container-and-kubernetes-assessment",
-      "docs": 1,
-      "pdfs": 1,
-      "platform": "Kubernetes"
+      "key": "Secure Code Review",
+      "label": "Secure Code Review",
+      "slug": "/secure-code-review",
+      "docs": 6,
+      "pdfs": 3,
+      "platform": "Source Code"
     },
     {
       "key": "Mobile Pentesting",
@@ -71,28 +47,36 @@
       "platform": "Desktop"
     },
     {
-      "key": "IoT Pentesting",
-      "label": "IoT Pentesting",
-      "slug": "/iot-pentesting",
-      "docs": 2,
-      "pdfs": 0,
-      "platform": "IoT"
+      "key": "Cloud Pentesting",
+      "label": "Cloud Pentesting",
+      "slug": "/cloud-pentesting",
+      "docs": 5,
+      "pdfs": 6,
+      "platform": "Cloud"
     },
     {
-      "key": "Wi-Fi Pentesting",
-      "label": "Wi-Fi Pentesting",
-      "slug": "/wi-fi-pentesting",
+      "key": "Network Pentesting",
+      "label": "Network Pentesting",
+      "slug": "/network-pentesting",
+      "docs": 3,
+      "pdfs": 9,
+      "platform": "Network"
+    },
+    {
+      "key": "Firewall Penetration",
+      "label": "Firewall Penetration",
+      "slug": "/firewall-penetration",
+      "docs": 2,
+      "pdfs": 1,
+      "platform": "Network"
+    },
+    {
+      "key": "Infrastucture Security",
+      "label": "Infrastructure Security",
+      "slug": "/infrastructure-security",
       "docs": 1,
-      "pdfs": 2,
-      "platform": "Wireless"
-    },
-    {
-      "key": "BlockChain Pentesting",
-      "label": "BlockChain Pentesting",
-      "slug": "/blockchain-pentesting",
-      "docs": 2,
-      "pdfs": 0,
-      "platform": "Blockchain"
+      "pdfs": 3,
+      "platform": "Infrastructure"
     },
     {
       "key": "LLM Security Assessment",
@@ -111,6 +95,46 @@
       "platform": "AI / LLM"
     },
     {
+      "key": "Active Directory Pentesting",
+      "label": "Active Directory Pentesting",
+      "slug": "/active-directory-pentesting",
+      "docs": 1,
+      "pdfs": 6,
+      "platform": "Windows / AD"
+    },
+    {
+      "key": "Container & Kubernetes  Assessment",
+      "label": "Container & Kubernetes Assessment",
+      "slug": "/container-and-kubernetes-assessment",
+      "docs": 1,
+      "pdfs": 1,
+      "platform": "Kubernetes"
+    },
+    {
+      "key": "IoT Pentesting",
+      "label": "IoT Pentesting",
+      "slug": "/iot-pentesting",
+      "docs": 2,
+      "pdfs": 0,
+      "platform": "IoT"
+    },
+    {
+      "key": "Wi-Fi Pentesting",
+      "label": "Wi-Fi Pentesting",
+      "slug": "/wi-fi-pentesting",
+      "docs": 2,
+      "pdfs": 2,
+      "platform": "Wireless"
+    },
+    {
+      "key": "BlockChain Pentesting",
+      "label": "BlockChain Pentesting",
+      "slug": "/blockchain-pentesting",
+      "docs": 2,
+      "pdfs": 0,
+      "platform": "Blockchain"
+    },
+    {
       "key": "OSINT",
       "label": "OSINT",
       "slug": "/osint",
@@ -125,14 +149,6 @@
       "docs": 2,
       "pdfs": 0,
       "platform": "Social Eng."
-    },
-    {
-      "key": "Secure Code Review",
-      "label": "Secure Code Review",
-      "slug": "/secure-code-review",
-      "docs": 6,
-      "pdfs": 3,
-      "platform": "Source Code"
     },
     {
       "key": "Configuration Review",
@@ -154,7 +170,7 @@
       "key": "CI-CD Pentesting",
       "label": "CI-CD Pentesting",
       "slug": "/ci-cd-pentesting",
-      "docs": 1,
+      "docs": 2,
       "pdfs": 1,
       "platform": "CI/CD"
     },
@@ -165,22 +181,6 @@
       "docs": 1,
       "pdfs": 1,
       "platform": "Design"
-    },
-    {
-      "key": "Firewall Penetration",
-      "label": "Firewall Penetration",
-      "slug": "/firewall-penetration",
-      "docs": 2,
-      "pdfs": 1,
-      "platform": "Network"
-    },
-    {
-      "key": "Infrastucture Security",
-      "label": "Infrastructure Security",
-      "slug": "/infrastructure-security",
-      "docs": 1,
-      "pdfs": 3,
-      "platform": "Infrastructure"
     },
     {
       "key": "Forensic",
@@ -200,7 +200,7 @@
     },
     {
       "login": "m14r41",
-      "name": "Madhurendra kumar",
+      "name": "m14r41",
       "avatar": "https://avatars.githubusercontent.com/u/95265573?v=4",
       "profile": "https://m14r41.in"
     },
