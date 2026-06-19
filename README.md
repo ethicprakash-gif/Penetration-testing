@@ -1,6 +1,23 @@
-**[PentestingEverything](pentest.m14r41.in/)** is an open-source, comprehensive penetration-testing knowledge base. It brings together methodology, checklists, payloads, commands, and field-tested references across 23 domains: web, API, mobile, network, cloud, Active Directory, OSINT, and more. The goal is simple: give you the concise, practical knowledge to assess any target, from scoping an engagement to hunting a specific vulnerability class to writing the report.
+<div align="center">
 
-Project Website: https://pentest.m14r41.in
+# PentestingEverything
+
+**A complete, searchable penetration-testing knowledge base across 23 security domains.**
+
+### 🌐 Live website: **[pentest.m14r41.in](https://pentest.m14r41.in)**
+
+[Live Website](https://pentest.m14r41.in) · [PentestingChecklist](https://checklist.m14r41.in) · [Contribute](https://github.com/m14r41/PentestingEverything/blob/main/CONTRIBUTING.md) · [Report an Issue](https://github.com/m14r41/PentestingEverything/issues)
+
+![License](https://img.shields.io/github/license/m14r41/PentestingEverything?style=flat-square)
+![Stars](https://img.shields.io/github/stars/m14r41/PentestingEverything?style=flat-square)
+![Forks](https://img.shields.io/github/forks/m14r41/PentestingEverything?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/m14r41/PentestingEverything?style=flat-square)
+
+</div>
+
+> Read it online at **[pentest.m14r41.in](https://pentest.m14r41.in)**: fully searchable, with 108 documentation pages, 104 reference PDFs, and 212+ topics across 23 domains. The website turns this repository into a fast, structured, and readable knowledge base.
+
+**[PentestingEverything](https://pentest.m14r41.in/)** is an open-source, comprehensive penetration-testing knowledge base. It brings together methodology, checklists, payloads, commands, and field-tested references across 23 domains: web, API, mobile, network, cloud, Active Directory, OSINT, and more. The goal is simple: give you the concise, practical knowledge to assess any target, from scoping an engagement to hunting a specific vulnerability class to writing the report.
 
 > **Practical companion: [PentestingChecklist](https://checklist.m14r41.in/).** This project is the knowledge base. The checklist is the hands-on, tick-as-you-go companion. A structured checklist across 23 platforms (web, API, mobile, cloud, AD and more) with progress tracking, notes, and export. Use them side by side.
 

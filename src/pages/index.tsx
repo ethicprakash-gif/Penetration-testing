@@ -219,13 +219,22 @@ function ChecklistPromo(): React.JSX.Element {
               with progress tracking, notes, and export. Read the technique here, track it there.
             </p>
           </div>
-          <a
-            className={`pe-btn pe-btn--primary ${styles.promoBtn}`}
-            href="https://checklist.m14r41.in/"
-            target="_blank"
-            rel="noopener noreferrer">
-            Open Checklist <ArrowRight size={16} />
-          </a>
+          <div className={styles.promoActions}>
+            <a
+              className={`pe-btn pe-btn--primary ${styles.promoBtn}`}
+              href="https://checklist.m14r41.in/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Open Website <ArrowRight size={16} />
+            </a>
+            <a
+              className={`pe-btn pe-btn--ghost ${styles.promoBtn}`}
+              href="https://github.com/m14r41/PentestingChecklist"
+              target="_blank"
+              rel="noopener noreferrer">
+              <Github size={16} /> View on GitHub
+            </a>
+          </div>
         </div>
       </div>
     </section>

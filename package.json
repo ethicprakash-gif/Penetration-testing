@@ -1,6 +1,6 @@
 {
   "name": "pentesting-everything",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "PentestingEverything — a professional, searchable cybersecurity knowledge base.",
   "scripts": {

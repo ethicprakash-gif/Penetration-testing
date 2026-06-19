@@ -56,7 +56,7 @@ export default function References(): React.JSX.Element {
         <div className="container">
           <div className="pe-reflib__badge"><Library size={15} /> {total} documents · {manifest.categories.length} domains</div>
           <h1 className="pe-reflib__title">Reference Library</h1>
-          <p className="pe-reflib__sub">Every curated PDF in one place — open in a new tab or download for offline use.</p>
+          <p className="pe-reflib__sub">Every curated PDF in one place. Open in a new tab or download for offline use.</p>
           <div className="pe-reflib__search">
             <Search size={18} aria-hidden="true" />
             <input
