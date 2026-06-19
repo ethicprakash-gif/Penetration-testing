@@ -17,6 +17,8 @@
 
 > Read it online at **[pentest.m14r41.in](https://pentest.m14r41.in)**: fully searchable, with 108 documentation pages, 104 reference PDFs, and 212+ topics across 23 domains. The website turns this repository into a fast, structured, and readable knowledge base.
 
+> New in v2.0.0: the project is now a full website with instant full-text search, a filterable reference PDF library, learning paths for common engagements, and a companion checklist at [checklist.m14r41.in](https://checklist.m14r41.in). Full notes in the [changelog](CHANGELOG.md).
+
 **[PentestingEverything](https://pentest.m14r41.in/)** is an open-source, comprehensive penetration-testing knowledge base. It brings together methodology, checklists, payloads, commands, and field-tested references across 23 domains: web, API, mobile, network, cloud, Active Directory, OSINT, and more. The goal is simple: give you the concise, practical knowledge to assess any target, from scoping an engagement to hunting a specific vulnerability class to writing the report.
 
 > **Practical companion: [PentestingChecklist](https://checklist.m14r41.in/).** This project is the knowledge base. The checklist is the hands-on, tick-as-you-go companion. A structured checklist across 23 platforms (web, API, mobile, cloud, AD and more) with progress tracking, notes, and export. Use them side by side.
