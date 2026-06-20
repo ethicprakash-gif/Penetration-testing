@@ -152,6 +152,14 @@ html { scroll-behavior: smooth; }
   .navbar-sidebar .pe-ghstats { display: inline-flex; margin: 0.5rem 0 0; }
 }
 
+/* The local-search dropdown ships without a bounded height, so a long result
+   list overflows the viewport and can't be scrolled — cap it and let it scroll. */
+[class*='dropdownMenu_'] {
+  max-height: min(70vh, 32rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
 /* ----- Content typography ----- */
 .markdown { --ifm-h1-font-size: 2.25rem; }
 .markdown h1 { letter-spacing: -0.025em; }

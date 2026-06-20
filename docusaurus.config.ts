@@ -56,7 +56,7 @@ const config: Config = {
         indexBlog: false,
         docsRouteBasePath: '/',
         highlightSearchTermsOnTargetPage: true,
-        searchResultLimits: 12,
+        searchResultLimits: 20,
         searchResultContextMaxLength: 60,
         explicitSearchResultPath: true,
       },
