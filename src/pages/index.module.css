@@ -114,6 +114,16 @@
   letter-spacing: -0.02em;
 }
 .promoText { margin: 0; color: var(--pe-muted, var(--ifm-color-emphasis-700)); max-width: 46rem; }
+.promoTags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+.promoTag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 24%, transparent);
+}
 .promoActions { flex: 0 0 auto; display: flex; gap: 0.6rem; flex-wrap: wrap; }
 .promoBtn { flex: 0 0 auto; white-space: nowrap; }
 @media (max-width: 768px) {

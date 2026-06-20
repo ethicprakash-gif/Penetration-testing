@@ -218,6 +218,11 @@ function ChecklistPromo(): React.JSX.Element {
               hands-on, tick-as-you-go companion: a structured checklist across 23 platforms
               with progress tracking, notes, and export. Read the technique here, track it there.
             </p>
+            <div className={styles.promoTags}>
+              <span className={styles.promoTag}>23 platforms</span>
+              <span className={styles.promoTag}>Progress tracking</span>
+              <span className={styles.promoTag}>Notes &amp; export</span>
+            </div>
           </div>
           <div className={styles.promoActions}>
             <a
@@ -225,7 +230,7 @@ function ChecklistPromo(): React.JSX.Element {
               href="https://checklist.m14r41.in/"
               target="_blank"
               rel="noopener noreferrer">
-              Open Website <ArrowRight size={16} />
+              Open the checklist <ArrowRight size={16} />
             </a>
             <a
               className={`pe-btn pe-btn--ghost ${styles.promoBtn}`}
@@ -245,7 +250,7 @@ export default function Home(): React.JSX.Element {
   return (
     <Layout
       title="Pentest Everything: Offensive Security Knowledge Base"
-      description="A complete solution for penetration testing and VAPT across web, mobile, API, Thick client, Network, SAST, SAST, SCA and more.">
+      description="A complete solution for penetration testing and VAPT across web, mobile, API, Thick client, Network, SAST, SCA and more.">
       <Hero />
       <main>
         <ChecklistPromo />
