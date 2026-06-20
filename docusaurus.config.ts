@@ -57,7 +57,7 @@ const config: Config = {
         docsRouteBasePath: '/',
         highlightSearchTermsOnTargetPage: true,
         searchResultLimits: 20,
-        searchResultContextMaxLength: 60,
+        searchResultContextMaxLength: 130,
         explicitSearchResultPath: true,
       },
     ],
