@@ -148,8 +148,8 @@ html { scroll-behavior: smooth; }
 .pe-ghstats__stat svg { opacity: 0.85; }
 .pe-ghstats__sep { width: 1px; height: 14px; background: var(--pe-border); }
 @media (max-width: 996px) {
-  .pe-ghstats { margin: 0.5rem 0 0; }
   .navbar__items--right .pe-ghstats { display: none; }
+  .navbar-sidebar .pe-ghstats { display: inline-flex; margin: 0.5rem 0 0; }
 }
 
 /* ----- Content typography ----- */
