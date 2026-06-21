@@ -11,7 +11,7 @@ browsed directly on GitHub. The content was valuable, but it was unstructured, h
 to search, slow to navigate, and the reference PDFs were scattered across folders.
 
 v2.0.0 turns the same material into a fast, searchable website at
-**[pentest.m14r41.in](https://pentest.m14r41.in)**: 108 documentation pages, 104
+**[pentesting.m14r41.in](https://pentesting.m14r41.in)**: 108 documentation pages, 104
 reference PDFs, and 212+ topics across 23 security domains, organized for real use
 during an engagement.
 

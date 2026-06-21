@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pentest.m14r41.in/sitemap.xml
+Sitemap: https://pentesting.m14r41.in/sitemap.xml

@@ -8,7 +8,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // Everything is env-overridable for forks or alternate hosting.
 const ORG = process.env.GH_ORG ?? 'm14r41';
 const REPO = process.env.GH_REPO ?? 'PentestingEverything';
-const SITE_URL = process.env.SITE_URL ?? 'https://pentest.m14r41.in';
+const SITE_URL = process.env.SITE_URL ?? 'https://pentesting.m14r41.in';
 const BASE_URL = process.env.BASE_URL ?? '/';
 const GITHUB_URL = `https://github.com/${ORG}/${REPO}`;
 const IS_PROD = process.env.NODE_ENV === 'production';

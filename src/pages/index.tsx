@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import {ArrowRight, BookOpen, Search, ShieldCheck, FileText, Route, Github, Linkedin, Globe, Heart, ListChecks} from 'lucide-react';
 import CategoryIcon from '@site/src/components/CategoryIcon';
@@ -248,9 +249,30 @@ function ChecklistPromo(): React.JSX.Element {
 
 export default function Home(): React.JSX.Element {
   return (
-    <Layout
-      title="Pentest Everything: Offensive Security Knowledge Base"
-      description="A complete solution for penetration testing and VAPT across web, mobile, API, Thick client, Network, SAST, SCA and more.">
+    <Layout>
+      <Head>
+        {/* Brand-first, concise tab/SEO title — overrides Docusaurus' default
+            "{pageTitle} | {siteTitle}" composition so the brand leads. */}
+        <title>PentestingEverything | Pentesting Framework | All-in-One Solution</title>
+        <meta
+          name="description"
+          content="Open-source all-in-one pentesting framework and knowledge base: methodology, checklists, payloads & commands across web, API, cloud, mobile, network, AD & OSINT."
+        />
+        <link rel="canonical" href="https://pentesting.m14r41.in/" />
+        {/* Open Graph / Twitter — shorter title for social cards */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://pentesting.m14r41.in/" />
+        <meta property="og:title" content="PentestingEverything — All-in-One Pentesting Framework" />
+        <meta
+          property="og:description"
+          content="An open-source penetration-testing framework and knowledge base spanning 23 domains: web, API, cloud, mobile, network, Active Directory, OSINT and more."
+        />
+        <meta name="twitter:title" content="PentestingEverything — All-in-One Pentesting Framework" />
+        <meta
+          name="twitter:description"
+          content="An open-source penetration-testing framework and knowledge base spanning 23 domains: web, API, cloud, mobile, network, AD, OSINT and more."
+        />
+      </Head>
       <Hero />
       <main>
         <ChecklistPromo />

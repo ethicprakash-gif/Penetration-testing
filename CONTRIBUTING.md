@@ -3,7 +3,7 @@
 Thanks for helping improve **PentestingEverything**. Contributing is mostly about adding
 Markdown files in the right folder; the site (navigation, search, references) builds itself.
 
-**Full step-by-step guide:** [pentest.m14r41.in/contributing](https://pentest.m14r41.in/contributing)
+**Full step-by-step guide:** [pentesting.m14r41.in/contributing](https://pentesting.m14r41.in/contributing)
 covers adding a vulnerability, adding a new category, how the menu and sidebar work, and the
 configuration reference.
 
