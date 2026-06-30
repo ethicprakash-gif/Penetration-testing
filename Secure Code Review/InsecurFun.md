@@ -91,6 +91,44 @@ Get-ChildItem -Recurse | Select-String "localhost|127.0.0.1|http://|https://"
 
 ---
 
+
+
+
+
+
+
+
+### 1. Find Potential Directory Listing Candidates
+
+**One-liner 1 – Common public directories**
+
+```powershell
+Get-ChildItem -Recurse -Directory | Where-Object {$_.Name -match '^(public|static|assets|uploads?|images|img|media|downloads?|files|docs|resources)$'} | Select-Object FullName
+```
+
+**One-liner 2 – Directories containing web files**
+
+```powershell
+Get-ChildItem -Recurse -File | Where-Object {$_.Extension -match '^\.(html?|js|css|json|xml|png|jpe?g|gif|svg|pdf)$'} | Group-Object DirectoryName | Sort-Object Count -Descending | Select-Object Count,Name
+```
+
+---
+
+### 2. Find Potentially Unauthenticated Pages
+
+**One-liner 1 – Find React route definitions**
+
+```powershell
+Get-ChildItem -Recurse -File -Include *.js,*.jsx,*.ts,*.tsx | Select-String -Pattern '<Route|createBrowserRouter|useRoutes|path:'
+```
+
+**One-liner 2 – Find page components**
+
+```powershell
+Get-ChildItem -Recurse -File -Include *.js,*.jsx,*.ts,*.tsx | Select-String -Pattern 'export default|function .*Page|const .*Page|lazy\('
+```
+
+
 ### Faster approach 
 
 
